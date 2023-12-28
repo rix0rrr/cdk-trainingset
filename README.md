@@ -67,3 +67,9 @@ and will evaluate the expressions in the template to symbolic values that repres
 ```shell
 npx cfngine create /path/to/template.json
 ```
+
+Or run `eval-all.sh` to do all of them:
+
+```shell
+./eval-all.sh
+```

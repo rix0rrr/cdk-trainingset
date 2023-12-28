@@ -16,7 +16,7 @@
     "aws-cdk-lib": "^2.117.0",
     "camelcase": "^8.0.0",
     "cdk-from-cfn": "^0.106.0",
-    "cfngine": "^0.0.1",
+    "cfngine": "^0.0.3",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0"
   }
