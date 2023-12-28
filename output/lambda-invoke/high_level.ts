@@ -3,7 +3,7 @@ import * as sfn from 'aws-cdk-lib/aws-stepfunctions';
 import * as cdk from 'aws-cdk-lib';
 import { LambdaInvoke } from 'aws-cdk-lib/aws-stepfunctions-tasks';
 import { IntegTest, ExpectedResult } from '@aws-cdk/integ-tests-alpha';
-import { STANDARD_NODEJS_RUNTIME } from '../../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 /*
  * Creates a state machine with a task state to invoke a Lambda function

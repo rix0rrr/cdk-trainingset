@@ -3,7 +3,7 @@ import * as cloudwatch from 'aws-cdk-lib/aws-cloudwatch';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as sagemaker from 'aws-cdk-lib/aws-sagemaker';
 
-export interface aws-cdk-sagemaker-endpoint-alarmsProps extends cdk.StackProps {
+export interface AwsCdkSagemakerEndpointAlarmsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface aws-cdk-sagemaker-endpoint-alarmsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-sagemaker-endpoint-alarms extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-sagemaker-endpoint-alarmsProps = {}) {
+export class AwsCdkSagemakerEndpointAlarms extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkSagemakerEndpointAlarmsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

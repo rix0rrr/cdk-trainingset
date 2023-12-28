@@ -3,7 +3,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as iot from 'aws-cdk-lib/aws-iot';
 import * as kinesis from 'aws-cdk-lib/aws-kinesis';
 
-export interface test-kinesis-stream-action-stackProps extends cdk.StackProps {
+export interface TestKinesisStreamActionStackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface test-kinesis-stream-action-stackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class test-kinesis-stream-action-stack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: test-kinesis-stream-action-stackProps = {}) {
+export class TestKinesisStreamActionStack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: TestKinesisStreamActionStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

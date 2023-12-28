@@ -4,7 +4,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as synthetics from 'aws-cdk-lib/aws-synthetics';
 
-export interface canary-vpcProps extends cdk.StackProps {
+export interface CanaryVpcProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface canary-vpcProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class canary-vpc extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: canary-vpcProps = {}) {
+export class CanaryVpc extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CanaryVpcProps = {}) {
     super(scope, id, props);
 
     // Applying default props

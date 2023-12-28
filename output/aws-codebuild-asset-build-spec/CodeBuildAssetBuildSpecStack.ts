@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as codebuild from 'aws-cdk-lib/aws-codebuild';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface CodeBuildAssetBuildSpecStackProps extends cdk.StackProps {
+export interface CodebuildassetbuildspecstackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,10 +10,10 @@ export interface CodeBuildAssetBuildSpecStackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class CodeBuildAssetBuildSpecStack extends cdk.Stack {
+export class Codebuildassetbuildspecstack extends cdk.Stack {
   public readonly exportsOutputRefMyProject39F7b0ae1ce3ca42;
 
-  public constructor(scope: cdk.App, id: string, props: CodeBuildAssetBuildSpecStackProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: CodebuildassetbuildspecstackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

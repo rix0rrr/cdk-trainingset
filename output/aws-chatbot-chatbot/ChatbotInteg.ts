@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as chatbot from 'aws-cdk-lib/aws-chatbot';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface ChatbotIntegProps extends cdk.StackProps {
+export interface ChatbotintegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface ChatbotIntegProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class ChatbotInteg extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: ChatbotIntegProps = {}) {
+export class Chatbotinteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: ChatbotintegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

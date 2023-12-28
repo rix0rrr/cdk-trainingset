@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface cloudfront-geo-restrictionsProps extends cdk.StackProps {
+export interface CloudfrontGeoRestrictionsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface cloudfront-geo-restrictionsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cloudfront-geo-restrictions extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cloudfront-geo-restrictionsProps = {}) {
+export class CloudfrontGeoRestrictions extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CloudfrontGeoRestrictionsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

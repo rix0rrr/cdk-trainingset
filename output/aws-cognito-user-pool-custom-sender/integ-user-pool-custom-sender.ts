@@ -4,7 +4,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as kms from 'aws-cdk-lib/aws-kms';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface integ-user-pool-custom-senderProps extends cdk.StackProps {
+export interface IntegUserPoolCustomSenderProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,11 +12,11 @@ export interface integ-user-pool-custom-senderProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-user-pool-custom-sender extends cdk.Stack {
+export class IntegUserPoolCustomSender extends cdk.Stack {
   public readonly userPoolId;
   public readonly clientId;
 
-  public constructor(scope: cdk.App, id: string, props: integ-user-pool-custom-senderProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegUserPoolCustomSenderProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -3,7 +3,7 @@ import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface lambda-event-source-filter-criteria-dynamodbProps extends cdk.StackProps {
+export interface LambdaEventSourceFilterCriteriaDynamodbProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface lambda-event-source-filter-criteria-dynamodbProps extends cdk.S
   readonly bootstrapVersion?: string;
 }
 
-export class lambda-event-source-filter-criteria-dynamodb extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: lambda-event-source-filter-criteria-dynamodbProps = {}) {
+export class LambdaEventSourceFilterCriteriaDynamodb extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: LambdaEventSourceFilterCriteriaDynamodbProps = {}) {
     super(scope, id, props);
 
     // Applying default props

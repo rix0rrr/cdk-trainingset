@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 
-export interface producerProps extends cdk.StackProps {
+export interface ProducerProps extends cdk.StackProps {
   /**
    * @default 'BLAT,BLAH'
    */
@@ -13,12 +13,12 @@ export interface producerProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class producer extends cdk.Stack {
+export class Producer extends cdk.Stack {
   public readonly exportManualExport;
   public readonly exportsOutputFnGetAttendpointE7b9679bDnsEntries62080A34;
   public readonly exportsOutputRefstringListParam77B646d6;
 
-  public constructor(scope: cdk.App, id: string, props: producerProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: ProducerProps = {}) {
     super(scope, id, props);
 
     // Applying default props

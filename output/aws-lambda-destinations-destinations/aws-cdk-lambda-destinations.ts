@@ -4,7 +4,7 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as sns from 'aws-cdk-lib/aws-sns';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 
-export interface aws-cdk-lambda-destinationsProps extends cdk.StackProps {
+export interface AwsCdkLambdaDestinationsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,11 +12,11 @@ export interface aws-cdk-lambda-destinationsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-lambda-destinations extends cdk.Stack {
+export class AwsCdkLambdaDestinations extends cdk.Stack {
   public readonly exportsOutputRefSnsSqsC4810b27404a5aff;
   public readonly exportsOutputRefQueue4A7e3555425e8bd3;
 
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-lambda-destinationsProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkLambdaDestinationsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

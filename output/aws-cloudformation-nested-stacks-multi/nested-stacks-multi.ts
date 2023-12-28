@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as cloudformation from 'aws-cdk-lib/aws-cloudformation';
 
-export interface nested-stacks-multiProps extends cdk.StackProps {
+export interface NestedStacksMultiProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface nested-stacks-multiProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class nested-stacks-multi extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: nested-stacks-multiProps = {}) {
+export class NestedStacksMulti extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: NestedStacksMultiProps = {}) {
     super(scope, id, props);
 
     // Applying default props

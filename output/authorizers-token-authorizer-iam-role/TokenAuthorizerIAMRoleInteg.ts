@@ -3,7 +3,7 @@ import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface TokenAuthorizerIAMRoleIntegProps extends cdk.StackProps {
+export interface TokenauthorizeriamroleintegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface TokenAuthorizerIAMRoleIntegProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class TokenAuthorizerIAMRoleInteg extends cdk.Stack {
+export class Tokenauthorizeriamroleinteg extends cdk.Stack {
   public readonly myRestApiEndpoint4C55e4cb;
 
-  public constructor(scope: cdk.App, id: string, props: TokenAuthorizerIAMRoleIntegProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: TokenauthorizeriamroleintegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

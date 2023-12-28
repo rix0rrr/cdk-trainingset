@@ -3,11 +3,11 @@ import * as appsync from 'aws-cdk-lib/aws-appsync';
 import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface stackProps extends cdk.StackProps {
+export interface StackProps extends cdk.StackProps {
 }
 
-export class stack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: stackProps = {}) {
+export class Stack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: StackProps = {}) {
     super(scope, id, props);
 
     // Resources

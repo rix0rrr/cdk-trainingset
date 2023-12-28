@@ -2,11 +2,11 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface integservicecatalogtwoproductsMyProductStack25090BCC2.productProps extends cdk.StackProps {
+export interface Integservicecatalogtwoproductsmyproductstack25090Bcc2ProductProps extends cdk.StackProps {
 }
 
-export class integservicecatalogtwoproductsMyProductStack25090BCC2.product extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integservicecatalogtwoproductsMyProductStack25090BCC2.productProps = {}) {
+export class Integservicecatalogtwoproductsmyproductstack25090Bcc2Product extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: Integservicecatalogtwoproductsmyproductstack25090Bcc2ProductProps = {}) {
     super(scope, id, props);
 
     // Resources

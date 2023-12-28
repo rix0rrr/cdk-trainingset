@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as codeguruprofiler from 'aws-cdk-lib/aws-codeguruprofiler';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface ProfilerGroupIntegrationTestProps extends cdk.StackProps {
+export interface ProfilergroupintegrationtestProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface ProfilerGroupIntegrationTestProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class ProfilerGroupIntegrationTest extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: ProfilerGroupIntegrationTestProps = {}) {
+export class Profilergroupintegrationtest extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: ProfilergroupintegrationtestProps = {}) {
     super(scope, id, props);
 
     // Applying default props

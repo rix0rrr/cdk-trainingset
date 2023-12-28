@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 import * as ses from 'aws-cdk-lib/aws-ses';
 
-export interface cdk-ses-email-identity-integProps extends cdk.StackProps {
+export interface CdkSesEmailIdentityIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface cdk-ses-email-identity-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-ses-email-identity-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-ses-email-identity-integProps = {}) {
+export class CdkSesEmailIdentityInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkSesEmailIdentityIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -3,7 +3,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as iot from 'aws-cdk-lib/aws-iot';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface sns-topic-action-test-stackProps extends cdk.StackProps {
+export interface SnsTopicActionTestStackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface sns-topic-action-test-stackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class sns-topic-action-test-stack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: sns-topic-action-test-stackProps = {}) {
+export class SnsTopicActionTestStack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: SnsTopicActionTestStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

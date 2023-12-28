@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as elasticsearch from 'aws-cdk-lib/aws-elasticsearch';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface cdk-integ-elasticsearch-advancedsecurityProps extends cdk.StackProps {
+export interface CdkIntegElasticsearchAdvancedsecurityProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface cdk-integ-elasticsearch-advancedsecurityProps extends cdk.Stack
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-integ-elasticsearch-advancedsecurity extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-integ-elasticsearch-advancedsecurityProps = {}) {
+export class CdkIntegElasticsearchAdvancedsecurity extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkIntegElasticsearchAdvancedsecurityProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -3,7 +3,7 @@ import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as kinesis from 'aws-cdk-lib/aws-kinesis';
 
-export interface integ-realtime-configProps extends cdk.StackProps {
+export interface IntegRealtimeConfigProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface integ-realtime-configProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-realtime-config extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-realtime-configProps = {}) {
+export class IntegRealtimeConfig extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegRealtimeConfigProps = {}) {
     super(scope, id, props);
 
     // Applying default props

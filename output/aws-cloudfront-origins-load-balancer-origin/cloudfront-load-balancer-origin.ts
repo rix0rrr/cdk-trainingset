@@ -3,7 +3,7 @@ import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as elasticloadbalancingv2 from 'aws-cdk-lib/aws-elasticloadbalancingv2';
 
-export interface cloudfront-load-balancer-originProps extends cdk.StackProps {
+export interface CloudfrontLoadBalancerOriginProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface cloudfront-load-balancer-originProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cloudfront-load-balancer-origin extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cloudfront-load-balancer-originProps = {}) {
+export class CloudfrontLoadBalancerOrigin extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CloudfrontLoadBalancerOriginProps = {}) {
     super(scope, id, props);
 
     // Applying default props

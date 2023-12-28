@@ -3,7 +3,7 @@ import * as sns from 'aws-cdk-lib/aws-sns';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 import * as cdk from 'aws-cdk-lib';
 import * as subs from 'aws-cdk-lib/aws-sns-subscriptions';
-import { STANDARD_NODEJS_RUNTIME } from '../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 class SnsToLambda extends cdk.Stack {
   constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {

@@ -3,7 +3,7 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 import { App, CfnOutput, Stack } from 'aws-cdk-lib';
 import { KinesisEventSource, SqsDlq } from 'aws-cdk-lib/aws-lambda-event-sources';
-import { STANDARD_NODEJS_RUNTIME } from '../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 /*
  * Stack verification steps:

@@ -4,7 +4,7 @@ import * as sns from 'aws-cdk-lib/aws-sns';
 import * as cdk from 'aws-cdk-lib';
 import * as integ from '@aws-cdk/integ-tests-alpha';
 import * as config from 'aws-cdk-lib/aws-config';
-import { STANDARD_NODEJS_RUNTIME } from '../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 /**********************************************************************************************************************
  *

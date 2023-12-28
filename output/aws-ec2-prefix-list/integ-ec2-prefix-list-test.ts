@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 
-export interface integ-ec2-prefix-list-testProps extends cdk.StackProps {
+export interface IntegEc2PrefixListTestProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface integ-ec2-prefix-list-testProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-ec2-prefix-list-test extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-ec2-prefix-list-testProps = {}) {
+export class IntegEc2PrefixListTest extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegEc2PrefixListTestProps = {}) {
     super(scope, id, props);
 
     // Applying default props

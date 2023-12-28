@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as opensearchservice from 'aws-cdk-lib/aws-opensearchservice';
 
-export interface cdk-integ-opensearch-advancedsecurityProps extends cdk.StackProps {
+export interface CdkIntegOpensearchAdvancedsecurityProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface cdk-integ-opensearch-advancedsecurityProps extends cdk.StackPro
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-integ-opensearch-advancedsecurity extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-integ-opensearch-advancedsecurityProps = {}) {
+export class CdkIntegOpensearchAdvancedsecurity extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkIntegOpensearchAdvancedsecurityProps = {}) {
     super(scope, id, props);
 
     // Applying default props

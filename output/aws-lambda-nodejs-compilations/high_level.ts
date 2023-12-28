@@ -2,7 +2,7 @@ import * as path from 'path';
 import { App, Stack, StackProps } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as lambda from 'aws-cdk-lib/aws-lambda-nodejs';
-import { STANDARD_NODEJS_RUNTIME } from '../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 class TestStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {

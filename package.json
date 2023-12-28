@@ -10,7 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@aws-cdk/integ-tests-alpha": "^2.117.0-alpha.0",
+    "@types/node": "^20.10.5",
+    "aws-cdk": "^2.117.0",
+    "aws-cdk-lib": "^2.117.0",
+    "camelcase": "^8.0.0",
     "cdk-from-cfn": "^0.106.0",
-    "cfngine": "^0.0.1"
+    "cfngine": "^0.0.1",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0"
   }
 }

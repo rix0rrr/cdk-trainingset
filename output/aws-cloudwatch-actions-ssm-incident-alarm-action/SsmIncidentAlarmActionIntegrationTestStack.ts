@@ -3,7 +3,7 @@ import * as cloudwatch from 'aws-cdk-lib/aws-cloudwatch';
 import * as kms from 'aws-cdk-lib/aws-kms';
 import * as ssmincidents from 'aws-cdk-lib/aws-ssmincidents';
 
-export interface SsmIncidentAlarmActionIntegrationTestStackProps extends cdk.StackProps {
+export interface SsmincidentalarmactionintegrationteststackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface SsmIncidentAlarmActionIntegrationTestStackProps extends cdk.Sta
   readonly bootstrapVersion?: string;
 }
 
-export class SsmIncidentAlarmActionIntegrationTestStack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: SsmIncidentAlarmActionIntegrationTestStackProps = {}) {
+export class Ssmincidentalarmactionintegrationteststack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: SsmincidentalarmactionintegrationteststackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

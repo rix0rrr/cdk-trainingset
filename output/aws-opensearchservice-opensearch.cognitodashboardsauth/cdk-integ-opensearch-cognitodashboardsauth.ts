@@ -3,7 +3,7 @@ import * as cognito from 'aws-cdk-lib/aws-cognito';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as opensearchservice from 'aws-cdk-lib/aws-opensearchservice';
 
-export interface cdk-integ-opensearch-cognitodashboardsauthProps extends cdk.StackProps {
+export interface CdkIntegOpensearchCognitodashboardsauthProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface cdk-integ-opensearch-cognitodashboardsauthProps extends cdk.Sta
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-integ-opensearch-cognitodashboardsauth extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-integ-opensearch-cognitodashboardsauthProps = {}) {
+export class CdkIntegOpensearchCognitodashboardsauth extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkIntegOpensearchCognitodashboardsauthProps = {}) {
     super(scope, id, props);
 
     // Applying default props

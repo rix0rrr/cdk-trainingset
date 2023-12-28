@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as apigatewayv2 from 'aws-cdk-lib/aws-apigatewayv2';
 
-export interface integ-mock-websocket-integrationProps extends cdk.StackProps {
+export interface IntegMockWebsocketIntegrationProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,10 +9,10 @@ export interface integ-mock-websocket-integrationProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-mock-websocket-integration extends cdk.Stack {
+export class IntegMockWebsocketIntegration extends cdk.Stack {
   public readonly apiEndpoint;
 
-  public constructor(scope: cdk.App, id: string, props: integ-mock-websocket-integrationProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegMockWebsocketIntegrationProps = {}) {
     super(scope, id, props);
 
     // Applying default props

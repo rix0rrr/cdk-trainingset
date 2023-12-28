@@ -1,11 +1,11 @@
 import * as cdk from 'aws-cdk-lib';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface TopicStackProps extends cdk.StackProps {
+export interface TopicstackProps extends cdk.StackProps {
 }
 
-export class TopicStack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: TopicStackProps = {}) {
+export class Topicstack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: TopicstackProps = {}) {
     super(scope, id, props);
 
     // Resources

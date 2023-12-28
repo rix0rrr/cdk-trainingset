@@ -3,7 +3,7 @@ import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as cloudwatch from 'aws-cdk-lib/aws-cloudwatch';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface restapi-metricsProps extends cdk.StackProps {
+export interface RestapiMetricsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface restapi-metricsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class restapi-metrics extends cdk.Stack {
+export class RestapiMetrics extends cdk.Stack {
   public readonly apiEndpoint4F160690;
 
-  public constructor(scope: cdk.App, id: string, props: restapi-metricsProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: RestapiMetricsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

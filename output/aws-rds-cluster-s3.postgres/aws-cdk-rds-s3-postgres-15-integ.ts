@@ -5,7 +5,7 @@ import * as rds from 'aws-cdk-lib/aws-rds';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 
-export interface aws-cdk-rds-s3-postgres-15-integProps extends cdk.StackProps {
+export interface AwsCdkRdsS3Postgres15IntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -13,8 +13,8 @@ export interface aws-cdk-rds-s3-postgres-15-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-rds-s3-postgres-15-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-rds-s3-postgres-15-integProps = {}) {
+export class AwsCdkRdsS3Postgres15Integ extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkRdsS3Postgres15IntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

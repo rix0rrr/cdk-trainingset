@@ -4,7 +4,7 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import { App, Stack } from 'aws-cdk-lib';
 import { IntegTest } from '@aws-cdk/integ-tests-alpha';
 import { AuthorizationType, MockIntegration, PassthroughBehavior, RestApi, TokenAuthorizer } from 'aws-cdk-lib/aws-apigateway';
-import { STANDARD_NODEJS_RUNTIME } from '../../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 /*
  * Stack verification steps:

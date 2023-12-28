@@ -3,7 +3,7 @@ import * as batch from 'aws-cdk-lib/aws-batch';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface batch-stackProps extends cdk.StackProps {
+export interface BatchStackProps extends cdk.StackProps {
   /**
    * @default '/aws/service/ami-amazon-linux-latest/amzn-ami-hvm-x86_64-gp2'
    */
@@ -15,8 +15,8 @@ export interface batch-stackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class batch-stack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: batch-stackProps = {}) {
+export class BatchStack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: BatchStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

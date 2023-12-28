@@ -4,7 +4,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as kms from 'aws-cdk-lib/aws-kms';
 import * as rds from 'aws-cdk-lib/aws-rds';
 
-export interface aws-cdk-rds-integ-with-feature-flagProps extends cdk.StackProps {
+export interface AwsCdkRdsIntegWithFeatureFlagProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface aws-cdk-rds-integ-with-feature-flagProps extends cdk.StackProps
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-rds-integ-with-feature-flag extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-rds-integ-with-feature-flagProps = {}) {
+export class AwsCdkRdsIntegWithFeatureFlag extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkRdsIntegWithFeatureFlagProps = {}) {
     super(scope, id, props);
 
     // Applying default props

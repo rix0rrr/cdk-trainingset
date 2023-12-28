@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as ses from 'aws-cdk-lib/aws-ses';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface cdk-ses-configuration-set-integProps extends cdk.StackProps {
+export interface CdkSesConfigurationSetIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface cdk-ses-configuration-set-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-ses-configuration-set-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-ses-configuration-set-integProps = {}) {
+export class CdkSesConfigurationSetInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkSesConfigurationSetIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

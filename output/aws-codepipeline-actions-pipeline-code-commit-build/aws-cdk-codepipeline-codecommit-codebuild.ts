@@ -6,7 +6,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as kms from 'aws-cdk-lib/aws-kms';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface aws-cdk-codepipeline-codecommit-codebuildProps extends cdk.StackProps {
+export interface AwsCdkCodepipelineCodecommitCodebuildProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -14,8 +14,8 @@ export interface aws-cdk-codepipeline-codecommit-codebuildProps extends cdk.Stac
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-codepipeline-codecommit-codebuild extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-codepipeline-codecommit-codebuildProps = {}) {
+export class AwsCdkCodepipelineCodecommitCodebuild extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkCodepipelineCodecommitCodebuildProps = {}) {
     super(scope, id, props);
 
     // Applying default props

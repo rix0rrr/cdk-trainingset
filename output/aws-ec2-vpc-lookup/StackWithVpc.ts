@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 
-export interface StackWithVpcProps extends cdk.StackProps {
+export interface StackwithvpcProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface StackWithVpcProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class StackWithVpc extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: StackWithVpcProps = {}) {
+export class Stackwithvpc extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: StackwithvpcProps = {}) {
     super(scope, id, props);
 
     // Applying default props

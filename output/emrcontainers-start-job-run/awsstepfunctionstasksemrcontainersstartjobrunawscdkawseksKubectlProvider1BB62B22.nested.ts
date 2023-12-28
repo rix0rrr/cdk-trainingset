@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface awsstepfunctionstasksemrcontainersstartjobrunawscdkawseksKubectlProvider1BB62B22.nestedProps extends cdk.StackProps {
+export interface Awsstepfunctionstasksemrcontainersstartjobrunawscdkawsekskubectlprovider1Bb62B22NestedProps extends cdk.StackProps {
   /**
    */
   readonly referencetoawsstepfunctionstasksemrcontainersstartjobrunintegrationtesteksclusterKubectlHandlerRole965Aea8dArn: string;
@@ -17,10 +17,10 @@ export interface awsstepfunctionstasksemrcontainersstartjobrunawscdkawseksKubect
   readonly referencetoawsstepfunctionstasksemrcontainersstartjobrunintegrationtestekscluster59B73e28ClusterSecurityGroupId: string;
 }
 
-export class awsstepfunctionstasksemrcontainersstartjobrunawscdkawseksKubectlProvider1BB62B22.nested extends cdk.Stack {
+export class Awsstepfunctionstasksemrcontainersstartjobrunawscdkawsekskubectlprovider1Bb62B22Nested extends cdk.Stack {
   public readonly awsstepfunctionstasksemrcontainersstartjobrunawscdkawseksKubectlProviderframeworkonEventB25eddaeArn;
 
-  public constructor(scope: cdk.App, id: string, props: awsstepfunctionstasksemrcontainersstartjobrunawscdkawseksKubectlProvider1BB62B22.nestedProps) {
+  public constructor(scope: cdk.App, id: string, props: Awsstepfunctionstasksemrcontainersstartjobrunawscdkawsekskubectlprovider1Bb62B22NestedProps) {
     super(scope, id, props);
 
     // Resources

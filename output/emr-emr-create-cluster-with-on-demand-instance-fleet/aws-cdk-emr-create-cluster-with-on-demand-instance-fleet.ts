@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface aws-cdk-emr-create-cluster-with-on-demand-instance-fleetProps extends cdk.StackProps {
+export interface AwsCdkEmrCreateClusterWithOnDemandInstanceFleetProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface aws-cdk-emr-create-cluster-with-on-demand-instance-fleetProps e
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-emr-create-cluster-with-on-demand-instance-fleet extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-emr-create-cluster-with-on-demand-instance-fleetProps = {}) {
+export class AwsCdkEmrCreateClusterWithOnDemandInstanceFleet extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkEmrCreateClusterWithOnDemandInstanceFleetProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface cdk-saml-providerProps extends cdk.StackProps {
+export interface CdkSamlProviderProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface cdk-saml-providerProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-saml-provider extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-saml-providerProps = {}) {
+export class CdkSamlProvider extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkSamlProviderProps = {}) {
     super(scope, id, props);
 
     // Applying default props

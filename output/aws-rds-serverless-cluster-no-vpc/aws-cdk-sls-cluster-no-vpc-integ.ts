@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as rds from 'aws-cdk-lib/aws-rds';
 
-export interface aws-cdk-sls-cluster-no-vpc-integProps extends cdk.StackProps {
+export interface AwsCdkSlsClusterNoVpcIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface aws-cdk-sls-cluster-no-vpc-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-sls-cluster-no-vpc-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-sls-cluster-no-vpc-integProps = {}) {
+export class AwsCdkSlsClusterNoVpcInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkSlsClusterNoVpcIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

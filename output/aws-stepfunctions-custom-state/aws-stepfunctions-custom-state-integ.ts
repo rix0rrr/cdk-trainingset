@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface aws-stepfunctions-custom-state-integProps extends cdk.StackProps {
+export interface AwsStepfunctionsCustomStateIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,10 +10,10 @@ export interface aws-stepfunctions-custom-state-integProps extends cdk.StackProp
   readonly bootstrapVersion?: string;
 }
 
-export class aws-stepfunctions-custom-state-integ extends cdk.Stack {
+export class AwsStepfunctionsCustomStateInteg extends cdk.Stack {
   public readonly stateMachineArn;
 
-  public constructor(scope: cdk.App, id: string, props: aws-stepfunctions-custom-state-integProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsStepfunctionsCustomStateIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -3,7 +3,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as kinesis from 'aws-cdk-lib/aws-kinesis';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface lambda-event-source-kinesisProps extends cdk.StackProps {
+export interface LambdaEventSourceKinesisProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface lambda-event-source-kinesisProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class lambda-event-source-kinesis extends cdk.Stack {
+export class LambdaEventSourceKinesis extends cdk.Stack {
   public readonly outputEventSourceMappingArn;
 
-  public constructor(scope: cdk.App, id: string, props: lambda-event-source-kinesisProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: LambdaEventSourceKinesisProps = {}) {
     super(scope, id, props);
 
     // Applying default props

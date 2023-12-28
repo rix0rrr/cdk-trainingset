@@ -3,7 +3,7 @@ import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as logs from 'aws-cdk-lib/aws-logs';
 
-export interface test-apigateway-access-logsProps extends cdk.StackProps {
+export interface TestApigatewayAccessLogsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface test-apigateway-access-logsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class test-apigateway-access-logs extends cdk.Stack {
+export class TestApigatewayAccessLogs extends cdk.Stack {
   public readonly myApiEndpoint869Abe96;
 
-  public constructor(scope: cdk.App, id: string, props: test-apigateway-access-logsProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: TestApigatewayAccessLogsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

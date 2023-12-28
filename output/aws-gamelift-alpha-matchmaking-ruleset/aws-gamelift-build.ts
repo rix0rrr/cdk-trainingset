@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as gamelift from 'aws-cdk-lib/aws-gamelift';
 
-export interface aws-gamelift-buildProps extends cdk.StackProps {
+export interface AwsGameliftBuildProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,11 +9,11 @@ export interface aws-gamelift-buildProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-gamelift-build extends cdk.Stack {
+export class AwsGameliftBuild extends cdk.Stack {
   public readonly matchmakingRuleSetArn;
   public readonly matchmakingRuleSetName;
 
-  public constructor(scope: cdk.App, id: string, props: aws-gamelift-buildProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsGameliftBuildProps = {}) {
     super(scope, id, props);
 
     // Applying default props

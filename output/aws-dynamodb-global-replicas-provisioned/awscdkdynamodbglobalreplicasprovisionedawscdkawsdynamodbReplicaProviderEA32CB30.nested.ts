@@ -4,18 +4,18 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as logs from 'aws-cdk-lib/aws-logs';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface awscdkdynamodbglobalreplicasprovisionedawscdkawsdynamodbReplicaProviderEA32CB30.nestedProps extends cdk.StackProps {
+export interface Awscdkdynamodbglobalreplicasprovisionedawscdkawsdynamodbreplicaproviderea32Cb30NestedProps extends cdk.StackProps {
   /**
    */
   readonly referencetoawscdkdynamodbglobalreplicasprovisionedTable12280A12Ref: string;
 }
 
-export class awscdkdynamodbglobalreplicasprovisionedawscdkawsdynamodbReplicaProviderEA32CB30.nested extends cdk.Stack {
+export class Awscdkdynamodbglobalreplicasprovisionedawscdkawsdynamodbreplicaproviderea32Cb30Nested extends cdk.Stack {
   public readonly awscdkdynamodbglobalreplicasprovisionedawscdkawsdynamodbReplicaProviderOnEventHandlerServiceRole348A0c9aRef;
   public readonly awscdkdynamodbglobalreplicasprovisionedawscdkawsdynamodbReplicaProviderIsCompleteHandlerServiceRole750F1ee9Ref;
   public readonly awscdkdynamodbglobalreplicasprovisionedawscdkawsdynamodbReplicaProviderframeworkonEventAcc2c387Arn;
 
-  public constructor(scope: cdk.App, id: string, props: awscdkdynamodbglobalreplicasprovisionedawscdkawsdynamodbReplicaProviderEA32CB30.nestedProps) {
+  public constructor(scope: cdk.App, id: string, props: Awscdkdynamodbglobalreplicasprovisionedawscdkawsdynamodbreplicaproviderea32Cb30NestedProps) {
     super(scope, id, props);
 
     // Resources

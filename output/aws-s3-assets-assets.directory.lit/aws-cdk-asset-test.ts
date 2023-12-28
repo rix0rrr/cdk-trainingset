@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface aws-cdk-asset-testProps extends cdk.StackProps {
+export interface AwsCdkAssetTestProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface aws-cdk-asset-testProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-asset-test extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-asset-testProps = {}) {
+export class AwsCdkAssetTest extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkAssetTestProps = {}) {
     super(scope, id, props);
 
     // Applying default props

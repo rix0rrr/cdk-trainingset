@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as cloud9 from 'aws-cdk-lib/aws-cloud9';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 
-export interface cloud9-imageid-integProps extends cdk.StackProps {
+export interface Cloud9ImageidIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,11 +10,11 @@ export interface cloud9-imageid-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cloud9-imageid-integ extends cdk.Stack {
+export class Cloud9ImageidInteg extends cdk.Stack {
   public readonly url;
   public readonly arn;
 
-  public constructor(scope: cdk.App, id: string, props: cloud9-imageid-integProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: Cloud9ImageidIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -3,7 +3,7 @@ import * as cloudformation from 'aws-cdk-lib/aws-cloudformation';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface integ-dns-validated-certificateProps extends cdk.StackProps {
+export interface IntegDnsValidatedCertificateProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface integ-dns-validated-certificateProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-dns-validated-certificate extends cdk.Stack {
+export class IntegDnsValidatedCertificate extends cdk.Stack {
   public readonly certificateArn;
 
-  public constructor(scope: cdk.App, id: string, props: integ-dns-validated-certificateProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegDnsValidatedCertificateProps = {}) {
     super(scope, id, props);
 
     // Applying default props

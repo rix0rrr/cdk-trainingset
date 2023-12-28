@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as cognito from 'aws-cdk-lib/aws-cognito';
 
-export interface integ-user-pool-idp-amazonProps extends cdk.StackProps {
+export interface IntegUserPoolIdpAmazonProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,10 +9,10 @@ export interface integ-user-pool-idp-amazonProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-user-pool-idp-amazon extends cdk.Stack {
+export class IntegUserPoolIdpAmazon extends cdk.Stack {
   public readonly signInLink;
 
-  public constructor(scope: cdk.App, id: string, props: integ-user-pool-idp-amazonProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegUserPoolIdpAmazonProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -4,7 +4,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as rds from 'aws-cdk-lib/aws-rds';
 import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 
-export interface aws-cdk-rds-proxyProps extends cdk.StackProps {
+export interface AwsCdkRdsProxyProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface aws-cdk-rds-proxyProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-rds-proxy extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-rds-proxyProps = {}) {
+export class AwsCdkRdsProxy extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkRdsProxyProps = {}) {
     super(scope, id, props);
 
     // Applying default props

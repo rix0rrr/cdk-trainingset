@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as efs from 'aws-cdk-lib/aws-efs';
 
-export interface test-efs-integProps extends cdk.StackProps {
+export interface TestEfsIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface test-efs-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class test-efs-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: test-efs-integProps = {}) {
+export class TestEfsInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: TestEfsIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

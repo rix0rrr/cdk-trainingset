@@ -4,7 +4,7 @@ import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
 import * as efs from 'aws-cdk-lib/aws-efs';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface cdk-backupProps extends cdk.StackProps {
+export interface CdkBackupProps extends cdk.StackProps {
   /**
    * Env
    * @default 'test'
@@ -17,8 +17,8 @@ export interface cdk-backupProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-backup extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-backupProps = {}) {
+export class CdkBackup extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkBackupProps = {}) {
     super(scope, id, props);
 
     // Applying default props

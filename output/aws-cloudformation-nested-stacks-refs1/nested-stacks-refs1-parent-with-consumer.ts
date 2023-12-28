@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as cloudformation from 'aws-cdk-lib/aws-cloudformation';
 
-export interface nested-stacks-refs1-parent-with-consumerProps extends cdk.StackProps {
+export interface NestedStacksRefs1ParentWithConsumerProps extends cdk.StackProps {
   /**
    * S3 bucket for asset "f780d24543a81dc89296e718fbad166c6cc0223026f7a142a0ad9cb21de3ac46"
    */
@@ -16,8 +16,8 @@ export interface nested-stacks-refs1-parent-with-consumerProps extends cdk.Stack
   readonly assetParametersf780d24543a81dc89296e718fbad166c6cc0223026f7a142a0ad9cb21de3ac46ArtifactHashFcb5e601: string;
 }
 
-export class nested-stacks-refs1-parent-with-consumer extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: nested-stacks-refs1-parent-with-consumerProps) {
+export class NestedStacksRefs1ParentWithConsumer extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: NestedStacksRefs1ParentWithConsumerProps) {
     super(scope, id, props);
 
     // Resources

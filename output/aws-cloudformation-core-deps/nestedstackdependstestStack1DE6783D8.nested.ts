@@ -2,11 +2,11 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface nestedstackdependstestStack1DE6783D8.nestedProps extends cdk.StackProps {
+export interface Nestedstackdependsteststack1De6783D8NestedProps extends cdk.StackProps {
 }
 
-export class nestedstackdependstestStack1DE6783D8.nested extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: nestedstackdependstestStack1DE6783D8.nestedProps = {}) {
+export class Nestedstackdependsteststack1De6783D8Nested extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: Nestedstackdependsteststack1De6783D8NestedProps = {}) {
     super(scope, id, props);
 
     // Resources

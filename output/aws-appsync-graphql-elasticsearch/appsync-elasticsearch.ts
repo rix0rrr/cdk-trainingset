@@ -3,7 +3,7 @@ import * as appsync from 'aws-cdk-lib/aws-appsync';
 import * as elasticsearch from 'aws-cdk-lib/aws-elasticsearch';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface appsync-elasticsearchProps extends cdk.StackProps {
+export interface AppsyncElasticsearchProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface appsync-elasticsearchProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class appsync-elasticsearch extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: appsync-elasticsearchProps = {}) {
+export class AppsyncElasticsearch extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AppsyncElasticsearchProps = {}) {
     super(scope, id, props);
 
     // Applying default props

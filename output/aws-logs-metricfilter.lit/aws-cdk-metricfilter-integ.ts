@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as logs from 'aws-cdk-lib/aws-logs';
 
-export interface aws-cdk-metricfilter-integProps extends cdk.StackProps {
+export interface AwsCdkMetricfilterIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface aws-cdk-metricfilter-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-metricfilter-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-metricfilter-integProps = {}) {
+export class AwsCdkMetricfilterInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkMetricfilterIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

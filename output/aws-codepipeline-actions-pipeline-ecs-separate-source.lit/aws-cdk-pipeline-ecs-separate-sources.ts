@@ -7,14 +7,14 @@ import * as events from 'aws-cdk-lib/aws-events';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface aws-cdk-pipeline-ecs-separate-sourcesProps extends cdk.StackProps {
+export interface AwsCdkPipelineEcsSeparateSourcesProps extends cdk.StackProps {
 }
 
-export class aws-cdk-pipeline-ecs-separate-sources extends cdk.Stack {
+export class AwsCdkPipelineEcsSeparateSources extends cdk.Stack {
   public readonly exportsOutputFnGetAttEcsDeployRepositoryE7a569c0ArnCcace9dd;
   public readonly exportsOutputRefEcsDeployRepositoryE7a569c04ec3eb5e;
 
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-pipeline-ecs-separate-sourcesProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkPipelineEcsSeparateSourcesProps = {}) {
     super(scope, id, props);
 
     // Resources

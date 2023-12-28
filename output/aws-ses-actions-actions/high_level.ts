@@ -5,7 +5,7 @@ import * as ses from 'aws-cdk-lib/aws-ses';
 import * as sns from 'aws-cdk-lib/aws-sns';
 import * as cdk from 'aws-cdk-lib';
 import * as actions from 'aws-cdk-lib/aws-ses-actions';
-import { STANDARD_NODEJS_RUNTIME } from '../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 /**********************************************************************************************************************
  *

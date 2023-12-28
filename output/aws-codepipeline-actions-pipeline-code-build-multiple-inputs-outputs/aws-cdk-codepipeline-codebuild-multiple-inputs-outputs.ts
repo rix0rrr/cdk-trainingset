@@ -6,7 +6,7 @@ import * as events from 'aws-cdk-lib/aws-events';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface aws-cdk-codepipeline-codebuild-multiple-inputs-outputsProps extends cdk.StackProps {
+export interface AwsCdkCodepipelineCodebuildMultipleInputsOutputsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -14,8 +14,8 @@ export interface aws-cdk-codepipeline-codebuild-multiple-inputs-outputsProps ext
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-codepipeline-codebuild-multiple-inputs-outputs extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-codepipeline-codebuild-multiple-inputs-outputsProps = {}) {
+export class AwsCdkCodepipelineCodebuildMultipleInputsOutputs extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkCodepipelineCodebuildMultipleInputsOutputsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

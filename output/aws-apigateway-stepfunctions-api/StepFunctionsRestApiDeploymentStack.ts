@@ -3,7 +3,7 @@ import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface StepFunctionsRestApiDeploymentStackProps extends cdk.StackProps {
+export interface StepfunctionsrestapideploymentstackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface StepFunctionsRestApiDeploymentStackProps extends cdk.StackProps
   readonly bootstrapVersion?: string;
 }
 
-export class StepFunctionsRestApiDeploymentStack extends cdk.Stack {
+export class Stepfunctionsrestapideploymentstack extends cdk.Stack {
   public readonly apiEndpoint;
 
-  public constructor(scope: cdk.App, id: string, props: StepFunctionsRestApiDeploymentStackProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: StepfunctionsrestapideploymentstackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

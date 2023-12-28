@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as elasticloadbalancingv2 from 'aws-cdk-lib/aws-elasticloadbalancingv2';
 
-export interface aws-cdk-elbv2-StackWithLbProps extends cdk.StackProps {
+export interface AwsCdkElbv2StackwithlbProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,13 +10,13 @@ export interface aws-cdk-elbv2-StackWithLbProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-elbv2-StackWithLb extends cdk.Stack {
+export class AwsCdkElbv2Stackwithlb extends cdk.Stack {
   public readonly nlbArn;
   public readonly tgArn;
   public readonly exportsOutputRefLb8a12904c1150d6a6;
   public readonly exportsOutputRefLbListenerTargetGroupGroup07C223bf73476d0d;
 
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-elbv2-StackWithLbProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkElbv2StackwithlbProps = {}) {
     super(scope, id, props);
 
     // Applying default props

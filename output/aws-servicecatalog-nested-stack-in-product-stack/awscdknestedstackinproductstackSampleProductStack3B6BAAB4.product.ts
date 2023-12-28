@@ -1,11 +1,11 @@
 import * as cdk from 'aws-cdk-lib';
 import * as cloudformation from 'aws-cdk-lib/aws-cloudformation';
 
-export interface awscdknestedstackinproductstackSampleProductStack3B6BAAB4.productProps extends cdk.StackProps {
+export interface Awscdknestedstackinproductstacksampleproductstack3B6Baab4ProductProps extends cdk.StackProps {
 }
 
-export class awscdknestedstackinproductstackSampleProductStack3B6BAAB4.product extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: awscdknestedstackinproductstackSampleProductStack3B6BAAB4.productProps = {}) {
+export class Awscdknestedstackinproductstacksampleproductstack3B6Baab4Product extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: Awscdknestedstackinproductstacksampleproductstack3B6Baab4ProductProps = {}) {
     super(scope, id, props);
 
     // Resources

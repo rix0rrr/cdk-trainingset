@@ -4,7 +4,7 @@ import * as rds from 'aws-cdk-lib/aws-rds';
 import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 import * as serverless from 'aws-cdk-lib/aws-serverless';
 
-export interface aws-cdk-rds-cluster-rotationProps extends cdk.StackProps {
+export interface AwsCdkRdsClusterRotationProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface aws-cdk-rds-cluster-rotationProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-rds-cluster-rotation extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-rds-cluster-rotationProps = {}) {
+export class AwsCdkRdsClusterRotation extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkRdsClusterRotationProps = {}) {
     super(scope, id, props);
 
     // Applying default props

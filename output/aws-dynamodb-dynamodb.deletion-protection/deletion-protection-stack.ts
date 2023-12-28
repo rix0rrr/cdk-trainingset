@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
 
-export interface deletion-protection-stackProps extends cdk.StackProps {
+export interface DeletionProtectionStackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface deletion-protection-stackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class deletion-protection-stack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: deletion-protection-stackProps = {}) {
+export class DeletionProtectionStack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: DeletionProtectionStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

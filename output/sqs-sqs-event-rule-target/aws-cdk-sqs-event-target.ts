@@ -3,7 +3,7 @@ import * as events from 'aws-cdk-lib/aws-events';
 import * as kms from 'aws-cdk-lib/aws-kms';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 
-export interface aws-cdk-sqs-event-targetProps extends cdk.StackProps {
+export interface AwsCdkSqsEventTargetProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface aws-cdk-sqs-event-targetProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-sqs-event-target extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-sqs-event-targetProps = {}) {
+export class AwsCdkSqsEventTarget extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkSqsEventTargetProps = {}) {
     super(scope, id, props);
 
     // Applying default props

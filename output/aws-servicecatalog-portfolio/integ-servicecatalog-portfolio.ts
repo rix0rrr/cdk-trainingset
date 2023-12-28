@@ -3,7 +3,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as sns from 'aws-cdk-lib/aws-sns';
 import * as servicecatalog from 'aws-cdk-lib/aws-servicecatalog';
 
-export interface integ-servicecatalog-portfolioProps extends cdk.StackProps {
+export interface IntegServicecatalogPortfolioProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface integ-servicecatalog-portfolioProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-servicecatalog-portfolio extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-servicecatalog-portfolioProps = {}) {
+export class IntegServicecatalogPortfolio extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegServicecatalogPortfolioProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as cloudtrail from 'aws-cdk-lib/aws-cloudtrail';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface integ-cloudtrail-defaultsProps extends cdk.StackProps {
+export interface IntegCloudtrailDefaultsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface integ-cloudtrail-defaultsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-cloudtrail-defaults extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-cloudtrail-defaultsProps = {}) {
+export class IntegCloudtrailDefaults extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegCloudtrailDefaultsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

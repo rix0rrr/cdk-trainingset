@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as codebuild from 'aws-cdk-lib/aws-codebuild';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface codebuild-project-linux-lambdaProps extends cdk.StackProps {
+export interface CodebuildProjectLinuxLambdaProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,10 +10,10 @@ export interface codebuild-project-linux-lambdaProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class codebuild-project-linux-lambda extends cdk.Stack {
+export class CodebuildProjectLinuxLambda extends cdk.Stack {
   public readonly exportsOutputRefMyProject39F7b0ae1ce3ca42;
 
-  public constructor(scope: cdk.App, id: string, props: codebuild-project-linux-lambdaProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: CodebuildProjectLinuxLambdaProps = {}) {
     super(scope, id, props);
 
     // Applying default props

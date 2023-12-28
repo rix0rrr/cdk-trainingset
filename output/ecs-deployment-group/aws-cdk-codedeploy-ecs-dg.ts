@@ -6,7 +6,7 @@ import * as ecs from 'aws-cdk-lib/aws-ecs';
 import * as elasticloadbalancingv2 from 'aws-cdk-lib/aws-elasticloadbalancingv2';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface aws-cdk-codedeploy-ecs-dgProps extends cdk.StackProps {
+export interface AwsCdkCodedeployEcsDgProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -14,7 +14,7 @@ export interface aws-cdk-codedeploy-ecs-dgProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-codedeploy-ecs-dg extends cdk.Stack {
+export class AwsCdkCodedeployEcsDg extends cdk.Stack {
   public readonly newTaskDefinition;
   public readonly subnet1Id;
   public readonly subnet2Id;
@@ -22,7 +22,7 @@ export class aws-cdk-codedeploy-ecs-dg extends cdk.Stack {
   public readonly codeDeployApplicationName;
   public readonly codeDeployDeploymentGroupName;
 
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-codedeploy-ecs-dgProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkCodedeployEcsDgProps = {}) {
     super(scope, id, props);
 
     // Applying default props

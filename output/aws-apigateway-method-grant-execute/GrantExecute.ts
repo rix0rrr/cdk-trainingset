@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface GrantExecuteProps extends cdk.StackProps {
+export interface GrantexecuteProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,10 +10,10 @@ export interface GrantExecuteProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class GrantExecute extends cdk.Stack {
+export class Grantexecute extends cdk.Stack {
   public readonly testapiEndpoint4Ae34d29;
 
-  public constructor(scope: cdk.App, id: string, props: GrantExecuteProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: GrantexecuteProps = {}) {
     super(scope, id, props);
 
     // Applying default props

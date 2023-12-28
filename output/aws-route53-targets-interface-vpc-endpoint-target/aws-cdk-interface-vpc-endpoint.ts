@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 
-export interface aws-cdk-interface-vpc-endpointProps extends cdk.StackProps {
+export interface AwsCdkInterfaceVpcEndpointProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface aws-cdk-interface-vpc-endpointProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-interface-vpc-endpoint extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-interface-vpc-endpointProps = {}) {
+export class AwsCdkInterfaceVpcEndpoint extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkInterfaceVpcEndpointProps = {}) {
     super(scope, id, props);
 
     // Applying default props

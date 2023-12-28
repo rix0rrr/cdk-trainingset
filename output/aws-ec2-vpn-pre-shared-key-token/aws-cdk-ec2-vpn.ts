@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 
-export interface aws-cdk-ec2-vpnProps extends cdk.StackProps {
+export interface AwsCdkEc2VpnProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface aws-cdk-ec2-vpnProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-ec2-vpn extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-ec2-vpnProps = {}) {
+export class AwsCdkEc2Vpn extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkEc2VpnProps = {}) {
     super(scope, id, props);
 
     // Applying default props

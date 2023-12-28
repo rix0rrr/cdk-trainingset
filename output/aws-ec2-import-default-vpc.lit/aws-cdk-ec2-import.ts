@@ -1,15 +1,15 @@
 import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 
-export interface aws-cdk-ec2-importProps extends cdk.StackProps {
+export interface AwsCdkEc2ImportProps extends cdk.StackProps {
 }
 
-export class aws-cdk-ec2-import extends cdk.Stack {
+export class AwsCdkEc2Import extends cdk.Stack {
   public readonly publicSubnets;
   public readonly privateSubnets;
   public readonly publicRouteTables;
 
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-ec2-importProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkEc2ImportProps = {}) {
     super(scope, id, props);
 
     // Resources

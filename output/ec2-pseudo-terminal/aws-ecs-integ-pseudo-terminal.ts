@@ -6,7 +6,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface aws-ecs-integ-pseudo-terminalProps extends cdk.StackProps {
+export interface AwsEcsIntegPseudoTerminalProps extends cdk.StackProps {
   /**
    * @default '/aws/service/ecs/optimized-ami/amazon-linux-2/recommended/image_id'
    */
@@ -18,8 +18,8 @@ export interface aws-ecs-integ-pseudo-terminalProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-integ-pseudo-terminal extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-integ-pseudo-terminalProps = {}) {
+export class AwsEcsIntegPseudoTerminal extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsIntegPseudoTerminalProps = {}) {
     super(scope, id, props);
 
     // Applying default props

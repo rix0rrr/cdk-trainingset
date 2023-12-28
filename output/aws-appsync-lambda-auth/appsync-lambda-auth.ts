@@ -3,7 +3,7 @@ import * as appsync from 'aws-cdk-lib/aws-appsync';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface appsync-lambda-authProps extends cdk.StackProps {
+export interface AppsyncLambdaAuthProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface appsync-lambda-authProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class appsync-lambda-auth extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: appsync-lambda-authProps = {}) {
+export class AppsyncLambdaAuth extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AppsyncLambdaAuthProps = {}) {
     super(scope, id, props);
 
     // Applying default props

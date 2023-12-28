@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface lambda-test-assets-fileProps extends cdk.StackProps {
+export interface LambdaTestAssetsFileProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface lambda-test-assets-fileProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class lambda-test-assets-file extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: lambda-test-assets-fileProps = {}) {
+export class LambdaTestAssetsFile extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: LambdaTestAssetsFileProps = {}) {
     super(scope, id, props);
 
     // Applying default props

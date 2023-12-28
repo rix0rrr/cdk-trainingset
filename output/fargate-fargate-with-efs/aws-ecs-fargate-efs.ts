@@ -4,7 +4,7 @@ import * as ecs from 'aws-cdk-lib/aws-ecs';
 import * as efs from 'aws-cdk-lib/aws-efs';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface aws-ecs-fargate-efsProps extends cdk.StackProps {
+export interface AwsEcsFargateEfsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface aws-ecs-fargate-efsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-fargate-efs extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-fargate-efsProps = {}) {
+export class AwsEcsFargateEfs extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsFargateEfsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

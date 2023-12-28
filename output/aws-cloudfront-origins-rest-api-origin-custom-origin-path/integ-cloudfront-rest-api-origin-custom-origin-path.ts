@@ -3,7 +3,7 @@ import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface integ-cloudfront-rest-api-origin-custom-origin-pathProps extends cdk.StackProps {
+export interface IntegCloudfrontRestApiOriginCustomOriginPathProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface integ-cloudfront-rest-api-origin-custom-origin-pathProps extend
   readonly bootstrapVersion?: string;
 }
 
-export class integ-cloudfront-rest-api-origin-custom-origin-path extends cdk.Stack {
+export class IntegCloudfrontRestApiOriginCustomOriginPath extends cdk.Stack {
   public readonly restApiEndpoint0551178A;
 
-  public constructor(scope: cdk.App, id: string, props: integ-cloudfront-rest-api-origin-custom-origin-pathProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegCloudfrontRestApiOriginCustomOriginPathProps = {}) {
     super(scope, id, props);
 
     // Applying default props

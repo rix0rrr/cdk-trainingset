@@ -5,7 +5,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as logs from 'aws-cdk-lib/aws-logs';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface aws-sfn-tasks-ecs-fargate-integProps extends cdk.StackProps {
+export interface AwsSfnTasksEcsFargateIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -13,10 +13,10 @@ export interface aws-sfn-tasks-ecs-fargate-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-sfn-tasks-ecs-fargate-integ extends cdk.Stack {
+export class AwsSfnTasksEcsFargateInteg extends cdk.Stack {
   public readonly stateMachineArn;
 
-  public constructor(scope: cdk.App, id: string, props: aws-sfn-tasks-ecs-fargate-integProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsSfnTasksEcsFargateIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

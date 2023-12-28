@@ -3,7 +3,7 @@ import * as appsync from 'aws-cdk-lib/aws-appsync';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface stackProps extends cdk.StackProps {
+export interface StackProps extends cdk.StackProps {
   /**
    * S3 bucket for asset "8deae95d7935a4885bfc15a9af9fa85591ad93f3353790f242fca60881a6ec73"
    */
@@ -18,8 +18,8 @@ export interface stackProps extends cdk.StackProps {
   readonly assetParameters8deae95d7935a4885bfc15a9af9fa85591ad93f3353790f242fca60881a6ec73ArtifactHash60312028: string;
 }
 
-export class stack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: stackProps) {
+export class Stack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: StackProps) {
     super(scope, id, props);
 
     // Resources

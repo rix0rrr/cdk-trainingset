@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as gamelift from 'aws-cdk-lib/aws-gamelift';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface aws-gamelift-standalone-matchmaking-configurationProps extends cdk.StackProps {
+export interface AwsGameliftStandaloneMatchmakingConfigurationProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,11 +10,11 @@ export interface aws-gamelift-standalone-matchmaking-configurationProps extends 
   readonly bootstrapVersion?: string;
 }
 
-export class aws-gamelift-standalone-matchmaking-configuration extends cdk.Stack {
+export class AwsGameliftStandaloneMatchmakingConfiguration extends cdk.Stack {
   public readonly matchmakingConfigurationArn;
   public readonly matchmakingConfigurationName;
 
-  public constructor(scope: cdk.App, id: string, props: aws-gamelift-standalone-matchmaking-configurationProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsGameliftStandaloneMatchmakingConfigurationProps = {}) {
     super(scope, id, props);
 
     // Applying default props

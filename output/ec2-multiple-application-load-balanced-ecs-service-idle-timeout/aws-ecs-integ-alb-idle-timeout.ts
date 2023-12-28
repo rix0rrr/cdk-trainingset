@@ -9,7 +9,7 @@ import * as logs from 'aws-cdk-lib/aws-logs';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface aws-ecs-integ-alb-idle-timeoutProps extends cdk.StackProps {
+export interface AwsEcsIntegAlbIdleTimeoutProps extends cdk.StackProps {
   /**
    * @default '/aws/service/ecs/optimized-ami/amazon-linux-2/recommended/image_id'
    */
@@ -21,13 +21,13 @@ export interface aws-ecs-integ-alb-idle-timeoutProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-integ-alb-idle-timeout extends cdk.Stack {
+export class AwsEcsIntegAlbIdleTimeout extends cdk.Stack {
   public readonly myServiceLoadBalancerDnSlb1341Ee21a;
   public readonly myServiceServiceUrLlb1https6C9c5530;
   public readonly myServiceLoadBalancerDnSlb2Ddce46c8;
   public readonly myServiceServiceUrLlb2https8Bc76f76;
 
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-integ-alb-idle-timeoutProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsIntegAlbIdleTimeoutProps = {}) {
     super(scope, id, props);
 
     // Applying default props

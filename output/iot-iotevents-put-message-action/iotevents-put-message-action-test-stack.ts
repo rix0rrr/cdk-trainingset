@@ -4,7 +4,7 @@ import * as iot from 'aws-cdk-lib/aws-iot';
 import * as iotevents from 'aws-cdk-lib/aws-iotevents';
 import * as logs from 'aws-cdk-lib/aws-logs';
 
-export interface iotevents-put-message-action-test-stackProps extends cdk.StackProps {
+export interface IoteventsPutMessageActionTestStackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface iotevents-put-message-action-test-stackProps extends cdk.StackP
   readonly bootstrapVersion?: string;
 }
 
-export class iotevents-put-message-action-test-stack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: iotevents-put-message-action-test-stackProps = {}) {
+export class IoteventsPutMessageActionTestStack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IoteventsPutMessageActionTestStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

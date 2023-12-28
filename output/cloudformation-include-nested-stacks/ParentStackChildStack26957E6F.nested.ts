@@ -1,15 +1,15 @@
 import * as cdk from 'aws-cdk-lib';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface ParentStackChildStack26957E6F.nestedProps extends cdk.StackProps {
+export interface Parentstackchildstack26957E6FNestedProps extends cdk.StackProps {
   /**
    * @default 'default-bucket-param-name'
    */
   readonly myBucketParameter?: string;
 }
 
-export class ParentStackChildStack26957E6F.nested extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: ParentStackChildStack26957E6F.nestedProps = {}) {
+export class Parentstackchildstack26957E6FNested extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: Parentstackchildstack26957E6FNestedProps = {}) {
     super(scope, id, props);
 
     // Applying default props

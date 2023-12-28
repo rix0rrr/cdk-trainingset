@@ -1,14 +1,14 @@
 import * as cdk from 'aws-cdk-lib';
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 
-export interface integrestapiimportRootStackintegrestapiimportDeployStack7C4FC449.nestedProps extends cdk.StackProps {
+export interface Integrestapiimportrootstackintegrestapiimportdeploystack7C4Fc449NestedProps extends cdk.StackProps {
   /**
    */
   readonly referencetointegrestapiimportRootStackRestApi2647Da4cRef: string;
 }
 
-export class integrestapiimportRootStackintegrestapiimportDeployStack7C4FC449.nested extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integrestapiimportRootStackintegrestapiimportDeployStack7C4FC449.nestedProps) {
+export class Integrestapiimportrootstackintegrestapiimportdeploystack7C4Fc449Nested extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: Integrestapiimportrootstackintegrestapiimportdeploystack7C4Fc449NestedProps) {
     super(scope, id, props);
 
     // Resources

@@ -4,7 +4,7 @@ import * as ecs from 'aws-cdk-lib/aws-ecs';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as logs from 'aws-cdk-lib/aws-logs';
 
-export interface aws-ecs-integProps extends cdk.StackProps {
+export interface AwsEcsIntegProps extends cdk.StackProps {
   /**
    * @default '/aws/service/aws-for-fluent-bit/latest'
    */
@@ -16,8 +16,8 @@ export interface aws-ecs-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-integProps = {}) {
+export class AwsEcsInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

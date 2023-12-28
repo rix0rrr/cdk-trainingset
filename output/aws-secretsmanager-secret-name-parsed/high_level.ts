@@ -1,7 +1,7 @@
 import * as path from 'path';
 import * as cdk from 'aws-cdk-lib';
 import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
-import { STANDARD_CUSTOM_RESOURCE_PROVIDER_RUNTIME } from '../../config';
+import { STANDARD_CUSTOM_RESOURCE_PROVIDER_RUNTIME } from '@additional/config';
 
 /**
  * Creates several secrets, with varying names and IDs, with the parseOwnedSecretName feature flag set,

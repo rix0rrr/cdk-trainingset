@@ -5,7 +5,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as logs from 'aws-cdk-lib/aws-logs';
 import * as servicediscovery from 'aws-cdk-lib/aws-servicediscovery';
 
-export interface aws-ecs-service-connectProps extends cdk.StackProps {
+export interface AwsEcsServiceConnectProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -13,8 +13,8 @@ export interface aws-ecs-service-connectProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-service-connect extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-service-connectProps = {}) {
+export class AwsEcsServiceConnect extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsServiceConnectProps = {}) {
     super(scope, id, props);
 
     // Applying default props

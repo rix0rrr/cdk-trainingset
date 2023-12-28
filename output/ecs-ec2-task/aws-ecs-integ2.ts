@@ -8,7 +8,7 @@ import * as logs from 'aws-cdk-lib/aws-logs';
 import * as sns from 'aws-cdk-lib/aws-sns';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface aws-ecs-integ2Props extends cdk.StackProps {
+export interface AwsEcsInteg2Props extends cdk.StackProps {
   /**
    * @default '/aws/service/ecs/optimized-ami/amazon-linux-2/recommended/image_id'
    */
@@ -20,8 +20,8 @@ export interface aws-ecs-integ2Props extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-integ2 extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-integ2Props = {}) {
+export class AwsEcsInteg2 extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsInteg2Props = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -4,7 +4,7 @@ import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface integ-https-redirect-same-regionProps extends cdk.StackProps {
+export interface IntegHttpsRedirectSameRegionProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface integ-https-redirect-same-regionProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-https-redirect-same-region extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-https-redirect-same-regionProps = {}) {
+export class IntegHttpsRedirectSameRegion extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegHttpsRedirectSameRegionProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as batch from 'aws-cdk-lib/aws-batch';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface batch-stackProps extends cdk.StackProps {
+export interface BatchStackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface batch-stackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class batch-stack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: batch-stackProps = {}) {
+export class BatchStack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: BatchStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

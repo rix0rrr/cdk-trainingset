@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as ssm from 'aws-cdk-lib/aws-ssm';
 
-export interface consumerProps extends cdk.StackProps {
+export interface ConsumerProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface consumerProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class consumer extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: consumerProps = {}) {
+export class Consumer extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: ConsumerProps = {}) {
     super(scope, id, props);
 
     // Applying default props

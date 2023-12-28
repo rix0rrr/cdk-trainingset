@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 
-export interface test-stackProps extends cdk.StackProps {
+export interface TestStackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,10 +9,10 @@ export interface test-stackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class test-stack extends cdk.Stack {
+export class TestStack extends cdk.Stack {
   public readonly apiEndpoint4F160690;
 
-  public constructor(scope: cdk.App, id: string, props: test-stackProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: TestStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

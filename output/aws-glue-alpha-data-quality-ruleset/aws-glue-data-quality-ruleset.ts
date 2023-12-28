@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as glue from 'aws-cdk-lib/aws-glue';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface aws-glue-data-quality-rulesetProps extends cdk.StackProps {
+export interface AwsGlueDataQualityRulesetProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface aws-glue-data-quality-rulesetProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-glue-data-quality-ruleset extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-glue-data-quality-rulesetProps = {}) {
+export class AwsGlueDataQualityRuleset extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsGlueDataQualityRulesetProps = {}) {
     super(scope, id, props);
 
     // Applying default props

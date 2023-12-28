@@ -4,7 +4,7 @@ import * as ecs from 'aws-cdk-lib/aws-ecs';
 import * as elasticloadbalancingv2 from 'aws-cdk-lib/aws-elasticloadbalancingv2';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface TestStackProps extends cdk.StackProps {
+export interface TeststackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,12 +12,12 @@ export interface TestStackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class TestStack extends cdk.Stack {
+export class Teststack extends cdk.Stack {
   public readonly serviceLoadBalancerDnsec5b149e;
   public readonly serviceServiceUrl250c0fb6;
   public readonly nlbEndpoint;
 
-  public constructor(scope: cdk.App, id: string, props: TestStackProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: TeststackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

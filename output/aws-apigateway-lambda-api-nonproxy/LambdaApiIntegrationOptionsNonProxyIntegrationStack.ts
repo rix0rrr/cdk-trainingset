@@ -3,7 +3,7 @@ import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface LambdaApiIntegrationOptionsNonProxyIntegrationStackProps extends cdk.StackProps {
+export interface LambdaapiintegrationoptionsnonproxyintegrationstackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface LambdaApiIntegrationOptionsNonProxyIntegrationStackProps extend
   readonly bootstrapVersion?: string;
 }
 
-export class LambdaApiIntegrationOptionsNonProxyIntegrationStack extends cdk.Stack {
+export class Lambdaapiintegrationoptionsnonproxyintegrationstack extends cdk.Stack {
   public readonly lambdarestapiEndpoint4A61b166;
 
-  public constructor(scope: cdk.App, id: string, props: LambdaApiIntegrationOptionsNonProxyIntegrationStackProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: LambdaapiintegrationoptionsnonproxyintegrationstackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

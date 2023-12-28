@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as glue from 'aws-cdk-lib/aws-glue';
 
-export interface aws-cdk-glueProps extends cdk.StackProps {
+export interface AwsCdkGlueProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface aws-cdk-glueProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-glue extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-glueProps = {}) {
+export class AwsCdkGlue extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkGlueProps = {}) {
     super(scope, id, props);
 
     // Applying default props

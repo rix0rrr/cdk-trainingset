@@ -1,7 +1,7 @@
 import { Code, Function, IFunction } from 'aws-cdk-lib/aws-lambda';
 import { App, CfnOutput, Duration, RemovalPolicy, Stack } from 'aws-cdk-lib';
 import { AdvancedSecurityMode, BooleanAttribute, DateTimeAttribute, Mfa, NumberAttribute, StringAttribute, UserPool } from 'aws-cdk-lib/aws-cognito';
-import { STANDARD_NODEJS_RUNTIME } from '../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 const app = new App();
 const stack = new Stack(app, 'integ-user-pool');

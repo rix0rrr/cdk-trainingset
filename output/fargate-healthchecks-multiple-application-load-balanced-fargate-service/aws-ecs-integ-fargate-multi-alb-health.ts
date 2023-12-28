@@ -5,7 +5,7 @@ import * as elasticloadbalancingv2 from 'aws-cdk-lib/aws-elasticloadbalancingv2'
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as logs from 'aws-cdk-lib/aws-logs';
 
-export interface aws-ecs-integ-fargate-multi-alb-healthProps extends cdk.StackProps {
+export interface AwsEcsIntegFargateMultiAlbHealthProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -13,13 +13,13 @@ export interface aws-ecs-integ-fargate-multi-alb-healthProps extends cdk.StackPr
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-integ-fargate-multi-alb-health extends cdk.Stack {
+export class AwsEcsIntegFargateMultiAlbHealth extends cdk.Stack {
   public readonly myServiceLoadBalancerDnSlb1341Ee21a;
   public readonly myServiceServiceUrLlb1httpAfa12fd3;
   public readonly myServiceLoadBalancerDnSlb2Ddce46c8;
   public readonly myServiceServiceUrLlb2http935C1443;
 
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-integ-fargate-multi-alb-healthProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsIntegFargateMultiAlbHealthProps = {}) {
     super(scope, id, props);
 
     // Applying default props

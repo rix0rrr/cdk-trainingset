@@ -4,7 +4,7 @@ import { App, CustomResource, CustomResourceProvider, RemovalPolicy, Stack, Stac
 import { Construct } from 'constructs';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import { EC2_RESTRICT_DEFAULT_SECURITY_GROUP } from 'aws-cdk-lib/cx-api';
-import { STANDARD_CUSTOM_RESOURCE_PROVIDER_RUNTIME } from '../../config';
+import { STANDARD_CUSTOM_RESOURCE_PROVIDER_RUNTIME } from '@additional/config';
 
 /**********************************************************************************************************************
  *

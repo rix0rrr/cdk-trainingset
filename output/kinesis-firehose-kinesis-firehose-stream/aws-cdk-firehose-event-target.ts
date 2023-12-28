@@ -4,7 +4,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as kinesisfirehose from 'aws-cdk-lib/aws-kinesisfirehose';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface aws-cdk-firehose-event-targetProps extends cdk.StackProps {
+export interface AwsCdkFirehoseEventTargetProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface aws-cdk-firehose-event-targetProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-firehose-event-target extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-firehose-event-targetProps = {}) {
+export class AwsCdkFirehoseEventTarget extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkFirehoseEventTargetProps = {}) {
     super(scope, id, props);
 
     // Applying default props

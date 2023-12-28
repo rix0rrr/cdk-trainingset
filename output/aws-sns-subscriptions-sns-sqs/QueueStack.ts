@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as sns from 'aws-cdk-lib/aws-sns';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 
-export interface QueueStackProps extends cdk.StackProps {
+export interface QueuestackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,10 +10,10 @@ export interface QueueStackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class QueueStack extends cdk.Stack {
+export class Queuestack extends cdk.Stack {
   public readonly exportsOutputRefMyQueueE6ca623512a57419;
 
-  public constructor(scope: cdk.App, id: string, props: QueueStackProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: QueuestackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

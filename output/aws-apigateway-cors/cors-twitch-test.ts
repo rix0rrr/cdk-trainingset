@@ -3,7 +3,7 @@ import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface cors-twitch-testProps extends cdk.StackProps {
+export interface CorsTwitchTestProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface cors-twitch-testProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cors-twitch-test extends cdk.Stack {
+export class CorsTwitchTest extends cdk.Stack {
   public readonly corsapitestEndpointE63606ae;
 
-  public constructor(scope: cdk.App, id: string, props: cors-twitch-testProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: CorsTwitchTestProps = {}) {
     super(scope, id, props);
 
     // Applying default props

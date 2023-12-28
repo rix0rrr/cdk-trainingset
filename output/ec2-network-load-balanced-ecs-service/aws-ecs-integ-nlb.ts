@@ -6,7 +6,7 @@ import * as elasticloadbalancingv2 from 'aws-cdk-lib/aws-elasticloadbalancingv2'
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as logs from 'aws-cdk-lib/aws-logs';
 
-export interface aws-ecs-integ-nlbProps extends cdk.StackProps {
+export interface AwsEcsIntegNlbProps extends cdk.StackProps {
   /**
    * @default '/aws/service/ecs/optimized-ami/amazon-linux-2/recommended/image_id'
    */
@@ -18,10 +18,10 @@ export interface aws-ecs-integ-nlbProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-integ-nlb extends cdk.Stack {
+export class AwsEcsIntegNlb extends cdk.Stack {
   public readonly myServiceLoadBalancerDns3a083e9f;
 
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-integ-nlbProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsIntegNlbProps = {}) {
     super(scope, id, props);
 
     // Applying default props

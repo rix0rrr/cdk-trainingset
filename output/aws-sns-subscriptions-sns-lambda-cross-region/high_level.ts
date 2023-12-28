@@ -2,7 +2,7 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as sns from 'aws-cdk-lib/aws-sns';
 import * as cdk from 'aws-cdk-lib';
 import * as subs from 'aws-cdk-lib/aws-sns-subscriptions';
-import { STANDARD_NODEJS_RUNTIME } from '../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 /// !cdk-integ * pragma:enable-lookups
 const app = new cdk.App();

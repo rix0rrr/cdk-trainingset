@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as iot from 'aws-cdk-lib/aws-iot';
 
-export interface IoTHttpsActionTestStackProps extends cdk.StackProps {
+export interface IothttpsactionteststackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface IoTHttpsActionTestStackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class IoTHttpsActionTestStack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: IoTHttpsActionTestStackProps = {}) {
+export class Iothttpsactionteststack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IothttpsactionteststackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

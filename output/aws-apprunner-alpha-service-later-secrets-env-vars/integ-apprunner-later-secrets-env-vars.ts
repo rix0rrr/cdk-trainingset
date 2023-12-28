@@ -3,7 +3,7 @@ import * as apprunner from 'aws-cdk-lib/aws-apprunner';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 
-export interface integ-apprunner-later-secrets-env-varsProps extends cdk.StackProps {
+export interface IntegApprunnerLaterSecretsEnvVarsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface integ-apprunner-later-secrets-env-varsProps extends cdk.StackPr
   readonly bootstrapVersion?: string;
 }
 
-export class integ-apprunner-later-secrets-env-vars extends cdk.Stack {
+export class IntegApprunnerLaterSecretsEnvVars extends cdk.Stack {
   public readonly url9;
 
-  public constructor(scope: cdk.App, id: string, props: integ-apprunner-later-secrets-env-varsProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegApprunnerLaterSecretsEnvVarsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

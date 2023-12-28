@@ -3,7 +3,7 @@ import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface cdk-integ-lambda-python-vpcProps extends cdk.StackProps {
+export interface CdkIntegLambdaPythonVpcProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface cdk-integ-lambda-python-vpcProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-integ-lambda-python-vpc extends cdk.Stack {
+export class CdkIntegLambdaPythonVpc extends cdk.Stack {
   public readonly exportsOutputRefmyhandlerD202fa8e369e8804;
 
-  public constructor(scope: cdk.App, id: string, props: cdk-integ-lambda-python-vpcProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: CdkIntegLambdaPythonVpcProps = {}) {
     super(scope, id, props);
 
     // Applying default props

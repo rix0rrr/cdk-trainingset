@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as ssm from 'aws-cdk-lib/aws-ssm';
 
-export interface integ-parameter-arnsProps extends cdk.StackProps {
+export interface IntegParameterArnsProps extends cdk.StackProps {
   /**
    * @default 'myParamName'
    */
@@ -13,7 +13,7 @@ export interface integ-parameter-arnsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-parameter-arns extends cdk.Stack {
+export class IntegParameterArns extends cdk.Stack {
   public readonly stringAutogenArn;
   public readonly stringSimpleArn;
   public readonly stringPathArn;
@@ -23,7 +23,7 @@ export class integ-parameter-arns extends cdk.Stack {
   public readonly parameterizedSimpleArn;
   public readonly parameterizedNonSimpleArn;
 
-  public constructor(scope: cdk.App, id: string, props: integ-parameter-arnsProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegParameterArnsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

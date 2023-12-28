@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface aws-stepfunctions-tasks-athena-start-query-execution-integProps extends cdk.StackProps {
+export interface AwsStepfunctionsTasksAthenaStartQueryExecutionIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,10 +10,10 @@ export interface aws-stepfunctions-tasks-athena-start-query-execution-integProps
   readonly bootstrapVersion?: string;
 }
 
-export class aws-stepfunctions-tasks-athena-start-query-execution-integ extends cdk.Stack {
+export class AwsStepfunctionsTasksAthenaStartQueryExecutionInteg extends cdk.Stack {
   public readonly stateMachineArn;
 
-  public constructor(scope: cdk.App, id: string, props: aws-stepfunctions-tasks-athena-start-query-execution-integProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsStepfunctionsTasksAthenaStartQueryExecutionIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

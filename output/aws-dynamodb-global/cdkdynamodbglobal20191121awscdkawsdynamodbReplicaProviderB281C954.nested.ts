@@ -4,18 +4,18 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as logs from 'aws-cdk-lib/aws-logs';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface cdkdynamodbglobal20191121awscdkawsdynamodbReplicaProviderB281C954.nestedProps extends cdk.StackProps {
+export interface Cdkdynamodbglobal20191121Awscdkawsdynamodbreplicaproviderb281C954NestedProps extends cdk.StackProps {
   /**
    */
   readonly referencetocdkdynamodbglobal20191121TableB640876bRef: string;
 }
 
-export class cdkdynamodbglobal20191121awscdkawsdynamodbReplicaProviderB281C954.nested extends cdk.Stack {
+export class Cdkdynamodbglobal20191121Awscdkawsdynamodbreplicaproviderb281C954Nested extends cdk.Stack {
   public readonly cdkdynamodbglobal20191121awscdkawsdynamodbReplicaProviderOnEventHandlerServiceRole3E8625f3Ref;
   public readonly cdkdynamodbglobal20191121awscdkawsdynamodbReplicaProviderIsCompleteHandlerServiceRole2F936ec4Ref;
   public readonly cdkdynamodbglobal20191121awscdkawsdynamodbReplicaProviderframeworkonEventCfdd0ba0Arn;
 
-  public constructor(scope: cdk.App, id: string, props: cdkdynamodbglobal20191121awscdkawsdynamodbReplicaProviderB281C954.nestedProps) {
+  public constructor(scope: cdk.App, id: string, props: Cdkdynamodbglobal20191121Awscdkawsdynamodbreplicaproviderb281C954NestedProps) {
     super(scope, id, props);
 
     // Resources

@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as cloudwatch from 'aws-cdk-lib/aws-cloudwatch';
 import * as kinesis from 'aws-cdk-lib/aws-kinesis';
 
-export interface integ-kinesis-stream-dashboardProps extends cdk.StackProps {
+export interface IntegKinesisStreamDashboardProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface integ-kinesis-stream-dashboardProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-kinesis-stream-dashboard extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-kinesis-stream-dashboardProps = {}) {
+export class IntegKinesisStreamDashboard extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegKinesisStreamDashboardProps = {}) {
     super(scope, id, props);
 
     // Applying default props

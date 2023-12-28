@@ -1,13 +1,13 @@
 import * as cdk from 'aws-cdk-lib';
 import * as kms from 'aws-cdk-lib/aws-kms';
 
-export interface KeyStackProps extends cdk.StackProps {
+export interface KeystackProps extends cdk.StackProps {
 }
 
-export class KeyStack extends cdk.Stack {
+export class Keystack extends cdk.Stack {
   public readonly exportsOutputFnGetAttMyKey6Ab29fa6Arn4Fa82736;
 
-  public constructor(scope: cdk.App, id: string, props: KeyStackProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: KeystackProps = {}) {
     super(scope, id, props);
 
     // Resources

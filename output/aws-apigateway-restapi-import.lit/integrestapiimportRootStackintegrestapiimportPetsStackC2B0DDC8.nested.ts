@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 
-export interface integrestapiimportRootStackintegrestapiimportPetsStackC2B0DDC8.nestedProps extends cdk.StackProps {
+export interface Integrestapiimportrootstackintegrestapiimportpetsstackc2B0Ddc8NestedProps extends cdk.StackProps {
   /**
    */
   readonly referencetointegrestapiimportRootStackRestApi2647Da4cRootResourceId: string;
@@ -10,8 +10,8 @@ export interface integrestapiimportRootStackintegrestapiimportPetsStackC2B0DDC8.
   readonly referencetointegrestapiimportRootStackRestApi2647Da4cRef: string;
 }
 
-export class integrestapiimportRootStackintegrestapiimportPetsStackC2B0DDC8.nested extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integrestapiimportRootStackintegrestapiimportPetsStackC2B0DDC8.nestedProps) {
+export class Integrestapiimportrootstackintegrestapiimportpetsstackc2B0Ddc8Nested extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: Integrestapiimportrootstackintegrestapiimportpetsstackc2B0Ddc8NestedProps) {
     super(scope, id, props);
 
     // Resources

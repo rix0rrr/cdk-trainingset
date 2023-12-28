@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 
-export interface integ-distribution-origin-idProps extends cdk.StackProps {
+export interface IntegDistributionOriginIdProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface integ-distribution-origin-idProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-distribution-origin-id extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-distribution-origin-idProps = {}) {
+export class IntegDistributionOriginId extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegDistributionOriginIdProps = {}) {
     super(scope, id, props);
 
     // Applying default props

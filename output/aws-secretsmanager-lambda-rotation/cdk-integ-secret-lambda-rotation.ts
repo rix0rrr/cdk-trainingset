@@ -4,7 +4,7 @@ import * as kms from 'aws-cdk-lib/aws-kms';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 
-export interface cdk-integ-secret-lambda-rotationProps extends cdk.StackProps {
+export interface CdkIntegSecretLambdaRotationProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface cdk-integ-secret-lambda-rotationProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-integ-secret-lambda-rotation extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-integ-secret-lambda-rotationProps = {}) {
+export class CdkIntegSecretLambdaRotation extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkIntegSecretLambdaRotationProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -3,7 +3,7 @@ import { App, Stack } from 'aws-cdk-lib';
 import { IntegTest } from '@aws-cdk/integ-tests-alpha';
 import { Construct } from 'constructs';
 import { LambdaRestApi, PassthroughBehavior } from 'aws-cdk-lib/aws-apigateway';
-import { STANDARD_NODEJS_RUNTIME } from '../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 class LambdaApiIntegrationOptionsNonProxyIntegrationStack extends Stack {
   constructor(scope: Construct) {

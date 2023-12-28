@@ -3,7 +3,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as logs from 'aws-cdk-lib/aws-logs';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface aws-stepfunctions-tasks-call-aws-service-logs-integProps extends cdk.StackProps {
+export interface AwsStepfunctionsTasksCallAwsServiceLogsIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface aws-stepfunctions-tasks-call-aws-service-logs-integProps extend
   readonly bootstrapVersion?: string;
 }
 
-export class aws-stepfunctions-tasks-call-aws-service-logs-integ extends cdk.Stack {
+export class AwsStepfunctionsTasksCallAwsServiceLogsInteg extends cdk.Stack {
   public readonly exportsOutputRefStateMachine2E01a3a5ba46f753;
 
-  public constructor(scope: cdk.App, id: string, props: aws-stepfunctions-tasks-call-aws-service-logs-integProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsStepfunctionsTasksCallAwsServiceLogsIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

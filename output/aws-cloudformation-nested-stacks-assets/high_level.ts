@@ -2,7 +2,7 @@ import * as path from 'path';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import { App, NestedStack, Stack } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-import { STANDARD_NODEJS_RUNTIME } from '../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 /* eslint-disable @aws-cdk/no-core-construct */
 

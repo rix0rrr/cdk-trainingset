@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as ivs from 'aws-cdk-lib/aws-ivs';
 
-export interface aws-cdk-ivsProps extends cdk.StackProps {
+export interface AwsCdkIvsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,12 +9,12 @@ export interface aws-cdk-ivsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-ivs extends cdk.Stack {
+export class AwsCdkIvs extends cdk.Stack {
   public readonly allPropertiesPlaybackKeyPairArn9C29d23b;
   public readonly allPropertiesChannelArn97A102c5;
   public readonly allPropertiesStreamKeyArnB62c0761;
 
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-ivsProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkIvsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

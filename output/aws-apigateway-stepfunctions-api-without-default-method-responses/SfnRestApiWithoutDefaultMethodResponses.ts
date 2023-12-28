@@ -3,7 +3,7 @@ import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface SfnRestApiWithoutDefaultMethodResponsesProps extends cdk.StackProps {
+export interface SfnrestapiwithoutdefaultmethodresponsesProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,11 +11,11 @@ export interface SfnRestApiWithoutDefaultMethodResponsesProps extends cdk.StackP
   readonly bootstrapVersion?: string;
 }
 
-export class SfnRestApiWithoutDefaultMethodResponses extends cdk.Stack {
+export class Sfnrestapiwithoutdefaultmethodresponses extends cdk.Stack {
   public readonly stepFunctionsRestApiEndpoint0Dd66fcb;
   public readonly apiEndpoint;
 
-  public constructor(scope: cdk.App, id: string, props: SfnRestApiWithoutDefaultMethodResponsesProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: SfnrestapiwithoutdefaultmethodresponsesProps = {}) {
     super(scope, id, props);
 
     // Applying default props

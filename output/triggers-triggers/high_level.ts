@@ -4,7 +4,7 @@ import * as sqs from 'aws-cdk-lib/aws-sqs';
 import { App, Duration, Stack } from 'aws-cdk-lib';
 import * as integ from '@aws-cdk/integ-tests-alpha';
 import * as triggers from 'aws-cdk-lib/triggers';
-import { STANDARD_NODEJS_RUNTIME } from '../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 const app = new App();
 const stack = new Stack(app, 'MyStack');

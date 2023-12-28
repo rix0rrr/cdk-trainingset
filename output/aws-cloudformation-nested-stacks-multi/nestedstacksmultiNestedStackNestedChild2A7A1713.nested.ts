@@ -1,11 +1,11 @@
 import * as cdk from 'aws-cdk-lib';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface nestedstacksmultiNestedStackNestedChild2A7A1713.nestedProps extends cdk.StackProps {
+export interface Nestedstacksmultinestedstacknestedchild2A7A1713NestedProps extends cdk.StackProps {
 }
 
-export class nestedstacksmultiNestedStackNestedChild2A7A1713.nested extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: nestedstacksmultiNestedStackNestedChild2A7A1713.nestedProps = {}) {
+export class Nestedstacksmultinestedstacknestedchild2A7A1713Nested extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: Nestedstacksmultinestedstacknestedchild2A7A1713NestedProps = {}) {
     super(scope, id, props);
 
     // Resources

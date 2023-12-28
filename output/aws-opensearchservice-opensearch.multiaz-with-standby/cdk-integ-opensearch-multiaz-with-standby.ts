@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as opensearchservice from 'aws-cdk-lib/aws-opensearchservice';
 
-export interface cdk-integ-opensearch-multiaz-with-standbyProps extends cdk.StackProps {
+export interface CdkIntegOpensearchMultiazWithStandbyProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface cdk-integ-opensearch-multiaz-with-standbyProps extends cdk.Stac
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-integ-opensearch-multiaz-with-standby extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-integ-opensearch-multiaz-with-standbyProps = {}) {
+export class CdkIntegOpensearchMultiazWithStandby extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkIntegOpensearchMultiazWithStandbyProps = {}) {
     super(scope, id, props);
 
     // Applying default props

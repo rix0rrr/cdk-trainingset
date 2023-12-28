@@ -7,7 +7,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as logs from 'aws-cdk-lib/aws-logs';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 
-export interface aws-ecs-patterns-queue-health-checkProps extends cdk.StackProps {
+export interface AwsEcsPatternsQueueHealthCheckProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -15,13 +15,13 @@ export interface aws-ecs-patterns-queue-health-checkProps extends cdk.StackProps
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-patterns-queue-health-check extends cdk.Stack {
+export class AwsEcsPatternsQueueHealthCheck extends cdk.Stack {
   public readonly healthCheckQueueServiceSqsDeadLetterQueue6Dc0188c;
   public readonly healthCheckQueueServiceSqsDeadLetterQueueArnAb5730dd;
   public readonly healthCheckQueueServiceSqsQueue9E8d5698;
   public readonly healthCheckQueueServiceSqsQueueArnB4a71095;
 
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-patterns-queue-health-checkProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsPatternsQueueHealthCheckProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -3,7 +3,7 @@ import * as backup from 'aws-cdk-lib/aws-backup';
 import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface cdk-backup-selectionProps extends cdk.StackProps {
+export interface CdkBackupSelectionProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface cdk-backup-selectionProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-backup-selection extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-backup-selectionProps = {}) {
+export class CdkBackupSelection extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkBackupSelectionProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as gamelift from 'aws-cdk-lib/aws-gamelift';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface aws-gamelift-aliasProps extends cdk.StackProps {
+export interface AwsGameliftAliasProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface aws-gamelift-aliasProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-gamelift-alias extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-gamelift-aliasProps = {}) {
+export class AwsGameliftAlias extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsGameliftAliasProps = {}) {
     super(scope, id, props);
 
     // Applying default props

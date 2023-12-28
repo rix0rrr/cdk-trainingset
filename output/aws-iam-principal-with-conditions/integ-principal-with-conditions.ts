@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface integ-principal-with-conditionsProps extends cdk.StackProps {
+export interface IntegPrincipalWithConditionsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface integ-principal-with-conditionsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-principal-with-conditions extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-principal-with-conditionsProps = {}) {
+export class IntegPrincipalWithConditions extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegPrincipalWithConditionsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

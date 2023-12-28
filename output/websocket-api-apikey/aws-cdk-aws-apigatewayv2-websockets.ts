@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as apigatewayv2 from 'aws-cdk-lib/aws-apigatewayv2';
 
-export interface aws-cdk-aws-apigatewayv2-websocketsProps extends cdk.StackProps {
+export interface AwsCdkAwsApigatewayv2WebsocketsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface aws-cdk-aws-apigatewayv2-websocketsProps extends cdk.StackProps
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-aws-apigatewayv2-websockets extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-aws-apigatewayv2-websocketsProps = {}) {
+export class AwsCdkAwsApigatewayv2Websockets extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkAwsApigatewayv2WebsocketsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

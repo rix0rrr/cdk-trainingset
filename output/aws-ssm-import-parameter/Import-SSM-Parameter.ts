@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as ssm from 'aws-cdk-lib/aws-ssm';
 
-export interface Import-SSM-ParameterProps extends cdk.StackProps {
+export interface ImportSsmParameterProps extends cdk.StackProps {
   /**
    * @default '/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-ebs'
    */
@@ -13,12 +13,12 @@ export interface Import-SSM-ParameterProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class Import-SSM-Parameter extends cdk.Stack {
+export class ImportSsmParameter extends cdk.Stack {
   public readonly importedWithNameOutput;
   public readonly importedWithIntrinsicOutput;
   public readonly importedWithForceFlagOutput;
 
-  public constructor(scope: cdk.App, id: string, props: Import-SSM-ParameterProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: ImportSsmParameterProps = {}) {
     super(scope, id, props);
 
     // Applying default props

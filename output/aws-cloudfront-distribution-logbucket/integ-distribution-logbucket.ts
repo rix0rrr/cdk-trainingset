@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface integ-distribution-logbucketProps extends cdk.StackProps {
+export interface IntegDistributionLogbucketProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface integ-distribution-logbucketProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-distribution-logbucket extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-distribution-logbucketProps = {}) {
+export class IntegDistributionLogbucket extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegDistributionLogbucketProps = {}) {
     super(scope, id, props);
 
     // Applying default props

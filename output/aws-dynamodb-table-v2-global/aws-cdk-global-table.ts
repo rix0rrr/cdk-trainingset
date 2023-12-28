@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
 import * as kinesis from 'aws-cdk-lib/aws-kinesis';
 
-export interface aws-cdk-global-tableProps extends cdk.StackProps {
+export interface AwsCdkGlobalTableProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface aws-cdk-global-tableProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-global-table extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-global-tableProps = {}) {
+export class AwsCdkGlobalTable extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkGlobalTableProps = {}) {
     super(scope, id, props);
 
     // Applying default props

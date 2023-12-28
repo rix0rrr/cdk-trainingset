@@ -3,7 +3,7 @@ import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as rds from 'aws-cdk-lib/aws-rds';
 import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 
-export interface cdk-integ-rds-instance-gp3Props extends cdk.StackProps {
+export interface CdkIntegRdsInstanceGp3Props extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface cdk-integ-rds-instance-gp3Props extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-integ-rds-instance-gp3 extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-integ-rds-instance-gp3Props = {}) {
+export class CdkIntegRdsInstanceGp3 extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkIntegRdsInstanceGp3Props = {}) {
     super(scope, id, props);
 
     // Applying default props

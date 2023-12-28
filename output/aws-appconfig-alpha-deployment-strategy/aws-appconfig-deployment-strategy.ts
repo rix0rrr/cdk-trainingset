@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as appconfig from 'aws-cdk-lib/aws-appconfig';
 
-export interface aws-appconfig-deployment-strategyProps extends cdk.StackProps {
+export interface AwsAppconfigDeploymentStrategyProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface aws-appconfig-deployment-strategyProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-appconfig-deployment-strategy extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-appconfig-deployment-strategyProps = {}) {
+export class AwsAppconfigDeploymentStrategy extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsAppconfigDeploymentStrategyProps = {}) {
     super(scope, id, props);
 
     // Applying default props

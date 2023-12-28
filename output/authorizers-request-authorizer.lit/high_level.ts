@@ -2,7 +2,7 @@ import * as path from 'path';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import { App, Stack } from 'aws-cdk-lib';
 import { MockIntegration, PassthroughBehavior, RestApi, RequestAuthorizer, IdentitySource } from 'aws-cdk-lib/aws-apigateway';
-import { STANDARD_NODEJS_RUNTIME } from '../../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 // Against the RestApi endpoint from the stack output, run
 // `curl -s -o /dev/null -w "%{http_code}" <url>` should return 401

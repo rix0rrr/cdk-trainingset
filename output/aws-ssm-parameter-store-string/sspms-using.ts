@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface sspms-usingProps extends cdk.StackProps {
+export interface SspmsUsingProps extends cdk.StackProps {
   /**
    * @default 1
    */
@@ -17,8 +17,8 @@ export interface sspms-usingProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class sspms-using extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: sspms-usingProps = {}) {
+export class SspmsUsing extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: SspmsUsingProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -1,13 +1,13 @@
 import * as cdk from 'aws-cdk-lib';
 import * as appsync from 'aws-cdk-lib/aws-appsync';
 
-export interface baseStackProps extends cdk.StackProps {
+export interface BasestackProps extends cdk.StackProps {
 }
 
-export class baseStack extends cdk.Stack {
+export class Basestack extends cdk.Stack {
   public readonly exportsOutputFnGetAttbaseApiCda4d43aApiId50287E68;
 
-  public constructor(scope: cdk.App, id: string, props: baseStackProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: BasestackProps = {}) {
     super(scope, id, props);
 
     // Resources

@@ -6,7 +6,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface aws-ecs-integ-bottlerocketProps extends cdk.StackProps {
+export interface AwsEcsIntegBottlerocketProps extends cdk.StackProps {
   /**
    * @default '/aws/service/bottlerocket/aws-ecs-1/x86_64/latest/image_id'
    */
@@ -18,8 +18,8 @@ export interface aws-ecs-integ-bottlerocketProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-integ-bottlerocket extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-integ-bottlerocketProps = {}) {
+export class AwsEcsIntegBottlerocket extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsIntegBottlerocketProps = {}) {
     super(scope, id, props);
 
     // Applying default props

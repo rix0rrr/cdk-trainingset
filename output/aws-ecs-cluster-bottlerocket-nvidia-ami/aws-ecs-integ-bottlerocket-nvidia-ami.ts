@@ -6,7 +6,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface aws-ecs-integ-bottlerocket-nvidia-amiProps extends cdk.StackProps {
+export interface AwsEcsIntegBottlerocketNvidiaAmiProps extends cdk.StackProps {
   /**
    * @default '/aws/service/bottlerocket/aws-ecs-2-nvidia/x86_64/latest/image_id'
    */
@@ -18,8 +18,8 @@ export interface aws-ecs-integ-bottlerocket-nvidia-amiProps extends cdk.StackPro
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-integ-bottlerocket-nvidia-ami extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-integ-bottlerocket-nvidia-amiProps = {}) {
+export class AwsEcsIntegBottlerocketNvidiaAmi extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsIntegBottlerocketNvidiaAmiProps = {}) {
     super(scope, id, props);
 
     // Applying default props

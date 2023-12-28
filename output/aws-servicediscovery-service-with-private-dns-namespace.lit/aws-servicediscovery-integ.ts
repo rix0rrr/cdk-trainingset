@@ -3,7 +3,7 @@ import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as elasticloadbalancingv2 from 'aws-cdk-lib/aws-elasticloadbalancingv2';
 import * as servicediscovery from 'aws-cdk-lib/aws-servicediscovery';
 
-export interface aws-servicediscovery-integProps extends cdk.StackProps {
+export interface AwsServicediscoveryIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface aws-servicediscovery-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-servicediscovery-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-servicediscovery-integProps = {}) {
+export class AwsServicediscoveryInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsServicediscoveryIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

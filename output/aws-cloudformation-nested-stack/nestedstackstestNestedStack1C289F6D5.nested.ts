@@ -3,7 +3,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface nestedstackstestNestedStack1C289F6D5.nestedProps extends cdk.StackProps {
+export interface Nestedstackstestnestedstack1C289F6D5NestedProps extends cdk.StackProps {
   /**
    */
   readonly topicNamePrefix: string;
@@ -12,12 +12,12 @@ export interface nestedstackstestNestedStack1C289F6D5.nestedProps extends cdk.St
   readonly referencetonestedstackstestSubscriberQueue39409787Ref: string;
 }
 
-export class nestedstackstestNestedStack1C289F6D5.nested extends cdk.Stack {
+export class Nestedstackstestnestedstack1C289F6D5Nested extends cdk.Stack {
   public readonly nestedstackstestNestedStack1topic02C2d1254Ref;
   public readonly nestedstackstestNestedStack1topic1474E5389Ref;
   public readonly nestedstackstestNestedStack1topic22C710dc4Ref;
 
-  public constructor(scope: cdk.App, id: string, props: nestedstackstestNestedStack1C289F6D5.nestedProps) {
+  public constructor(scope: cdk.App, id: string, props: Nestedstackstestnestedstack1C289F6D5NestedProps) {
     super(scope, id, props);
 
     // Resources

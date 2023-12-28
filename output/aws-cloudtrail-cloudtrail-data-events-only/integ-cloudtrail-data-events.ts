@@ -4,7 +4,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface integ-cloudtrail-data-eventsProps extends cdk.StackProps {
+export interface IntegCloudtrailDataEventsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface integ-cloudtrail-data-eventsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-cloudtrail-data-events extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-cloudtrail-data-eventsProps = {}) {
+export class IntegCloudtrailDataEvents extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegCloudtrailDataEventsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

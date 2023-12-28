@@ -4,7 +4,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface aws-cdk-codepipeline-manual-approvalProps extends cdk.StackProps {
+export interface AwsCdkCodepipelineManualApprovalProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface aws-cdk-codepipeline-manual-approvalProps extends cdk.StackProp
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-codepipeline-manual-approval extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-codepipeline-manual-approvalProps = {}) {
+export class AwsCdkCodepipelineManualApproval extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkCodepipelineManualApprovalProps = {}) {
     super(scope, id, props);
 
     // Applying default props

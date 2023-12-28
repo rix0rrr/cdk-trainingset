@@ -4,7 +4,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as logs from 'aws-cdk-lib/aws-logs';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface aws-cdk-codebuild-loggingProps extends cdk.StackProps {
+export interface AwsCdkCodebuildLoggingProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface aws-cdk-codebuild-loggingProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-codebuild-logging extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-codebuild-loggingProps = {}) {
+export class AwsCdkCodebuildLogging extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkCodebuildLoggingProps = {}) {
     super(scope, id, props);
 
     // Applying default props

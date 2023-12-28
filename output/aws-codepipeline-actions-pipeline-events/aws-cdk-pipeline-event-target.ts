@@ -8,7 +8,7 @@ import * as kms from 'aws-cdk-lib/aws-kms';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface aws-cdk-pipeline-event-targetProps extends cdk.StackProps {
+export interface AwsCdkPipelineEventTargetProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -16,8 +16,8 @@ export interface aws-cdk-pipeline-event-targetProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-pipeline-event-target extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-pipeline-event-targetProps = {}) {
+export class AwsCdkPipelineEventTarget extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkPipelineEventTargetProps = {}) {
     super(scope, id, props);
 
     // Applying default props

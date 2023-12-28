@@ -3,7 +3,7 @@ import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as apigatewayv2 from 'aws-cdk-lib/aws-apigatewayv2';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 
-export interface integ-apigw-domain-name-mappingProps extends cdk.StackProps {
+export interface IntegApigwDomainNameMappingProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,13 +11,13 @@ export interface integ-apigw-domain-name-mappingProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-apigw-domain-name-mapping extends cdk.Stack {
+export class IntegApigwDomainNameMapping extends cdk.Stack {
   public readonly integApi1IntegApi201Endpoint361E7c32;
   public readonly integApi2IntegApi202Endpoint18343E9b;
   public readonly exportsOutputRefIntegDomain624Df323d17b7540;
   public readonly exportsOutputRefInteg2Domain70Ccea688a08551f;
 
-  public constructor(scope: cdk.App, id: string, props: integ-apigw-domain-name-mappingProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegApigwDomainNameMappingProps = {}) {
     super(scope, id, props);
 
     // Applying default props

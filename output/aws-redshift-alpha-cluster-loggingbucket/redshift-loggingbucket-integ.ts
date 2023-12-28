@@ -4,7 +4,7 @@ import * as redshift from 'aws-cdk-lib/aws-redshift';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 
-export interface redshift-loggingbucket-integProps extends cdk.StackProps {
+export interface RedshiftLoggingbucketIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface redshift-loggingbucket-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class redshift-loggingbucket-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: redshift-loggingbucket-integProps = {}) {
+export class RedshiftLoggingbucketInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: RedshiftLoggingbucketIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

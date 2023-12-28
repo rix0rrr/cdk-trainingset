@@ -4,7 +4,7 @@ import * as cdk from 'aws-cdk-lib';
 import { IntegTest, ExpectedResult } from '@aws-cdk/integ-tests-alpha';
 import { Bucket } from 'aws-cdk-lib/aws-s3';
 import { DeployTimeSubstitutedFile } from 'aws-cdk-lib/aws-s3-deployment';
-import { STANDARD_NODEJS_RUNTIME } from '../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 class Test extends cdk.Stack {
   public readonly bucketName: String;

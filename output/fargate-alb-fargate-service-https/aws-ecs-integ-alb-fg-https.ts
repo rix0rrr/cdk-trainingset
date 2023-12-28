@@ -7,7 +7,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as logs from 'aws-cdk-lib/aws-logs';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 
-export interface aws-ecs-integ-alb-fg-httpsProps extends cdk.StackProps {
+export interface AwsEcsIntegAlbFgHttpsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -15,11 +15,11 @@ export interface aws-ecs-integ-alb-fg-httpsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-integ-alb-fg-https extends cdk.Stack {
+export class AwsEcsIntegAlbFgHttps extends cdk.Stack {
   public readonly myServiceLoadBalancerDns3a083e9f;
   public readonly myServiceServiceUrl1258c56b;
 
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-integ-alb-fg-httpsProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsIntegAlbFgHttpsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

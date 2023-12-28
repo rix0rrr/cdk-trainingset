@@ -3,7 +3,7 @@ import * as cloud9 from 'aws-cdk-lib/aws-cloud9';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface cloud9-owner-integProps extends cdk.StackProps {
+export interface Cloud9OwnerIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,11 +11,11 @@ export interface cloud9-owner-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cloud9-owner-integ extends cdk.Stack {
+export class Cloud9OwnerInteg extends cdk.Stack {
   public readonly url;
   public readonly arn;
 
-  public constructor(scope: cdk.App, id: string, props: cloud9-owner-integProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: Cloud9OwnerIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

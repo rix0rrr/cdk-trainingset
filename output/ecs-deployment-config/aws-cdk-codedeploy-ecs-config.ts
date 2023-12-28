@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as codedeploy from 'aws-cdk-lib/aws-codedeploy';
 
-export interface aws-cdk-codedeploy-ecs-configProps extends cdk.StackProps {
+export interface AwsCdkCodedeployEcsConfigProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface aws-cdk-codedeploy-ecs-configProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-codedeploy-ecs-config extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-codedeploy-ecs-configProps = {}) {
+export class AwsCdkCodedeployEcsConfig extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkCodedeployEcsConfigProps = {}) {
     super(scope, id, props);
 
     // Applying default props

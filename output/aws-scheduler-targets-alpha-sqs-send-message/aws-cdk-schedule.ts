@@ -3,7 +3,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 import * as scheduler from 'aws-cdk-lib/aws-scheduler';
 
-export interface aws-cdk-scheduleProps extends cdk.StackProps {
+export interface AwsCdkScheduleProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface aws-cdk-scheduleProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-schedule extends cdk.Stack {
+export class AwsCdkSchedule extends cdk.Stack {
   public readonly exportsOutputRefMyQueueE6ca623512a57419;
 
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-scheduleProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkScheduleProps = {}) {
     super(scope, id, props);
 
     // Applying default props

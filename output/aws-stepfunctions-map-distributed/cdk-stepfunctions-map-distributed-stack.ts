@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface cdk-stepfunctions-map-distributed-stackProps extends cdk.StackProps {
+export interface CdkStepfunctionsMapDistributedStackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,10 +10,10 @@ export interface cdk-stepfunctions-map-distributed-stackProps extends cdk.StackP
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-stepfunctions-map-distributed-stack extends cdk.Stack {
+export class CdkStepfunctionsMapDistributedStack extends cdk.Stack {
   public readonly stateMachineArn;
 
-  public constructor(scope: cdk.App, id: string, props: cdk-stepfunctions-map-distributed-stackProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: CdkStepfunctionsMapDistributedStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

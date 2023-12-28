@@ -3,7 +3,7 @@ import * as cloud9 from 'aws-cdk-lib/aws-cloud9';
 import * as codecommit from 'aws-cdk-lib/aws-codecommit';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 
-export interface C9ConnectionTypeStackProps extends cdk.StackProps {
+export interface C9ConnectiontypestackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,11 +11,11 @@ export interface C9ConnectionTypeStackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class C9ConnectionTypeStack extends cdk.Stack {
+export class C9Connectiontypestack extends cdk.Stack {
   public readonly url;
   public readonly arn;
 
-  public constructor(scope: cdk.App, id: string, props: C9ConnectionTypeStackProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: C9ConnectiontypestackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

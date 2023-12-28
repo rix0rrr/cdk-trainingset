@@ -5,7 +5,7 @@ import * as ecs from 'aws-cdk-lib/aws-ecs';
 import * as elasticloadbalancingv2 from 'aws-cdk-lib/aws-elasticloadbalancingv2';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface aws-ecs-integProps extends cdk.StackProps {
+export interface AwsEcsIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -13,10 +13,10 @@ export interface aws-ecs-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-integ extends cdk.Stack {
+export class AwsEcsInteg extends cdk.Stack {
   public readonly loadBalancerDns;
 
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-integProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

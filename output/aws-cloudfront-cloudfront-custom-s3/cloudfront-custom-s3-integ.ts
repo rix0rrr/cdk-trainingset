@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface cloudfront-custom-s3-integProps extends cdk.StackProps {
+export interface CloudfrontCustomS3IntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface cloudfront-custom-s3-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cloudfront-custom-s3-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cloudfront-custom-s3-integProps = {}) {
+export class CloudfrontCustomS3Integ extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CloudfrontCustomS3IntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

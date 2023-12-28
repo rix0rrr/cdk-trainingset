@@ -3,7 +3,7 @@ import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface restapi-multiuse-exampleProps extends cdk.StackProps {
+export interface RestapiMultiuseExampleProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,11 +11,11 @@ export interface restapi-multiuse-exampleProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class restapi-multiuse-example extends cdk.Stack {
+export class RestapiMultiuseExample extends cdk.Stack {
   public readonly helloapiEndpoint0E4d8d32;
   public readonly secondapiEndpoint89D0e02c;
 
-  public constructor(scope: cdk.App, id: string, props: restapi-multiuse-exampleProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: RestapiMultiuseExampleProps = {}) {
     super(scope, id, props);
 
     // Applying default props

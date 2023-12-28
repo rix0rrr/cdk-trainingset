@@ -4,7 +4,7 @@ import * as sns from 'aws-cdk-lib/aws-sns';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 import * as scheduler from 'aws-cdk-lib/aws-scheduler';
 
-export interface AwsSchedulerTargetsSnsPublishProps extends cdk.StackProps {
+export interface AwsschedulertargetssnspublishProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,10 +12,10 @@ export interface AwsSchedulerTargetsSnsPublishProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class AwsSchedulerTargetsSnsPublish extends cdk.Stack {
+export class Awsschedulertargetssnspublish extends cdk.Stack {
   public readonly exportsOutputRefQueue4A7e3555425e8bd3;
 
-  public constructor(scope: cdk.App, id: string, props: AwsSchedulerTargetsSnsPublishProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsschedulertargetssnspublishProps = {}) {
     super(scope, id, props);
 
     // Applying default props

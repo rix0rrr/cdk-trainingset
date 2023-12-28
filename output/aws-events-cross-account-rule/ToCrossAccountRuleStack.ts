@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as events from 'aws-cdk-lib/aws-events';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 
-export interface ToCrossAccountRuleStackProps extends cdk.StackProps {
+export interface TocrossaccountrulestackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface ToCrossAccountRuleStackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class ToCrossAccountRuleStack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: ToCrossAccountRuleStackProps = {}) {
+export class Tocrossaccountrulestack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: TocrossaccountrulestackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

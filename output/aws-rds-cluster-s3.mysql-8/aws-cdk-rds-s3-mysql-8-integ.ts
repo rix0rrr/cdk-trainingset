@@ -4,7 +4,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as rds from 'aws-cdk-lib/aws-rds';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface aws-cdk-rds-s3-mysql-8-integProps extends cdk.StackProps {
+export interface AwsCdkRdsS3Mysql8IntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface aws-cdk-rds-s3-mysql-8-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-rds-s3-mysql-8-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-rds-s3-mysql-8-integProps = {}) {
+export class AwsCdkRdsS3Mysql8Integ extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkRdsS3Mysql8IntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

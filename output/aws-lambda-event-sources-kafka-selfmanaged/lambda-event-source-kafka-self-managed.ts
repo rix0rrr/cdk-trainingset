@@ -3,7 +3,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 
-export interface lambda-event-source-kafka-self-managedProps extends cdk.StackProps {
+export interface LambdaEventSourceKafkaSelfManagedProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface lambda-event-source-kafka-self-managedProps extends cdk.StackPr
   readonly bootstrapVersion?: string;
 }
 
-export class lambda-event-source-kafka-self-managed extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: lambda-event-source-kafka-self-managedProps = {}) {
+export class LambdaEventSourceKafkaSelfManaged extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: LambdaEventSourceKafkaSelfManagedProps = {}) {
     super(scope, id, props);
 
     // Applying default props

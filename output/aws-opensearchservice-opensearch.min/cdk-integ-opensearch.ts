@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as opensearchservice from 'aws-cdk-lib/aws-opensearchservice';
 
-export interface cdk-integ-opensearchProps extends cdk.StackProps {
+export interface CdkIntegOpensearchProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface cdk-integ-opensearchProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-integ-opensearch extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-integ-opensearchProps = {}) {
+export class CdkIntegOpensearch extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkIntegOpensearchProps = {}) {
     super(scope, id, props);
 
     // Applying default props

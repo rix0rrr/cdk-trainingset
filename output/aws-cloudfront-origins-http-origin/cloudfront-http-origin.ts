@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 
-export interface cloudfront-http-originProps extends cdk.StackProps {
+export interface CloudfrontHttpOriginProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface cloudfront-http-originProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cloudfront-http-origin extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cloudfront-http-originProps = {}) {
+export class CloudfrontHttpOrigin extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CloudfrontHttpOriginProps = {}) {
     super(scope, id, props);
 
     // Applying default props

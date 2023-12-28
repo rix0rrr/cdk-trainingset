@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as ecs from 'aws-cdk-lib/aws-ecs';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface aws-ecs-task-definition-without-container-level-memoryProps extends cdk.StackProps {
+export interface AwsEcsTaskDefinitionWithoutContainerLevelMemoryProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface aws-ecs-task-definition-without-container-level-memoryProps ext
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-task-definition-without-container-level-memory extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-task-definition-without-container-level-memoryProps = {}) {
+export class AwsEcsTaskDefinitionWithoutContainerLevelMemory extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsTaskDefinitionWithoutContainerLevelMemoryProps = {}) {
     super(scope, id, props);
 
     // Applying default props

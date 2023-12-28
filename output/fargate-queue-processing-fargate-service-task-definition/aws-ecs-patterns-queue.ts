@@ -7,7 +7,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as logs from 'aws-cdk-lib/aws-logs';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 
-export interface aws-ecs-patterns-queueProps extends cdk.StackProps {
+export interface AwsEcsPatternsQueueProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -15,13 +15,13 @@ export interface aws-ecs-patterns-queueProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-patterns-queue extends cdk.Stack {
+export class AwsEcsPatternsQueue extends cdk.Stack {
   public readonly queueProcessingServiceSqsDeadLetterQueueE9058015;
   public readonly queueProcessingServiceSqsDeadLetterQueueArnF7c6d3a8;
   public readonly queueProcessingServiceSqsQueue1Ad9cd9c;
   public readonly queueProcessingServiceSqsQueueArn8C4ae4ae;
 
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-patterns-queueProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsPatternsQueueProps = {}) {
     super(scope, id, props);
 
     // Applying default props

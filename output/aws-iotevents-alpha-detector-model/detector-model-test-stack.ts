@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as iotevents from 'aws-cdk-lib/aws-iotevents';
 
-export interface detector-model-test-stackProps extends cdk.StackProps {
+export interface DetectorModelTestStackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface detector-model-test-stackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class detector-model-test-stack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: detector-model-test-stackProps = {}) {
+export class DetectorModelTestStack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: DetectorModelTestStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

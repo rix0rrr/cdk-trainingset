@@ -5,7 +5,7 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as logs from 'aws-cdk-lib/aws-logs';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface awscdkekshandlersinvpctestawscdkawseksClusterResourceProvider9260AB35.nestedProps extends cdk.StackProps {
+export interface Awscdkekshandlersinvpctestawscdkawseksclusterresourceprovider9260Ab35NestedProps extends cdk.StackProps {
   /**
    */
   readonly referencetoawscdkekshandlersinvpctestEksAllHandlersInVpcStackDefaultVpcE40ea7acRef: string;
@@ -17,12 +17,12 @@ export interface awscdkekshandlersinvpctestawscdkawseksClusterResourceProvider92
   readonly referencetoawscdkekshandlersinvpctestEksAllHandlersInVpcStackDefaultVpcPrivateSubnet2Subnet9480A740Ref: string;
 }
 
-export class awscdkekshandlersinvpctestawscdkawseksClusterResourceProvider9260AB35.nested extends cdk.Stack {
+export class Awscdkekshandlersinvpctestawscdkawseksclusterresourceprovider9260Ab35Nested extends cdk.Stack {
   public readonly awscdkekshandlersinvpctestawscdkawseksClusterResourceProviderOnEventHandlerServiceRole059C26fcArn;
   public readonly awscdkekshandlersinvpctestawscdkawseksClusterResourceProviderIsCompleteHandlerServiceRole2Aaceb53Arn;
   public readonly awscdkekshandlersinvpctestawscdkawseksClusterResourceProviderframeworkonEvent5C6c2463Arn;
 
-  public constructor(scope: cdk.App, id: string, props: awscdkekshandlersinvpctestawscdkawseksClusterResourceProvider9260AB35.nestedProps) {
+  public constructor(scope: cdk.App, id: string, props: Awscdkekshandlersinvpctestawscdkawseksclusterresourceprovider9260Ab35NestedProps) {
     super(scope, id, props);
 
     // Resources

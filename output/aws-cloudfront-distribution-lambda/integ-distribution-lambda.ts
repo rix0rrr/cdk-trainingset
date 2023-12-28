@@ -3,7 +3,7 @@ import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface integ-distribution-lambdaProps extends cdk.StackProps {
+export interface IntegDistributionLambdaProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface integ-distribution-lambdaProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-distribution-lambda extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-distribution-lambdaProps = {}) {
+export class IntegDistributionLambda extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegDistributionLambdaProps = {}) {
     super(scope, id, props);
 
     // Applying default props

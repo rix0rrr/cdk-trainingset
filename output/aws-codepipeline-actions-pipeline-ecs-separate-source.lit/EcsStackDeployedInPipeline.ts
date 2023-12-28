@@ -3,14 +3,14 @@ import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as ecs from 'aws-cdk-lib/aws-ecs';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface EcsStackDeployedInPipelineProps extends cdk.StackProps {
+export interface EcsstackdeployedinpipelineProps extends cdk.StackProps {
   /**
    */
   readonly taskDefinitionAppContainerImageTagParam6Dbcd720: string;
 }
 
-export class EcsStackDeployedInPipeline extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: EcsStackDeployedInPipelineProps) {
+export class Ecsstackdeployedinpipeline extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: EcsstackdeployedinpipelineProps) {
     super(scope, id, props);
 
     // Resources

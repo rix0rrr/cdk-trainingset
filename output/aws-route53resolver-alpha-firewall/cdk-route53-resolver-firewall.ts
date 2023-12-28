@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as route53resolver from 'aws-cdk-lib/aws-route53resolver';
 
-export interface cdk-route53-resolver-firewallProps extends cdk.StackProps {
+export interface CdkRoute53ResolverFirewallProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface cdk-route53-resolver-firewallProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-route53-resolver-firewall extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-route53-resolver-firewallProps = {}) {
+export class CdkRoute53ResolverFirewall extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkRoute53ResolverFirewallProps = {}) {
     super(scope, id, props);
 
     // Applying default props

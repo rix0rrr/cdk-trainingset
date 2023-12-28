@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface InvokeFunctionAssertionsProps extends cdk.StackProps {
+export interface InvokefunctionassertionsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,10 +10,10 @@ export interface InvokeFunctionAssertionsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class InvokeFunctionAssertions extends cdk.Stack {
+export class Invokefunctionassertions extends cdk.Stack {
   public readonly exportsOutputRefTargetFunc08E2afd9bd39cdae;
 
-  public constructor(scope: cdk.App, id: string, props: InvokeFunctionAssertionsProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: InvokefunctionassertionsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

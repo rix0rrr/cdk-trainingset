@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as ecs from 'aws-cdk-lib/aws-ecs';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface aws-ecs-task-definition-container-ulimitsProps extends cdk.StackProps {
+export interface AwsEcsTaskDefinitionContainerUlimitsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface aws-ecs-task-definition-container-ulimitsProps extends cdk.Stac
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-task-definition-container-ulimits extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-task-definition-container-ulimitsProps = {}) {
+export class AwsEcsTaskDefinitionContainerUlimits extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsTaskDefinitionContainerUlimitsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

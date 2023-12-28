@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as cognito from 'aws-cdk-lib/aws-cognito';
 
-export interface integ-user-poolProps extends cdk.StackProps {
+export interface IntegUserPoolProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,10 +9,10 @@ export interface integ-user-poolProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-user-pool extends cdk.Stack {
+export class IntegUserPool extends cdk.Stack {
   public readonly userpoolid;
 
-  public constructor(scope: cdk.App, id: string, props: integ-user-poolProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegUserPoolProps = {}) {
     super(scope, id, props);
 
     // Applying default props

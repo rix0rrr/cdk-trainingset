@@ -3,7 +3,7 @@ import * as cloudformation from 'aws-cdk-lib/aws-cloudformation';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface lambda-layer-node-proxy-agent-integ-stackProps extends cdk.StackProps {
+export interface LambdaLayerNodeProxyAgentIntegStackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface lambda-layer-node-proxy-agent-integ-stackProps extends cdk.Stac
   readonly bootstrapVersion?: string;
 }
 
-export class lambda-layer-node-proxy-agent-integ-stack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: lambda-layer-node-proxy-agent-integ-stackProps = {}) {
+export class LambdaLayerNodeProxyAgentIntegStack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: LambdaLayerNodeProxyAgentIntegStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -3,7 +3,7 @@ import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface SecondStackProps extends cdk.StackProps {
+export interface SecondstackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface SecondStackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class SecondStack extends cdk.Stack {
+export class Secondstack extends cdk.Stack {
   public readonly booksApiEndpointF2aa70a2;
 
-  public constructor(scope: cdk.App, id: string, props: SecondStackProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: SecondstackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

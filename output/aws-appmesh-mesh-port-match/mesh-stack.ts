@@ -3,7 +3,7 @@ import * as appmesh from 'aws-cdk-lib/aws-appmesh';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as servicediscovery from 'aws-cdk-lib/aws-servicediscovery';
 
-export interface mesh-stackProps extends cdk.StackProps {
+export interface MeshStackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface mesh-stackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class mesh-stack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: mesh-stackProps = {}) {
+export class MeshStack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: MeshStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as cloudwatch from 'aws-cdk-lib/aws-cloudwatch';
 
-export interface DashboardIntegrationTestStackProps extends cdk.StackProps {
+export interface DashboardintegrationteststackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,10 +9,10 @@ export interface DashboardIntegrationTestStackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class DashboardIntegrationTestStack extends cdk.Stack {
+export class Dashboardintegrationteststack extends cdk.Stack {
   public readonly dashboardArn;
 
-  public constructor(scope: cdk.App, id: string, props: DashboardIntegrationTestStackProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: DashboardintegrationteststackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

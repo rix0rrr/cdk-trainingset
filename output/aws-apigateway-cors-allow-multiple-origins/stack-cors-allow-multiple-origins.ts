@@ -3,7 +3,7 @@ import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface stack-cors-allow-multiple-originsProps extends cdk.StackProps {
+export interface StackCorsAllowMultipleOriginsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface stack-cors-allow-multiple-originsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class stack-cors-allow-multiple-origins extends cdk.Stack {
+export class StackCorsAllowMultipleOrigins extends cdk.Stack {
   public readonly corsapitestEndpointE63606ae;
 
-  public constructor(scope: cdk.App, id: string, props: stack-cors-allow-multiple-originsProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: StackCorsAllowMultipleOriginsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as ecr from 'aws-cdk-lib/aws-ecr';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface aws-ecr-integ-stackProps extends cdk.StackProps {
+export interface AwsEcrIntegStackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,10 +10,10 @@ export interface aws-ecr-integ-stackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecr-integ-stack extends cdk.Stack {
+export class AwsEcrIntegStack extends cdk.Stack {
   public readonly repositoryUri;
 
-  public constructor(scope: cdk.App, id: string, props: aws-ecr-integ-stackProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsEcrIntegStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

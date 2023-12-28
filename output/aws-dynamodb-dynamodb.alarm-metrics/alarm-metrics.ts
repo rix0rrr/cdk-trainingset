@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as cloudwatch from 'aws-cdk-lib/aws-cloudwatch';
 import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
 
-export interface alarm-metricsProps extends cdk.StackProps {
+export interface AlarmMetricsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface alarm-metricsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class alarm-metrics extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: alarm-metricsProps = {}) {
+export class AlarmMetrics extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AlarmMetricsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -3,7 +3,7 @@ import * as applicationautoscaling from 'aws-cdk-lib/aws-applicationautoscaling'
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as sagemaker from 'aws-cdk-lib/aws-sagemaker';
 
-export interface aws-cdk-sagemaker-endpointProps extends cdk.StackProps {
+export interface AwsCdkSagemakerEndpointProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface aws-cdk-sagemaker-endpointProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-sagemaker-endpoint extends cdk.Stack {
+export class AwsCdkSagemakerEndpoint extends cdk.Stack {
   public readonly exportsOutputFnGetAttEndpoint8024A810EndpointNameC77e4eff;
 
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-sagemaker-endpointProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkSagemakerEndpointProps = {}) {
     super(scope, id, props);
 
     // Applying default props

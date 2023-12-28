@@ -3,7 +3,7 @@ import * as cdk from 'aws-cdk-lib';
 import { Size } from 'aws-cdk-lib';
 import { IntegTest } from '@aws-cdk/integ-tests-alpha';
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
-import { STANDARD_NODEJS_RUNTIME } from '../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 class Test extends cdk.Stack {
   constructor(scope: cdk.App, id: string) {

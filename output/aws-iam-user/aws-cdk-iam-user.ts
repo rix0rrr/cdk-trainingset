@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface aws-cdk-iam-userProps extends cdk.StackProps {
+export interface AwsCdkIamUserProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,7 +9,7 @@ export interface aws-cdk-iam-userProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-iam-user extends cdk.Stack {
+export class AwsCdkIamUser extends cdk.Stack {
   public readonly nameForUserImportedByArn;
   public readonly nameForUserImportedByArnPath;
   public readonly nameForUserImportedByArnPathMultiple;
@@ -18,7 +18,7 @@ export class aws-cdk-iam-user extends cdk.Stack {
   public readonly nameForUserImportedByAttributesPathMultiple;
   public readonly nameForUserImportedByName;
 
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-iam-userProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkIamUserProps = {}) {
     super(scope, id, props);
 
     // Applying default props

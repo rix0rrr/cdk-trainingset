@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as rds from 'aws-cdk-lib/aws-rds';
 
-export interface cdk-rds-cluster-instance-ca-certificate-integProps extends cdk.StackProps {
+export interface CdkRdsClusterInstanceCaCertificateIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface cdk-rds-cluster-instance-ca-certificate-integProps extends cdk.
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-rds-cluster-instance-ca-certificate-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-rds-cluster-instance-ca-certificate-integProps = {}) {
+export class CdkRdsClusterInstanceCaCertificateInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkRdsClusterInstanceCaCertificateIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

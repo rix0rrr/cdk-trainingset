@@ -3,7 +3,7 @@ import * as events from 'aws-cdk-lib/aws-events';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface aws-stepfunctions-tasks-eventbridge-put-events-integProps extends cdk.StackProps {
+export interface AwsStepfunctionsTasksEventbridgePutEventsIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface aws-stepfunctions-tasks-eventbridge-put-events-integProps exten
   readonly bootstrapVersion?: string;
 }
 
-export class aws-stepfunctions-tasks-eventbridge-put-events-integ extends cdk.Stack {
+export class AwsStepfunctionsTasksEventbridgePutEventsInteg extends cdk.Stack {
   public readonly exportsOutputRefStateMachine2E01a3a5ba46f753;
 
-  public constructor(scope: cdk.App, id: string, props: aws-stepfunctions-tasks-eventbridge-put-events-integProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsStepfunctionsTasksEventbridgePutEventsIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface integ-assets-tarballProps extends cdk.StackProps {
+export interface IntegAssetsTarballProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,11 +9,11 @@ export interface integ-assets-tarballProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-assets-tarball extends cdk.Stack {
+export class IntegAssetsTarball extends cdk.Stack {
   public readonly imageUri;
   public readonly imageUri2;
 
-  public constructor(scope: cdk.App, id: string, props: integ-assets-tarballProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegAssetsTarballProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -3,7 +3,7 @@ import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface BarStackProps extends cdk.StackProps {
+export interface BarstackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface BarStackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class BarStack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: BarStackProps = {}) {
+export class Barstack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: BarstackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

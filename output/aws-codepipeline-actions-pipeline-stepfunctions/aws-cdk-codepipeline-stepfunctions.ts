@@ -5,7 +5,7 @@ import * as kms from 'aws-cdk-lib/aws-kms';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface aws-cdk-codepipeline-stepfunctionsProps extends cdk.StackProps {
+export interface AwsCdkCodepipelineStepfunctionsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -13,8 +13,8 @@ export interface aws-cdk-codepipeline-stepfunctionsProps extends cdk.StackProps 
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-codepipeline-stepfunctions extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-codepipeline-stepfunctionsProps = {}) {
+export class AwsCdkCodepipelineStepfunctions extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkCodepipelineStepfunctionsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as iotevents from 'aws-cdk-lib/aws-iotevents';
 
-export interface iotevents-set-variable-action-test-stackProps extends cdk.StackProps {
+export interface IoteventsSetVariableActionTestStackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface iotevents-set-variable-action-test-stackProps extends cdk.Stack
   readonly bootstrapVersion?: string;
 }
 
-export class iotevents-set-variable-action-test-stack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: iotevents-set-variable-action-test-stackProps = {}) {
+export class IoteventsSetVariableActionTestStack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IoteventsSetVariableActionTestStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

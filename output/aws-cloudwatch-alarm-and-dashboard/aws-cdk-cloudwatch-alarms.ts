@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as cloudwatch from 'aws-cdk-lib/aws-cloudwatch';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 
-export interface aws-cdk-cloudwatch-alarmsProps extends cdk.StackProps {
+export interface AwsCdkCloudwatchAlarmsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface aws-cdk-cloudwatch-alarmsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-cloudwatch-alarms extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-cloudwatch-alarmsProps = {}) {
+export class AwsCdkCloudwatchAlarms extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkCloudwatchAlarmsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

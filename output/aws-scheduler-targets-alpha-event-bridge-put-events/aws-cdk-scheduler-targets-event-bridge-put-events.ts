@@ -5,7 +5,7 @@ import * as ssm from 'aws-cdk-lib/aws-ssm';
 import * as scheduler from 'aws-cdk-lib/aws-scheduler';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface aws-cdk-scheduler-targets-event-bridge-put-eventsProps extends cdk.StackProps {
+export interface AwsCdkSchedulerTargetsEventBridgePutEventsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -13,8 +13,8 @@ export interface aws-cdk-scheduler-targets-event-bridge-put-eventsProps extends 
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-scheduler-targets-event-bridge-put-events extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-scheduler-targets-event-bridge-put-eventsProps = {}) {
+export class AwsCdkSchedulerTargetsEventBridgePutEvents extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkSchedulerTargetsEventBridgePutEventsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

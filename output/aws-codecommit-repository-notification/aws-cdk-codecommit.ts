@@ -3,7 +3,7 @@ import * as codecommit from 'aws-cdk-lib/aws-codecommit';
 import * as codestarnotifications from 'aws-cdk-lib/aws-codestarnotifications';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface aws-cdk-codecommitProps extends cdk.StackProps {
+export interface AwsCdkCodecommitProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface aws-cdk-codecommitProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-codecommit extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-codecommitProps = {}) {
+export class AwsCdkCodecommit extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkCodecommitProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface aws-cdk-iam-instance-profileProps extends cdk.StackProps {
+export interface AwsCdkIamInstanceProfileProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,7 +9,7 @@ export interface aws-cdk-iam-instance-profileProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-iam-instance-profile extends cdk.Stack {
+export class AwsCdkIamInstanceProfile extends cdk.Stack {
   public readonly nameForProfileImportedByArn;
   public readonly nameForProfileImportedByArnPath;
   public readonly nameForProfileImportedByArnPathMultiple;
@@ -17,7 +17,7 @@ export class aws-cdk-iam-instance-profile extends cdk.Stack {
   public readonly nameForProfileImportedByAttributesPathMultiple;
   public readonly nameForProfileImportedByName;
 
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-iam-instance-profileProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkIamInstanceProfileProps = {}) {
     super(scope, id, props);
 
     // Applying default props

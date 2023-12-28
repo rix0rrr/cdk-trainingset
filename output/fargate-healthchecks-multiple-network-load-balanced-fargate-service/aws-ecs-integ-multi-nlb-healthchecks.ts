@@ -5,7 +5,7 @@ import * as elasticloadbalancingv2 from 'aws-cdk-lib/aws-elasticloadbalancingv2'
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as logs from 'aws-cdk-lib/aws-logs';
 
-export interface aws-ecs-integ-multi-nlb-healthchecksProps extends cdk.StackProps {
+export interface AwsEcsIntegMultiNlbHealthchecksProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -13,11 +13,11 @@ export interface aws-ecs-integ-multi-nlb-healthchecksProps extends cdk.StackProp
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-integ-multi-nlb-healthchecks extends cdk.Stack {
+export class AwsEcsIntegMultiNlbHealthchecks extends cdk.Stack {
   public readonly myServiceLoadBalancerDnSlb1341Ee21a;
   public readonly myServiceLoadBalancerDnSlb2Ddce46c8;
 
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-integ-multi-nlb-healthchecksProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsIntegMultiNlbHealthchecksProps = {}) {
     super(scope, id, props);
 
     // Applying default props

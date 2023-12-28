@@ -6,7 +6,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface integ-default-capacity-providerProps extends cdk.StackProps {
+export interface IntegDefaultCapacityProviderProps extends cdk.StackProps {
   /**
    * @default '/aws/service/ecs/optimized-ami/amazon-linux-2/recommended/image_id'
    */
@@ -18,8 +18,8 @@ export interface integ-default-capacity-providerProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-default-capacity-provider extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-default-capacity-providerProps = {}) {
+export class IntegDefaultCapacityProvider extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegDefaultCapacityProviderProps = {}) {
     super(scope, id, props);
 
     // Applying default props

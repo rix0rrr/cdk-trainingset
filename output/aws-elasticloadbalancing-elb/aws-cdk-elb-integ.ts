@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as elasticloadbalancing from 'aws-cdk-lib/aws-elasticloadbalancing';
 
-export interface aws-cdk-elb-integProps extends cdk.StackProps {
+export interface AwsCdkElbIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface aws-cdk-elb-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-elb-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-elb-integProps = {}) {
+export class AwsCdkElbInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkElbIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

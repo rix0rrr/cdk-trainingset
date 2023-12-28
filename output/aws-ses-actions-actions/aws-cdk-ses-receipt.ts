@@ -6,7 +6,7 @@ import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as ses from 'aws-cdk-lib/aws-ses';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface aws-cdk-ses-receiptProps extends cdk.StackProps {
+export interface AwsCdkSesReceiptProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -14,8 +14,8 @@ export interface aws-cdk-ses-receiptProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-ses-receipt extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-ses-receiptProps = {}) {
+export class AwsCdkSesReceipt extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkSesReceiptProps = {}) {
     super(scope, id, props);
 
     // Applying default props

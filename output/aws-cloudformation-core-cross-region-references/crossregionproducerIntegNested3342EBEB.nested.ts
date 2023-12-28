@@ -1,13 +1,13 @@
 import * as cdk from 'aws-cdk-lib';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 
-export interface crossregionproducerIntegNested3342EBEB.nestedProps extends cdk.StackProps {
+export interface Crossregionproducerintegnested3342EbebNestedProps extends cdk.StackProps {
 }
 
-export class crossregionproducerIntegNested3342EBEB.nested extends cdk.Stack {
+export class Crossregionproducerintegnested3342EbebNested extends cdk.Stack {
   public readonly crossregionproducerIntegNestedNestedIntegQueueD686db69QueueName;
 
-  public constructor(scope: cdk.App, id: string, props: crossregionproducerIntegNested3342EBEB.nestedProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: Crossregionproducerintegnested3342EbebNestedProps = {}) {
     super(scope, id, props);
 
     // Resources

@@ -3,7 +3,7 @@ import * as ecs from 'aws-cdk-lib/aws-ecs';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 
-export interface aws-ecs-integ-secretProps extends cdk.StackProps {
+export interface AwsEcsIntegSecretProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface aws-ecs-integ-secretProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-integ-secret extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-integ-secretProps = {}) {
+export class AwsEcsIntegSecret extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsIntegSecretProps = {}) {
     super(scope, id, props);
 
     // Applying default props

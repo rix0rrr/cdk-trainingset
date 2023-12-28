@@ -8,7 +8,7 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as logs from 'aws-cdk-lib/aws-logs';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface aws-ecs-integ-multiple-albProps extends cdk.StackProps {
+export interface AwsEcsIntegMultipleAlbProps extends cdk.StackProps {
   /**
    * @default '/aws/service/ecs/optimized-ami/amazon-linux-2/recommended/image_id'
    */
@@ -20,11 +20,11 @@ export interface aws-ecs-integ-multiple-albProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-integ-multiple-alb extends cdk.Stack {
+export class AwsEcsIntegMultipleAlb extends cdk.Stack {
   public readonly myServiceLoadBalancerDns3a083e9f;
   public readonly myServiceServiceUrl1258c56b;
 
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-integ-multiple-albProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsIntegMultipleAlbProps = {}) {
     super(scope, id, props);
 
     // Applying default props

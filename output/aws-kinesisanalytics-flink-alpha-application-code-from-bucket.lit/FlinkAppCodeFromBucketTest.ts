@@ -3,7 +3,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as kinesisanalyticsv2 from 'aws-cdk-lib/aws-kinesisanalyticsv2';
 import * as logs from 'aws-cdk-lib/aws-logs';
 
-export interface FlinkAppCodeFromBucketTestProps extends cdk.StackProps {
+export interface FlinkappcodefrombuckettestProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface FlinkAppCodeFromBucketTestProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class FlinkAppCodeFromBucketTest extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: FlinkAppCodeFromBucketTestProps = {}) {
+export class Flinkappcodefrombuckettest extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: FlinkappcodefrombuckettestProps = {}) {
     super(scope, id, props);
 
     // Applying default props

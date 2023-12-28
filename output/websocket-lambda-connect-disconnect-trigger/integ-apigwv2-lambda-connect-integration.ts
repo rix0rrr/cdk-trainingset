@@ -4,7 +4,7 @@ import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface integ-apigwv2-lambda-connect-integrationProps extends cdk.StackProps {
+export interface IntegApigwv2LambdaConnectIntegrationProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface integ-apigwv2-lambda-connect-integrationProps extends cdk.Stack
   readonly bootstrapVersion?: string;
 }
 
-export class integ-apigwv2-lambda-connect-integration extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-apigwv2-lambda-connect-integrationProps = {}) {
+export class IntegApigwv2LambdaConnectIntegration extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegApigwv2LambdaConnectIntegrationProps = {}) {
     super(scope, id, props);
 
     // Applying default props

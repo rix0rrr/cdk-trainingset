@@ -1,11 +1,11 @@
 import * as cdk from 'aws-cdk-lib';
 import * as kms from 'aws-cdk-lib/aws-kms';
 
-export interface UseStackProps extends cdk.StackProps {
+export interface UsestackProps extends cdk.StackProps {
 }
 
-export class UseStack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: UseStackProps = {}) {
+export class Usestack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: UsestackProps = {}) {
     super(scope, id, props);
 
     // Resources

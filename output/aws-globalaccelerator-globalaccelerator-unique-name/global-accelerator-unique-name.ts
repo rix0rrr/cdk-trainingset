@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as globalaccelerator from 'aws-cdk-lib/aws-globalaccelerator';
 
-export interface global-accelerator-unique-nameProps extends cdk.StackProps {
+export interface GlobalAcceleratorUniqueNameProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface global-accelerator-unique-nameProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class global-accelerator-unique-name extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: global-accelerator-unique-nameProps = {}) {
+export class GlobalAcceleratorUniqueName extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: GlobalAcceleratorUniqueNameProps = {}) {
     super(scope, id, props);
 
     // Applying default props

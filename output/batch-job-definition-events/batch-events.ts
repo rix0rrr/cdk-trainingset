@@ -4,7 +4,7 @@ import * as events from 'aws-cdk-lib/aws-events';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 
-export interface batch-eventsProps extends cdk.StackProps {
+export interface BatchEventsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface batch-eventsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class batch-events extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: batch-eventsProps = {}) {
+export class BatchEvents extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: BatchEventsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

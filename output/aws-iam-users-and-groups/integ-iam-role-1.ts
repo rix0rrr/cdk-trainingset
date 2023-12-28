@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface integ-iam-role-1Props extends cdk.StackProps {
+export interface IntegIamRole1Props extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface integ-iam-role-1Props extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-iam-role-1 extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-iam-role-1Props = {}) {
+export class IntegIamRole1 extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegIamRole1Props = {}) {
     super(scope, id, props);
 
     // Applying default props

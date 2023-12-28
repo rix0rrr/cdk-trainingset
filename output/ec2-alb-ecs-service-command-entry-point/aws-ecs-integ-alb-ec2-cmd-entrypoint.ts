@@ -6,7 +6,7 @@ import * as elasticloadbalancingv2 from 'aws-cdk-lib/aws-elasticloadbalancingv2'
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as logs from 'aws-cdk-lib/aws-logs';
 
-export interface aws-ecs-integ-alb-ec2-cmd-entrypointProps extends cdk.StackProps {
+export interface AwsEcsIntegAlbEc2CmdEntrypointProps extends cdk.StackProps {
   /**
    * @default '/aws/service/ecs/optimized-ami/amazon-linux-2/recommended/image_id'
    */
@@ -18,11 +18,11 @@ export interface aws-ecs-integ-alb-ec2-cmd-entrypointProps extends cdk.StackProp
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-integ-alb-ec2-cmd-entrypoint extends cdk.Stack {
+export class AwsEcsIntegAlbEc2CmdEntrypoint extends cdk.Stack {
   public readonly albecsServiceWithCommandEntryPointLoadBalancerDns4794c277;
   public readonly albecsServiceWithCommandEntryPointServiceUrla5faf4d9;
 
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-integ-alb-ec2-cmd-entrypointProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsIntegAlbEc2CmdEntrypointProps = {}) {
     super(scope, id, props);
 
     // Applying default props

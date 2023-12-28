@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as cloudwatch from 'aws-cdk-lib/aws-cloudwatch';
 
-export interface gauge-alarmProps extends cdk.StackProps {
+export interface GaugeAlarmProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface gauge-alarmProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class gauge-alarm extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: gauge-alarmProps = {}) {
+export class GaugeAlarm extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: GaugeAlarmProps = {}) {
     super(scope, id, props);
 
     // Applying default props

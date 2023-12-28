@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 
-export interface aws-cdk-cloudfront-customProps extends cdk.StackProps {
+export interface AwsCdkCloudfrontCustomProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface aws-cdk-cloudfront-customProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-cloudfront-custom extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-cloudfront-customProps = {}) {
+export class AwsCdkCloudfrontCustom extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkCloudfrontCustomProps = {}) {
     super(scope, id, props);
 
     // Applying default props

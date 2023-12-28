@@ -2,11 +2,11 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface synthesize-default-resourcesProps extends cdk.StackProps {
+export interface SynthesizeDefaultResourcesProps extends cdk.StackProps {
 }
 
-export class synthesize-default-resources extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: synthesize-default-resourcesProps = {}) {
+export class SynthesizeDefaultResources extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: SynthesizeDefaultResourcesProps = {}) {
     super(scope, id, props);
 
     // Resources

@@ -3,7 +3,7 @@ import * as codebuild from 'aws-cdk-lib/aws-codebuild';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface aws-cdk-codebuild-file-system-locationsProps extends cdk.StackProps {
+export interface AwsCdkCodebuildFileSystemLocationsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface aws-cdk-codebuild-file-system-locationsProps extends cdk.StackP
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-codebuild-file-system-locations extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-codebuild-file-system-locationsProps = {}) {
+export class AwsCdkCodebuildFileSystemLocations extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkCodebuildFileSystemLocationsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

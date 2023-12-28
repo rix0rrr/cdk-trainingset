@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as msk from 'aws-cdk-lib/aws-msk';
 
-export interface KafkaStorageModeTestStackProps extends cdk.StackProps {
+export interface KafkastoragemodeteststackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface KafkaStorageModeTestStackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class KafkaStorageModeTestStack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: KafkaStorageModeTestStackProps = {}) {
+export class Kafkastoragemodeteststack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: KafkastoragemodeteststackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as cloudwatch from 'aws-cdk-lib/aws-cloudwatch';
 import * as logs from 'aws-cdk-lib/aws-logs';
 
-export interface aws-cdk-expose-metric-integProps extends cdk.StackProps {
+export interface AwsCdkExposeMetricIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface aws-cdk-expose-metric-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-expose-metric-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-expose-metric-integProps = {}) {
+export class AwsCdkExposeMetricInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkExposeMetricIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -3,7 +3,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as inspector from 'aws-cdk-lib/aws-inspector';
 import * as scheduler from 'aws-cdk-lib/aws-scheduler';
 
-export interface aws-cdk-scheduler-targets-inspector-start-assessment-runProps extends cdk.StackProps {
+export interface AwsCdkSchedulerTargetsInspectorStartAssessmentRunProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface aws-cdk-scheduler-targets-inspector-start-assessment-runProps e
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-scheduler-targets-inspector-start-assessment-run extends cdk.Stack {
+export class AwsCdkSchedulerTargetsInspectorStartAssessmentRun extends cdk.Stack {
   public readonly exportsOutputFnGetAttMyAssessmentTemplateArn495Ba409;
 
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-scheduler-targets-inspector-start-assessment-runProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkSchedulerTargetsInspectorStartAssessmentRunProps = {}) {
     super(scope, id, props);
 
     // Applying default props

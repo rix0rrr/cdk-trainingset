@@ -3,7 +3,7 @@ import * as applicationautoscaling from 'aws-cdk-lib/aws-applicationautoscaling'
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface aws-lambda-autoscalingProps extends cdk.StackProps {
+export interface AwsLambdaAutoscalingProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface aws-lambda-autoscalingProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-lambda-autoscaling extends cdk.Stack {
+export class AwsLambdaAutoscaling extends cdk.Stack {
   public readonly functionName;
 
-  public constructor(scope: cdk.App, id: string, props: aws-lambda-autoscalingProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsLambdaAutoscalingProps = {}) {
     super(scope, id, props);
 
     // Applying default props

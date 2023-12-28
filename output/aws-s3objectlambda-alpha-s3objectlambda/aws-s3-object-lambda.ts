@@ -4,7 +4,7 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as s3objectlambda from 'aws-cdk-lib/aws-s3objectlambda';
 
-export interface aws-s3-object-lambdaProps extends cdk.StackProps {
+export interface AwsS3ObjectLambdaProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface aws-s3-object-lambdaProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-s3-object-lambda extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-s3-object-lambdaProps = {}) {
+export class AwsS3ObjectLambda extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsS3ObjectLambdaProps = {}) {
     super(scope, id, props);
 
     // Applying default props

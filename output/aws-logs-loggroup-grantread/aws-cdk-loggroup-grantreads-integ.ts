@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as logs from 'aws-cdk-lib/aws-logs';
 
-export interface aws-cdk-loggroup-grantreads-integProps extends cdk.StackProps {
+export interface AwsCdkLoggroupGrantreadsIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface aws-cdk-loggroup-grantreads-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-loggroup-grantreads-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-loggroup-grantreads-integProps = {}) {
+export class AwsCdkLoggroupGrantreadsInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkLoggroupGrantreadsIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

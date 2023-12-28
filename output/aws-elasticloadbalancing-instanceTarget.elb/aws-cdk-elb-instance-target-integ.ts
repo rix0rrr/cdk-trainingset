@@ -3,7 +3,7 @@ import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as elasticloadbalancing from 'aws-cdk-lib/aws-elasticloadbalancing';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface aws-cdk-elb-instance-target-integProps extends cdk.StackProps {
+export interface AwsCdkElbInstanceTargetIntegProps extends cdk.StackProps {
   /**
    * @default '/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2'
    */
@@ -15,8 +15,8 @@ export interface aws-cdk-elb-instance-target-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-elb-instance-target-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-elb-instance-target-integProps = {}) {
+export class AwsCdkElbInstanceTargetInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkElbInstanceTargetIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

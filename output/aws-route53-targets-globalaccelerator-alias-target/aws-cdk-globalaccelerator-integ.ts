@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as globalaccelerator from 'aws-cdk-lib/aws-globalaccelerator';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 
-export interface aws-cdk-globalaccelerator-integProps extends cdk.StackProps {
+export interface AwsCdkGlobalacceleratorIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface aws-cdk-globalaccelerator-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-globalaccelerator-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-globalaccelerator-integProps = {}) {
+export class AwsCdkGlobalacceleratorInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkGlobalacceleratorIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

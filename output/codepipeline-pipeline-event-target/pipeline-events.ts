@@ -7,7 +7,7 @@ import * as kms from 'aws-cdk-lib/aws-kms';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 
-export interface pipeline-eventsProps extends cdk.StackProps {
+export interface PipelineEventsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -15,8 +15,8 @@ export interface pipeline-eventsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class pipeline-events extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: pipeline-eventsProps = {}) {
+export class PipelineEvents extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: PipelineEventsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

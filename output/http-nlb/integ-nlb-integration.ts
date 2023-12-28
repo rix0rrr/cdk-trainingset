@@ -3,7 +3,7 @@ import * as apigatewayv2 from 'aws-cdk-lib/aws-apigatewayv2';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as elasticloadbalancingv2 from 'aws-cdk-lib/aws-elasticloadbalancingv2';
 
-export interface integ-nlb-integrationProps extends cdk.StackProps {
+export interface IntegNlbIntegrationProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface integ-nlb-integrationProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-nlb-integration extends cdk.Stack {
+export class IntegNlbIntegration extends cdk.Stack {
   public readonly endpoint;
 
-  public constructor(scope: cdk.App, id: string, props: integ-nlb-integrationProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegNlbIntegrationProps = {}) {
     super(scope, id, props);
 
     // Applying default props

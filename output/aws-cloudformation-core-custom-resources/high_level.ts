@@ -8,7 +8,7 @@
  */
 import { App, CfnOutput, CustomResource, CustomResourceProvider, Stack, Token } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-import { STANDARD_CUSTOM_RESOURCE_PROVIDER_RUNTIME } from '../../config';
+import { STANDARD_CUSTOM_RESOURCE_PROVIDER_RUNTIME } from '@additional/config';
 
 /* eslint-disable @aws-cdk/no-core-construct */
 

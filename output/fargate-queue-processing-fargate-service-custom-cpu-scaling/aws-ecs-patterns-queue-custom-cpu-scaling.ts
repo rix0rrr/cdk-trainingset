@@ -7,7 +7,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as logs from 'aws-cdk-lib/aws-logs';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 
-export interface aws-ecs-patterns-queue-custom-cpu-scalingProps extends cdk.StackProps {
+export interface AwsEcsPatternsQueueCustomCpuScalingProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -15,13 +15,13 @@ export interface aws-ecs-patterns-queue-custom-cpu-scalingProps extends cdk.Stac
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-patterns-queue-custom-cpu-scaling extends cdk.Stack {
+export class AwsEcsPatternsQueueCustomCpuScaling extends cdk.Stack {
   public readonly awsecspatternsqueuecustomcpuscalingSqsDeadLetterQueue94103Ab7;
   public readonly awsecspatternsqueuecustomcpuscalingSqsDeadLetterQueueArn45Aa7a61;
   public readonly awsecspatternsqueuecustomcpuscalingSqsQueue56D4c1ab;
   public readonly awsecspatternsqueuecustomcpuscalingSqsQueueArnA165eb72;
 
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-patterns-queue-custom-cpu-scalingProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsPatternsQueueCustomCpuScalingProps = {}) {
     super(scope, id, props);
 
     // Applying default props

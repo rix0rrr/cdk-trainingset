@@ -6,7 +6,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface aws-ecs-integ-spotProps extends cdk.StackProps {
+export interface AwsEcsIntegSpotProps extends cdk.StackProps {
   /**
    * @default '/aws/service/ecs/optimized-ami/amazon-linux-2/recommended/image_id'
    */
@@ -18,8 +18,8 @@ export interface aws-ecs-integ-spotProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-integ-spot extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-integ-spotProps = {}) {
+export class AwsEcsIntegSpot extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsIntegSpotProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -4,7 +4,7 @@ import * as kms from 'aws-cdk-lib/aws-kms';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface aws-stepfunctions-tasks-sqs-send-message-integProps extends cdk.StackProps {
+export interface AwsStepfunctionsTasksSqsSendMessageIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,11 +12,11 @@ export interface aws-stepfunctions-tasks-sqs-send-message-integProps extends cdk
   readonly bootstrapVersion?: string;
 }
 
-export class aws-stepfunctions-tasks-sqs-send-message-integ extends cdk.Stack {
+export class AwsStepfunctionsTasksSqsSendMessageInteg extends cdk.Stack {
   public readonly stateMachineArn;
   public readonly queueUrl;
 
-  public constructor(scope: cdk.App, id: string, props: aws-stepfunctions-tasks-sqs-send-message-integProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsStepfunctionsTasksSqsSendMessageIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

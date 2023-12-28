@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as logs from 'aws-cdk-lib/aws-logs';
 
-export interface aws-cdk-log-group-resource-policy-any-integProps extends cdk.StackProps {
+export interface AwsCdkLogGroupResourcePolicyAnyIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface aws-cdk-log-group-resource-policy-any-integProps extends cdk.St
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-log-group-resource-policy-any-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-log-group-resource-policy-any-integProps = {}) {
+export class AwsCdkLogGroupResourcePolicyAnyInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkLogGroupResourcePolicyAnyIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -15,7 +15,7 @@ import { RetentionDays } from 'aws-cdk-lib/aws-logs';
 import { App, Stack, CfnResource, NestedStack } from 'aws-cdk-lib';
 import * as integ from '@aws-cdk/integ-tests-alpha';
 import { Construct } from 'constructs';
-import { STANDARD_NODEJS_RUNTIME } from '../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 class TestStack extends Stack {
   constructor(scope: Construct, id: string) {

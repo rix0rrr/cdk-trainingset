@@ -3,7 +3,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as kms from 'aws-cdk-lib/aws-kms';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface SNSIntegProps extends cdk.StackProps {
+export interface SnsintegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface SNSIntegProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class SNSInteg extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: SNSIntegProps = {}) {
+export class Snsinteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: SnsintegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

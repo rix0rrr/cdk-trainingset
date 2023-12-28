@@ -4,7 +4,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 
-export interface aws-cdk-apigw-alias-integProps extends cdk.StackProps {
+export interface AwsCdkApigwAliasIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,10 +12,10 @@ export interface aws-cdk-apigw-alias-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-apigw-alias-integ extends cdk.Stack {
+export class AwsCdkApigwAliasInteg extends cdk.Stack {
   public readonly apiEndpoint9349E63c;
 
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-apigw-alias-integProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkApigwAliasIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -4,7 +4,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface CallRestApiIntegProps extends cdk.StackProps {
+export interface CallrestapiintegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,11 +12,11 @@ export interface CallRestApiIntegProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class CallRestApiInteg extends cdk.Stack {
+export class Callrestapiinteg extends cdk.Stack {
   public readonly myRestApiEndpoint4C55e4cb;
   public readonly stateMachineArn;
 
-  public constructor(scope: cdk.App, id: string, props: CallRestApiIntegProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: CallrestapiintegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

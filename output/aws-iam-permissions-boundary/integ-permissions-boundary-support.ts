@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface integ-permissions-boundary-supportProps extends cdk.StackProps {
+export interface IntegPermissionsBoundarySupportProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface integ-permissions-boundary-supportProps extends cdk.StackProps 
   readonly bootstrapVersion?: string;
 }
 
-export class integ-permissions-boundary-support extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-permissions-boundary-supportProps = {}) {
+export class IntegPermissionsBoundarySupport extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegPermissionsBoundarySupportProps = {}) {
     super(scope, id, props);
 
     // Applying default props

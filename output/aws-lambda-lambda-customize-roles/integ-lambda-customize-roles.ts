@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface integ-lambda-customize-rolesProps extends cdk.StackProps {
+export interface IntegLambdaCustomizeRolesProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface integ-lambda-customize-rolesProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-lambda-customize-roles extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-lambda-customize-rolesProps = {}) {
+export class IntegLambdaCustomizeRoles extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegLambdaCustomizeRolesProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as events from 'aws-cdk-lib/aws-events';
 
-export interface RuleStackProps extends cdk.StackProps {
+export interface RulestackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface RuleStackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class RuleStack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: RuleStackProps = {}) {
+export class Rulestack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: RulestackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

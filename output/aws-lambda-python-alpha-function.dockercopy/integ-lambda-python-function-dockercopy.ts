@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface integ-lambda-python-function-dockercopyProps extends cdk.StackProps {
+export interface IntegLambdaPythonFunctionDockercopyProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,11 +10,11 @@ export interface integ-lambda-python-function-dockercopyProps extends cdk.StackP
   readonly bootstrapVersion?: string;
 }
 
-export class integ-lambda-python-function-dockercopy extends cdk.Stack {
+export class IntegLambdaPythonFunctionDockercopy extends cdk.Stack {
   public readonly functionArn;
   public readonly exportsOutputRefmyhandlerD202fa8e369e8804;
 
-  public constructor(scope: cdk.App, id: string, props: integ-lambda-python-function-dockercopyProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegLambdaPythonFunctionDockercopyProps = {}) {
     super(scope, id, props);
 
     // Applying default props

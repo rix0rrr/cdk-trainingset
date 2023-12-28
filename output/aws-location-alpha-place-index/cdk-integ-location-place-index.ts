@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as location from 'aws-cdk-lib/aws-location';
 
-export interface cdk-integ-location-place-indexProps extends cdk.StackProps {
+export interface CdkIntegLocationPlaceIndexProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface cdk-integ-location-place-indexProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-integ-location-place-index extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-integ-location-place-indexProps = {}) {
+export class CdkIntegLocationPlaceIndex extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkIntegLocationPlaceIndexProps = {}) {
     super(scope, id, props);
 
     // Applying default props

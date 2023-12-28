@@ -3,7 +3,7 @@ import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface stringset-after-parallelProps extends cdk.StackProps {
+export interface StringsetAfterParallelProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface stringset-after-parallelProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class stringset-after-parallel extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: stringset-after-parallelProps = {}) {
+export class StringsetAfterParallel extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: StringsetAfterParallelProps = {}) {
     super(scope, id, props);
 
     // Applying default props

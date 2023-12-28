@@ -3,7 +3,7 @@ import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as rds from 'aws-cdk-lib/aws-rds';
 import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 
-export interface BulkUpdateProps extends cdk.StackProps {
+export interface BulkupdateProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface BulkUpdateProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class BulkUpdate extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: BulkUpdateProps = {}) {
+export class Bulkupdate extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: BulkupdateProps = {}) {
     super(scope, id, props);
 
     // Applying default props

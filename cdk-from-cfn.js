@@ -1,3 +1,4 @@
+// Small wrapper around the `cdk-from-cfn` NPM library
 const cdk_from_cfn = require('cdk-from-cfn');
 const fs = require('fs');
 const path = require('path');

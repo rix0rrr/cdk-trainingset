@@ -3,7 +3,7 @@ import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as cloudformation from 'aws-cdk-lib/aws-cloudformation';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface integ-restapi-import-RootStackProps extends cdk.StackProps {
+export interface IntegRestapiImportRootstackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,11 +11,11 @@ export interface integ-restapi-import-RootStackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-restapi-import-RootStack extends cdk.Stack {
+export class IntegRestapiImportRootstack extends cdk.Stack {
   public readonly petsUrl;
   public readonly booksUrl;
 
-  public constructor(scope: cdk.App, id: string, props: integ-restapi-import-RootStackProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegRestapiImportRootstackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

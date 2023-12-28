@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface integ-lambda-python-functionProps extends cdk.StackProps {
+export interface IntegLambdaPythonFunctionProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,7 +10,7 @@ export interface integ-lambda-python-functionProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-lambda-python-function extends cdk.Stack {
+export class IntegLambdaPythonFunction extends cdk.Stack {
   public readonly defaultFunctionArn;
   public readonly functionArnWithExcludes;
   public readonly functionWithCustomPypi;
@@ -18,7 +18,7 @@ export class integ-lambda-python-function extends cdk.Stack {
   public readonly exportsOutputRefmyhandlerexcludes0437E0d23d81f234;
   public readonly exportsOutputRefmyhandlerpypiBadba141a80e83f9;
 
-  public constructor(scope: cdk.App, id: string, props: integ-lambda-python-functionProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegLambdaPythonFunctionProps = {}) {
     super(scope, id, props);
 
     // Applying default props

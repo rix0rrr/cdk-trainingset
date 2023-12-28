@@ -4,7 +4,7 @@ import * as kinesis from 'aws-cdk-lib/aws-kinesis';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 
-export interface lambda-event-source-kinesis-with-dlqProps extends cdk.StackProps {
+export interface LambdaEventSourceKinesisWithDlqProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,12 +12,12 @@ export interface lambda-event-source-kinesis-with-dlqProps extends cdk.StackProp
   readonly bootstrapVersion?: string;
 }
 
-export class lambda-event-source-kinesis-with-dlq extends cdk.Stack {
+export class LambdaEventSourceKinesisWithDlq extends cdk.Stack {
   public readonly functionArn;
   public readonly inputKinesisStreamName;
   public readonly dlqSqsQueueUrl;
 
-  public constructor(scope: cdk.App, id: string, props: lambda-event-source-kinesis-with-dlqProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: LambdaEventSourceKinesisWithDlqProps = {}) {
     super(scope, id, props);
 
     // Applying default props

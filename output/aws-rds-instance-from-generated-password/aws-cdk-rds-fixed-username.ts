@@ -3,7 +3,7 @@ import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as rds from 'aws-cdk-lib/aws-rds';
 import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 
-export interface aws-cdk-rds-fixed-usernameProps extends cdk.StackProps {
+export interface AwsCdkRdsFixedUsernameProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface aws-cdk-rds-fixed-usernameProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-rds-fixed-username extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-rds-fixed-usernameProps = {}) {
+export class AwsCdkRdsFixedUsername extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkRdsFixedUsernameProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface integ-assets-dockerProps extends cdk.StackProps {
+export interface IntegAssetsDockerProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,7 +9,7 @@ export interface integ-assets-dockerProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-assets-docker extends cdk.Stack {
+export class IntegAssetsDocker extends cdk.Stack {
   public readonly imageUri;
   public readonly imageUri2;
   public readonly imageUri3;
@@ -19,7 +19,7 @@ export class integ-assets-docker extends cdk.Stack {
   public readonly imageUri7;
   public readonly imageUri8;
 
-  public constructor(scope: cdk.App, id: string, props: integ-assets-dockerProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegAssetsDockerProps = {}) {
     super(scope, id, props);
 
     // Applying default props

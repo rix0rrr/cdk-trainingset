@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface integ-cloudfront-failoverProps extends cdk.StackProps {
+export interface IntegCloudfrontFailoverProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,10 +10,10 @@ export interface integ-cloudfront-failoverProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-cloudfront-failover extends cdk.Stack {
+export class IntegCloudfrontFailover extends cdk.Stack {
   public readonly distributionDomainName;
 
-  public constructor(scope: cdk.App, id: string, props: integ-cloudfront-failoverProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegCloudfrontFailoverProps = {}) {
     super(scope, id, props);
 
     // Applying default props

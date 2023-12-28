@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 
-export interface integ-distribution-policiesProps extends cdk.StackProps {
+export interface IntegDistributionPoliciesProps extends cdk.StackProps {
   /**
    * @default 1000
    */
@@ -21,8 +21,8 @@ export interface integ-distribution-policiesProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-distribution-policies extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-distribution-policiesProps = {}) {
+export class IntegDistributionPolicies extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegDistributionPoliciesProps = {}) {
     super(scope, id, props);
 
     // Applying default props

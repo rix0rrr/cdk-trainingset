@@ -5,7 +5,7 @@ import * as elasticloadbalancingv2 from 'aws-cdk-lib/aws-elasticloadbalancingv2'
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as logs from 'aws-cdk-lib/aws-logs';
 
-export interface aws-ecs-integ-lb-fargate-cmd-entrypoint-testProps extends cdk.StackProps {
+export interface AwsEcsIntegLbFargateCmdEntrypointTestProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -13,11 +13,11 @@ export interface aws-ecs-integ-lb-fargate-cmd-entrypoint-testProps extends cdk.S
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-integ-lb-fargate-cmd-entrypoint-test extends cdk.Stack {
+export class AwsEcsIntegLbFargateCmdEntrypointTest extends cdk.Stack {
   public readonly albFargateServiceWithCommandAndEntryPointLoadBalancerDnse2b256cd;
   public readonly albFargateServiceWithCommandAndEntryPointServiceUrlacf72094;
 
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-integ-lb-fargate-cmd-entrypoint-testProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsIntegLbFargateCmdEntrypointTestProps = {}) {
     super(scope, id, props);
 
     // Applying default props

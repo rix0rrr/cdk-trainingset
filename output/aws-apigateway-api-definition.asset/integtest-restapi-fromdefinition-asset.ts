@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface integtest-restapi-fromdefinition-assetProps extends cdk.StackProps {
+export interface IntegtestRestapiFromdefinitionAssetProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,12 +10,12 @@ export interface integtest-restapi-fromdefinition-assetProps extends cdk.StackPr
   readonly bootstrapVersion?: string;
 }
 
-export class integtest-restapi-fromdefinition-asset extends cdk.Stack {
+export class IntegtestRestapiFromdefinitionAsset extends cdk.Stack {
   public readonly myapiEndpoint3628Afe3;
   public readonly petsUrl;
   public readonly booksUrl;
 
-  public constructor(scope: cdk.App, id: string, props: integtest-restapi-fromdefinition-assetProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegtestRestapiFromdefinitionAssetProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as ssm from 'aws-cdk-lib/aws-ssm';
 
-export interface crossregionconsumer2IntegNested80DBA5D8.nestedProps extends cdk.StackProps {
+export interface Crossregionconsumer2Integnested80Dba5D8NestedProps extends cdk.StackProps {
   /**
    */
   readonly referencetocrossregionconsumer2ExportsReader29C6f905cdkexportscrossregionconsumer2crossregionproduceruseast1FnGetAttIntegQueue3A18718aQueueName8D8d3c9b: string;
@@ -10,8 +10,8 @@ export interface crossregionconsumer2IntegNested80DBA5D8.nestedProps extends cdk
   readonly referencetocrossregionconsumer2ExportsReader29C6f905cdkexportscrossregionconsumer2crossregionproduceruseast1FnGetAttIntegNestedNestedStackIntegNestedNestedStackResource168C5881OutputscrossregionproducerIntegNestedNestedIntegQueueD686db69QueueNameC1c9c99e: string;
 }
 
-export class crossregionconsumer2IntegNested80DBA5D8.nested extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: crossregionconsumer2IntegNested80DBA5D8.nestedProps) {
+export class Crossregionconsumer2Integnested80Dba5D8Nested extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: Crossregionconsumer2Integnested80Dba5D8NestedProps) {
     super(scope, id, props);
 
     // Resources

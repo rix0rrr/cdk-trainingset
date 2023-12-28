@@ -4,7 +4,7 @@ import * as kms from 'aws-cdk-lib/aws-kms';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface integ-stepfunctions-sagemakerProps extends cdk.StackProps {
+export interface IntegStepfunctionsSagemakerProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,10 +12,10 @@ export interface integ-stepfunctions-sagemakerProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-stepfunctions-sagemaker extends cdk.Stack {
+export class IntegStepfunctionsSagemaker extends cdk.Stack {
   public readonly stateMachineArn;
 
-  public constructor(scope: cdk.App, id: string, props: integ-stepfunctions-sagemakerProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegStepfunctionsSagemakerProps = {}) {
     super(scope, id, props);
 
     // Applying default props

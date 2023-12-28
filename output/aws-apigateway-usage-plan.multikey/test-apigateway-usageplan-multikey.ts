@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 
-export interface test-apigateway-usageplan-multikeyProps extends cdk.StackProps {
+export interface TestApigatewayUsageplanMultikeyProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface test-apigateway-usageplan-multikeyProps extends cdk.StackProps 
   readonly bootstrapVersion?: string;
 }
 
-export class test-apigateway-usageplan-multikey extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: test-apigateway-usageplan-multikeyProps = {}) {
+export class TestApigatewayUsageplanMultikey extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: TestApigatewayUsageplanMultikeyProps = {}) {
     super(scope, id, props);
 
     // Applying default props

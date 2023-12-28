@@ -3,7 +3,7 @@ import * as apigatewayv2 from 'aws-cdk-lib/aws-apigatewayv2';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface IntegApiGatewayV2IamProps extends cdk.StackProps {
+export interface Integapigatewayv2IamProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,12 +11,12 @@ export interface IntegApiGatewayV2IamProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class IntegApiGatewayV2Iam extends cdk.Stack {
+export class Integapigatewayv2Iam extends cdk.Stack {
   public readonly testaccesskeyid;
   public readonly testsecretaccesskey;
   public readonly testregion;
 
-  public constructor(scope: cdk.App, id: string, props: IntegApiGatewayV2IamProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: Integapigatewayv2IamProps = {}) {
     super(scope, id, props);
 
     // Applying default props

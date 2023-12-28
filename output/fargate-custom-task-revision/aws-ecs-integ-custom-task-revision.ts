@@ -3,7 +3,7 @@ import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as ecs from 'aws-cdk-lib/aws-ecs';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface aws-ecs-integ-custom-task-revisionProps extends cdk.StackProps {
+export interface AwsEcsIntegCustomTaskRevisionProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface aws-ecs-integ-custom-task-revisionProps extends cdk.StackProps 
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-integ-custom-task-revision extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-integ-custom-task-revisionProps = {}) {
+export class AwsEcsIntegCustomTaskRevision extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsIntegCustomTaskRevisionProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as codecommit from 'aws-cdk-lib/aws-codecommit';
 
-export interface aws-cdk-codecommit-repo-contents-zip-fileProps extends cdk.StackProps {
+export interface AwsCdkCodecommitRepoContentsZipFileProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface aws-cdk-codecommit-repo-contents-zip-fileProps extends cdk.Stac
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-codecommit-repo-contents-zip-file extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-codecommit-repo-contents-zip-fileProps = {}) {
+export class AwsCdkCodecommitRepoContentsZipFile extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkCodecommitRepoContentsZipFileProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -1,13 +1,13 @@
 import * as cdk from 'aws-cdk-lib';
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 
-export interface test-apigateway-usageplan-createProps extends cdk.StackProps {
+export interface TestApigatewayUsageplanCreateProps extends cdk.StackProps {
 }
 
-export class test-apigateway-usageplan-create extends cdk.Stack {
+export class TestApigatewayUsageplanCreate extends cdk.Stack {
   public readonly exportsOutputRefmyusageplan4B391740f6b819ba;
 
-  public constructor(scope: cdk.App, id: string, props: test-apigateway-usageplan-createProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: TestApigatewayUsageplanCreateProps = {}) {
     super(scope, id, props);
 
     // Resources

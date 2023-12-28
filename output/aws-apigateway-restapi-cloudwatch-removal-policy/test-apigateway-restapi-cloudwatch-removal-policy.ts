@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface test-apigateway-restapi-cloudwatch-removal-policyProps extends cdk.StackProps {
+export interface TestApigatewayRestapiCloudwatchRemovalPolicyProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,10 +10,10 @@ export interface test-apigateway-restapi-cloudwatch-removal-policyProps extends 
   readonly bootstrapVersion?: string;
 }
 
-export class test-apigateway-restapi-cloudwatch-removal-policy extends cdk.Stack {
+export class TestApigatewayRestapiCloudwatchRemovalPolicy extends cdk.Stack {
   public readonly myapiEndpoint3628Afe3;
 
-  public constructor(scope: cdk.App, id: string, props: test-apigateway-restapi-cloudwatch-removal-policyProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: TestApigatewayRestapiCloudwatchRemovalPolicyProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -5,7 +5,7 @@ import * as kms from 'aws-cdk-lib/aws-kms';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as ssm from 'aws-cdk-lib/aws-ssm';
 
-export interface aws-cdk-aws-api-target-integProps extends cdk.StackProps {
+export interface AwsCdkAwsApiTargetIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -13,11 +13,11 @@ export interface aws-cdk-aws-api-target-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-aws-api-target-integ extends cdk.Stack {
+export class AwsCdkAwsApiTargetInteg extends cdk.Stack {
   public readonly exportsOutputRefTestParameter95Dd6e25d868fba1;
   public readonly exportsOutputRefEncryptionKey1B843e66d737bcfc;
 
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-aws-api-target-integProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkAwsApiTargetIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

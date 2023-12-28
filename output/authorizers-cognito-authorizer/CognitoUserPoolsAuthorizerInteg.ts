@@ -3,7 +3,7 @@ import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as cognito from 'aws-cdk-lib/aws-cognito';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface CognitoUserPoolsAuthorizerIntegProps extends cdk.StackProps {
+export interface CognitouserpoolsauthorizerintegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface CognitoUserPoolsAuthorizerIntegProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class CognitoUserPoolsAuthorizerInteg extends cdk.Stack {
+export class Cognitouserpoolsauthorizerinteg extends cdk.Stack {
   public readonly myrestapiEndpointE06f9d98;
 
-  public constructor(scope: cdk.App, id: string, props: CognitoUserPoolsAuthorizerIntegProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: CognitouserpoolsauthorizerintegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

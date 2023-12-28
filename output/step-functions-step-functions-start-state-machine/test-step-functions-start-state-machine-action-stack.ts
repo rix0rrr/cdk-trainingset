@@ -3,7 +3,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as iot from 'aws-cdk-lib/aws-iot';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface test-step-functions-start-state-machine-action-stackProps extends cdk.StackProps {
+export interface TestStepFunctionsStartStateMachineActionStackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface test-step-functions-start-state-machine-action-stackProps exten
   readonly bootstrapVersion?: string;
 }
 
-export class test-step-functions-start-state-machine-action-stack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: test-step-functions-start-state-machine-action-stackProps = {}) {
+export class TestStepFunctionsStartStateMachineActionStack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: TestStepFunctionsStartStateMachineActionStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

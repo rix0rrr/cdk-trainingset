@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as logs from 'aws-cdk-lib/aws-logs';
 
-export interface log-group-classProps extends cdk.StackProps {
+export interface LogGroupClassProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,12 +9,12 @@ export interface log-group-classProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class log-group-class extends cdk.Stack {
+export class LogGroupClass extends cdk.Stack {
   public readonly exportsOutputRefloggroupdefaultAf2b13aea68e3e99;
   public readonly exportsOutputRefloggroupstandard035A0c267ef270a0;
   public readonly exportsOutputRefloggroupinfrequentaccessBe348c18d714344d;
 
-  public constructor(scope: cdk.App, id: string, props: log-group-classProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: LogGroupClassProps = {}) {
     super(scope, id, props);
 
     // Applying default props

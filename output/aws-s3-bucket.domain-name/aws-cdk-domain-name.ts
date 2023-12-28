@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface aws-cdk-domain-nameProps extends cdk.StackProps {
+export interface AwsCdkDomainNameProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,11 +9,11 @@ export interface aws-cdk-domain-nameProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-domain-name extends cdk.Stack {
+export class AwsCdkDomainName extends cdk.Stack {
   public readonly realBucketDomain;
   public readonly importedBucketDomain;
 
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-domain-nameProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkDomainNameProps = {}) {
     super(scope, id, props);
 
     // Applying default props

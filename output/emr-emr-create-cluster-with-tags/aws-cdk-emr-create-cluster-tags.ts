@@ -3,7 +3,7 @@ import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface aws-cdk-emr-create-cluster-tagsProps extends cdk.StackProps {
+export interface AwsCdkEmrCreateClusterTagsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface aws-cdk-emr-create-cluster-tagsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-emr-create-cluster-tags extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-emr-create-cluster-tagsProps = {}) {
+export class AwsCdkEmrCreateClusterTags extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkEmrCreateClusterTagsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

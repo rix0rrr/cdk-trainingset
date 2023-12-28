@@ -6,7 +6,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface aws-cdk-ecs-integration-test-stackProps extends cdk.StackProps {
+export interface AwsCdkEcsIntegrationTestStackProps extends cdk.StackProps {
   /**
    * @default '/aws/service/ecs/optimized-ami/amazon-linux-2/recommended/image_id'
    */
@@ -18,8 +18,8 @@ export interface aws-cdk-ecs-integration-test-stackProps extends cdk.StackProps 
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-ecs-integration-test-stack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-ecs-integration-test-stackProps = {}) {
+export class AwsCdkEcsIntegrationTestStack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkEcsIntegrationTestStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

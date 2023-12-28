@@ -6,7 +6,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as sns from 'aws-cdk-lib/aws-sns';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 
-export interface aws-cdk-codebuild-eventsProps extends cdk.StackProps {
+export interface AwsCdkCodebuildEventsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -14,8 +14,8 @@ export interface aws-cdk-codebuild-eventsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-codebuild-events extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-codebuild-eventsProps = {}) {
+export class AwsCdkCodebuildEvents extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkCodebuildEventsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

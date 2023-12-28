@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface aws-stepfunctions-tasks-bedrock-invoke-model-integProps extends cdk.StackProps {
+export interface AwsStepfunctionsTasksBedrockInvokeModelIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface aws-stepfunctions-tasks-bedrock-invoke-model-integProps extends
   readonly bootstrapVersion?: string;
 }
 
-export class aws-stepfunctions-tasks-bedrock-invoke-model-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-stepfunctions-tasks-bedrock-invoke-model-integProps = {}) {
+export class AwsStepfunctionsTasksBedrockInvokeModelInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsStepfunctionsTasksBedrockInvokeModelIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

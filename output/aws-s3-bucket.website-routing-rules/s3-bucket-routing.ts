@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface s3-bucket-routingProps extends cdk.StackProps {
+export interface S3BucketRoutingProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface s3-bucket-routingProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class s3-bucket-routing extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: s3-bucket-routingProps = {}) {
+export class S3BucketRouting extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: S3BucketRoutingProps = {}) {
     super(scope, id, props);
 
     // Applying default props

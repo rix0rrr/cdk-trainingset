@@ -6,7 +6,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as ssm from 'aws-cdk-lib/aws-ssm';
 import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 
-export interface stackProps extends cdk.StackProps {
+export interface StackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -14,8 +14,8 @@ export interface stackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class stack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: stackProps = {}) {
+export class Stack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: StackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

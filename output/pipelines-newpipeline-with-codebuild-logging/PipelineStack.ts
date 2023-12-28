@@ -4,7 +4,7 @@ import * as codepipeline from 'aws-cdk-lib/aws-codepipeline';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface PipelineStackProps extends cdk.StackProps {
+export interface PipelinestackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface PipelineStackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class PipelineStack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: PipelineStackProps = {}) {
+export class Pipelinestack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: PipelinestackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -4,7 +4,7 @@ import * as kinesis from 'aws-cdk-lib/aws-kinesis';
 import * as kinesisfirehose from 'aws-cdk-lib/aws-kinesisfirehose';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface aws-cdk-firehose-delivery-stream-source-streamProps extends cdk.StackProps {
+export interface AwsCdkFirehoseDeliveryStreamSourceStreamProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface aws-cdk-firehose-delivery-stream-source-streamProps extends cdk
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-firehose-delivery-stream-source-stream extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-firehose-delivery-stream-source-streamProps = {}) {
+export class AwsCdkFirehoseDeliveryStreamSourceStream extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkFirehoseDeliveryStreamSourceStreamProps = {}) {
     super(scope, id, props);
 
     // Applying default props

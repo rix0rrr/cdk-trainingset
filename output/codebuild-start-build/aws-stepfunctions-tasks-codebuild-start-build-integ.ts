@@ -3,7 +3,7 @@ import * as codebuild from 'aws-cdk-lib/aws-codebuild';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface aws-stepfunctions-tasks-codebuild-start-build-integProps extends cdk.StackProps {
+export interface AwsStepfunctionsTasksCodebuildStartBuildIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,11 +11,11 @@ export interface aws-stepfunctions-tasks-codebuild-start-build-integProps extend
   readonly bootstrapVersion?: string;
 }
 
-export class aws-stepfunctions-tasks-codebuild-start-build-integ extends cdk.Stack {
+export class AwsStepfunctionsTasksCodebuildStartBuildInteg extends cdk.Stack {
   public readonly projectName;
   public readonly stateMachineArn;
 
-  public constructor(scope: cdk.App, id: string, props: aws-stepfunctions-tasks-codebuild-start-build-integProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsStepfunctionsTasksCodebuildStartBuildIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

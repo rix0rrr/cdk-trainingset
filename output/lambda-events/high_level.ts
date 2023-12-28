@@ -3,7 +3,7 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 import * as cdk from 'aws-cdk-lib';
 import * as targets from 'aws-cdk-lib/aws-events-targets';
-import { STANDARD_NODEJS_RUNTIME } from '../../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 const app = new cdk.App();
 

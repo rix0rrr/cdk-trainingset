@@ -3,7 +3,7 @@ import * as apigatewayv2 from 'aws-cdk-lib/aws-apigatewayv2';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface integ-lambda-add-subroute-integrationProps extends cdk.StackProps {
+export interface IntegLambdaAddSubrouteIntegrationProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface integ-lambda-add-subroute-integrationProps extends cdk.StackPro
   readonly bootstrapVersion?: string;
 }
 
-export class integ-lambda-add-subroute-integration extends cdk.Stack {
+export class IntegLambdaAddSubrouteIntegration extends cdk.Stack {
   public readonly exportsOutputFnGetAtttestapigwv2addsubrouteintegration74634536ApiEndpoint0B440cad;
 
-  public constructor(scope: cdk.App, id: string, props: integ-lambda-add-subroute-integrationProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegLambdaAddSubrouteIntegrationProps = {}) {
     super(scope, id, props);
 
     // Applying default props

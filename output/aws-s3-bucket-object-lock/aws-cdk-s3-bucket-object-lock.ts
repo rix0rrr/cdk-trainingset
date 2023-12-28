@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface aws-cdk-s3-bucket-object-lockProps extends cdk.StackProps {
+export interface AwsCdkS3BucketObjectLockProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface aws-cdk-s3-bucket-object-lockProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-s3-bucket-object-lock extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-s3-bucket-object-lockProps = {}) {
+export class AwsCdkS3BucketObjectLock extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkS3BucketObjectLockProps = {}) {
     super(scope, id, props);
 
     // Applying default props

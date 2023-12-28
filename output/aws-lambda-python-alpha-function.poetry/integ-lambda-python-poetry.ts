@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface integ-lambda-python-poetryProps extends cdk.StackProps {
+export interface IntegLambdaPythonPoetryProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,7 +10,7 @@ export interface integ-lambda-python-poetryProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-lambda-python-poetry extends cdk.Stack {
+export class IntegLambdaPythonPoetry extends cdk.Stack {
   public readonly exportsOutputRefmyhandlerinlinepython37Bc8b334f06029f9c;
   public readonly exportsOutputRefmyhandlerinlinepython38Bca26446cbd4f87b;
   public readonly exportsOutputRefmyhandlerinlinepython3914E0d89daa53377b;
@@ -37,7 +37,7 @@ export class integ-lambda-python-poetry extends cdk.Stack {
   public readonly exportsOutputRefmyhandlerinlinewithouturlspython310D1d226e35105656c;
   public readonly exportsOutputRefmyhandlerinlinewithouturlspython31174A8d66561f57634;
 
-  public constructor(scope: cdk.App, id: string, props: integ-lambda-python-poetryProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegLambdaPythonPoetryProps = {}) {
     super(scope, id, props);
 
     // Applying default props

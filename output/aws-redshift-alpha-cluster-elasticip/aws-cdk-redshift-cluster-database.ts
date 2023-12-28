@@ -3,7 +3,7 @@ import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as redshift from 'aws-cdk-lib/aws-redshift';
 import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 
-export interface aws-cdk-redshift-cluster-databaseProps extends cdk.StackProps {
+export interface AwsCdkRedshiftClusterDatabaseProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface aws-cdk-redshift-cluster-databaseProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-redshift-cluster-database extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-redshift-cluster-databaseProps = {}) {
+export class AwsCdkRedshiftClusterDatabase extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkRedshiftClusterDatabaseProps = {}) {
     super(scope, id, props);
 
     // Applying default props

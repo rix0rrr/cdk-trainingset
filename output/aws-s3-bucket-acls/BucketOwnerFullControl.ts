@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface BucketOwnerFullControlProps extends cdk.StackProps {
+export interface BucketownerfullcontrolProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface BucketOwnerFullControlProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class BucketOwnerFullControl extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: BucketOwnerFullControlProps = {}) {
+export class Bucketownerfullcontrol extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: BucketownerfullcontrolProps = {}) {
     super(scope, id, props);
 
     // Applying default props

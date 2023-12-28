@@ -3,7 +3,7 @@ import * as apigatewayv2 from 'aws-cdk-lib/aws-apigatewayv2';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface integ-http-proxyProps extends cdk.StackProps {
+export interface IntegHttpProxyProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface integ-http-proxyProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-http-proxy extends cdk.Stack {
+export class IntegHttpProxy extends cdk.Stack {
   public readonly endpoint;
 
-  public constructor(scope: cdk.App, id: string, props: integ-http-proxyProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegHttpProxyProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -8,7 +8,7 @@ import * as integ from '@aws-cdk/integ-tests-alpha';
 import { Construct } from 'constructs';
 import * as pipelines from 'aws-cdk-lib/pipelines';
 import { ICodePipelineActionFactory, Step } from 'aws-cdk-lib/pipelines';
-import { STANDARD_NODEJS_RUNTIME } from '../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 class CustomStep extends Step implements ICodePipelineActionFactory {
   constructor(private readonly stackOutput: CfnOutput) {

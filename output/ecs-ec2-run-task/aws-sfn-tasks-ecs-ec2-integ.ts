@@ -8,7 +8,7 @@ import * as logs from 'aws-cdk-lib/aws-logs';
 import * as sns from 'aws-cdk-lib/aws-sns';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface aws-sfn-tasks-ecs-ec2-integProps extends cdk.StackProps {
+export interface AwsSfnTasksEcsEc2IntegProps extends cdk.StackProps {
   /**
    * @default '/aws/service/ecs/optimized-ami/amazon-linux-2/recommended/image_id'
    */
@@ -20,10 +20,10 @@ export interface aws-sfn-tasks-ecs-ec2-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-sfn-tasks-ecs-ec2-integ extends cdk.Stack {
+export class AwsSfnTasksEcsEc2Integ extends cdk.Stack {
   public readonly stateMachineArn;
 
-  public constructor(scope: cdk.App, id: string, props: aws-sfn-tasks-ecs-ec2-integProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsSfnTasksEcsEc2IntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

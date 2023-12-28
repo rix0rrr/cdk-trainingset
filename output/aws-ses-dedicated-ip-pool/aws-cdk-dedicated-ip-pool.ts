@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as ses from 'aws-cdk-lib/aws-ses';
 
-export interface aws-cdk-dedicated-ip-poolProps extends cdk.StackProps {
+export interface AwsCdkDedicatedIpPoolProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface aws-cdk-dedicated-ip-poolProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-dedicated-ip-pool extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-dedicated-ip-poolProps = {}) {
+export class AwsCdkDedicatedIpPool extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkDedicatedIpPoolProps = {}) {
     super(scope, id, props);
 
     // Applying default props

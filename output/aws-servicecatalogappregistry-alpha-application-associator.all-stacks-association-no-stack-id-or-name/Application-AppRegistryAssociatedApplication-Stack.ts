@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as servicecatalogappregistry from 'aws-cdk-lib/aws-servicecatalogappregistry';
 
-export interface Application-AppRegistryAssociatedApplication-StackProps extends cdk.StackProps {
+export interface ApplicationAppregistryassociatedapplicationStackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,13 +12,13 @@ export interface Application-AppRegistryAssociatedApplication-StackProps extends
 /**
  * Stack to create AppRegistry application
  */
-export class Application-AppRegistryAssociatedApplication-Stack extends cdk.Stack {
+export class ApplicationAppregistryassociatedapplicationStack extends cdk.Stack {
   /**
    * Application manager url for the application created.
    */
   public readonly defaultCdkApplicationApplicationManagerUrl27C138ef;
 
-  public constructor(scope: cdk.App, id: string, props: Application-AppRegistryAssociatedApplication-StackProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: ApplicationAppregistryassociatedapplicationStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
 
-export interface aws-cdk-dynamodb-gsiProps extends cdk.StackProps {
+export interface AwsCdkDynamodbGsiProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface aws-cdk-dynamodb-gsiProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-dynamodb-gsi extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-dynamodb-gsiProps = {}) {
+export class AwsCdkDynamodbGsi extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkDynamodbGsiProps = {}) {
     super(scope, id, props);
 
     // Applying default props

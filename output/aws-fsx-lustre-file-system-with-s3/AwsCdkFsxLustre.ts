@@ -3,7 +3,7 @@ import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as fsx from 'aws-cdk-lib/aws-fsx';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface AwsCdkFsxLustreProps extends cdk.StackProps {
+export interface AwscdkfsxlustreProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface AwsCdkFsxLustreProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class AwsCdkFsxLustre extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: AwsCdkFsxLustreProps = {}) {
+export class Awscdkfsxlustre extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwscdkfsxlustreProps = {}) {
     super(scope, id, props);
 
     // Applying default props

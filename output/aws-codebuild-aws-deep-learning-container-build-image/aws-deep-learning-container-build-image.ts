@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as codebuild from 'aws-cdk-lib/aws-codebuild';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface aws-deep-learning-container-build-imageProps extends cdk.StackProps {
+export interface AwsDeepLearningContainerBuildImageProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface aws-deep-learning-container-build-imageProps extends cdk.StackP
   readonly bootstrapVersion?: string;
 }
 
-export class aws-deep-learning-container-build-image extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-deep-learning-container-build-imageProps = {}) {
+export class AwsDeepLearningContainerBuildImage extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsDeepLearningContainerBuildImageProps = {}) {
     super(scope, id, props);
 
     // Applying default props

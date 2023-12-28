@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as iot from 'aws-cdk-lib/aws-iot';
 
-export interface topic-rule-test-stackProps extends cdk.StackProps {
+export interface TopicRuleTestStackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface topic-rule-test-stackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class topic-rule-test-stack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: topic-rule-test-stackProps = {}) {
+export class TopicRuleTestStack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: TopicRuleTestStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

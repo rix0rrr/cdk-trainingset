@@ -3,7 +3,7 @@ import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as opensearchservice from 'aws-cdk-lib/aws-opensearchservice';
 
-export interface cdk-integ-opensearch-vpcProps extends cdk.StackProps {
+export interface CdkIntegOpensearchVpcProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface cdk-integ-opensearch-vpcProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-integ-opensearch-vpc extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-integ-opensearch-vpcProps = {}) {
+export class CdkIntegOpensearchVpc extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkIntegOpensearchVpcProps = {}) {
     super(scope, id, props);
 
     // Applying default props

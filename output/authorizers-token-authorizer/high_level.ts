@@ -3,7 +3,7 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import { App, Stack, Duration } from 'aws-cdk-lib';
 import { IntegTest, ExpectedResult, Match } from '@aws-cdk/integ-tests-alpha';
 import { MockIntegration, PassthroughBehavior, RestApi, TokenAuthorizer, Cors } from 'aws-cdk-lib/aws-apigateway';
-import { STANDARD_NODEJS_RUNTIME } from '../../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 const app = new App();
 const stack = new Stack(app, 'TokenAuthorizerInteg');

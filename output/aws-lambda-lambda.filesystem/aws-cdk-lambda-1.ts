@@ -4,7 +4,7 @@ import * as efs from 'aws-cdk-lib/aws-efs';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface aws-cdk-lambda-1Props extends cdk.StackProps {
+export interface AwsCdkLambda1Props extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface aws-cdk-lambda-1Props extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-lambda-1 extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-lambda-1Props = {}) {
+export class AwsCdkLambda1 extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkLambda1Props = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface LambdaStackProps extends cdk.StackProps {
+export interface LambdastackProps extends cdk.StackProps {
   /**
    */
   readonly lambdaLambdaSourceBucketNameParameter159473Fc: string;
@@ -16,8 +16,8 @@ export interface LambdaStackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class LambdaStack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: LambdaStackProps) {
+export class Lambdastack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: LambdastackProps) {
     super(scope, id, props);
 
     // Applying default props

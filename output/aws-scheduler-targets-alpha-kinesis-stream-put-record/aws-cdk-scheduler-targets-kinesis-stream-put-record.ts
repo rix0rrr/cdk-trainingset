@@ -3,7 +3,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as kinesis from 'aws-cdk-lib/aws-kinesis';
 import * as scheduler from 'aws-cdk-lib/aws-scheduler';
 
-export interface aws-cdk-scheduler-targets-kinesis-stream-put-recordProps extends cdk.StackProps {
+export interface AwsCdkSchedulerTargetsKinesisStreamPutRecordProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface aws-cdk-scheduler-targets-kinesis-stream-put-recordProps extend
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-scheduler-targets-kinesis-stream-put-record extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-scheduler-targets-kinesis-stream-put-recordProps = {}) {
+export class AwsCdkSchedulerTargetsKinesisStreamPutRecord extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkSchedulerTargetsKinesisStreamPutRecordProps = {}) {
     super(scope, id, props);
 
     // Applying default props

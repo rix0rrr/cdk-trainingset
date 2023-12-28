@@ -6,7 +6,7 @@ import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as elasticloadbalancing from 'aws-cdk-lib/aws-elasticloadbalancing';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface aws-cdk-codedeploy-server-dgProps extends cdk.StackProps {
+export interface AwsCdkCodedeployServerDgProps extends cdk.StackProps {
   /**
    * @default '/aws/service/ami-amazon-linux-latest/amzn-ami-hvm-x86_64-gp2'
    */
@@ -18,8 +18,8 @@ export interface aws-cdk-codedeploy-server-dgProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-codedeploy-server-dg extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-codedeploy-server-dgProps = {}) {
+export class AwsCdkCodedeployServerDg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkCodedeployServerDgProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -5,7 +5,7 @@ import * as elasticloadbalancingv2 from 'aws-cdk-lib/aws-elasticloadbalancingv2'
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as logs from 'aws-cdk-lib/aws-logs';
 
-export interface aws-ecs-integ-l3-vpconlyProps extends cdk.StackProps {
+export interface AwsEcsIntegL3VpconlyProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -13,12 +13,12 @@ export interface aws-ecs-integ-l3-vpconlyProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-ecs-integ-l3-vpconly extends cdk.Stack {
+export class AwsEcsIntegL3Vpconly extends cdk.Stack {
   public readonly albFargateServiceLoadBalancerDnsafb2eddb;
   public readonly albFargateServiceServiceUrl4a19cf25;
   public readonly nlbFargateServiceLoadBalancerDnsc2b2922f;
 
-  public constructor(scope: cdk.App, id: string, props: aws-ecs-integ-l3-vpconlyProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsEcsIntegL3VpconlyProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -1,11 +1,11 @@
 import * as cdk from 'aws-cdk-lib';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface integservicecatalogproductSNSTopicProduct1B8D03934.productProps extends cdk.StackProps {
+export interface Integservicecatalogproductsnstopicproduct1B8D03934ProductProps extends cdk.StackProps {
 }
 
-export class integservicecatalogproductSNSTopicProduct1B8D03934.product extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integservicecatalogproductSNSTopicProduct1B8D03934.productProps = {}) {
+export class Integservicecatalogproductsnstopicproduct1B8D03934Product extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: Integservicecatalogproductsnstopicproduct1B8D03934ProductProps = {}) {
     super(scope, id, props);
 
     // Resources

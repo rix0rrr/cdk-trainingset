@@ -3,7 +3,7 @@ import * as apigatewayv2 from 'aws-cdk-lib/aws-apigatewayv2';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as servicediscovery from 'aws-cdk-lib/aws-servicediscovery';
 
-export interface integ-service-discovery-integrationProps extends cdk.StackProps {
+export interface IntegServiceDiscoveryIntegrationProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface integ-service-discovery-integrationProps extends cdk.StackProps
   readonly bootstrapVersion?: string;
 }
 
-export class integ-service-discovery-integration extends cdk.Stack {
+export class IntegServiceDiscoveryIntegration extends cdk.Stack {
   public readonly endpoint;
 
-  public constructor(scope: cdk.App, id: string, props: integ-service-discovery-integrationProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegServiceDiscoveryIntegrationProps = {}) {
     super(scope, id, props);
 
     // Applying default props

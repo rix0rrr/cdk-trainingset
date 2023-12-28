@@ -2,11 +2,11 @@ import * as cdk from 'aws-cdk-lib';
 import * as sns from 'aws-cdk-lib/aws-sns';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 
-export interface QueueStackProps extends cdk.StackProps {
+export interface QueuestackProps extends cdk.StackProps {
 }
 
-export class QueueStack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: QueueStackProps = {}) {
+export class Queuestack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: QueuestackProps = {}) {
     super(scope, id, props);
 
     // Resources

@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as elasticloadbalancingv2 from 'aws-cdk-lib/aws-elasticloadbalancingv2';
 
-export interface aws-cdk-ec2-vpc-endpoint-serviceProps extends cdk.StackProps {
+export interface AwsCdkEc2VpcEndpointServiceProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,7 +10,7 @@ export interface aws-cdk-ec2-vpc-endpoint-serviceProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-ec2-vpc-endpoint-service extends cdk.Stack {
+export class AwsCdkEc2VpcEndpointService extends cdk.Stack {
   /**
    * Give this to service consumers so they can connect via VPC Endpoint
    */
@@ -20,7 +20,7 @@ export class aws-cdk-ec2-vpc-endpoint-service extends cdk.Stack {
    */
   public readonly myVpcEndpointServiceWithPrincipalsEndpointServiceId;
 
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-ec2-vpc-endpoint-serviceProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkEc2VpcEndpointServiceProps = {}) {
     super(scope, id, props);
 
     // Applying default props

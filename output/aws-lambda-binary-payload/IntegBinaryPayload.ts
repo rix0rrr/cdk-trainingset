@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface IntegBinaryPayloadProps extends cdk.StackProps {
+export interface IntegbinarypayloadProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,10 +10,10 @@ export interface IntegBinaryPayloadProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class IntegBinaryPayload extends cdk.Stack {
+export class Integbinarypayload extends cdk.Stack {
   public readonly exportsOutputReffn5Ff616e3be1a8bd6;
 
-  public constructor(scope: cdk.App, id: string, props: IntegBinaryPayloadProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegbinarypayloadProps = {}) {
     super(scope, id, props);
 
     // Applying default props

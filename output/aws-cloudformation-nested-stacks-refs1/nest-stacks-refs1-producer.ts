@@ -1,13 +1,13 @@
 import * as cdk from 'aws-cdk-lib';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface nest-stacks-refs1-producerProps extends cdk.StackProps {
+export interface NestStacksRefs1ProducerProps extends cdk.StackProps {
 }
 
-export class nest-stacks-refs1-producer extends cdk.Stack {
+export class NestStacksRefs1Producer extends cdk.Stack {
   public readonly exportsOutputFnGetAttMyTopic86869434TopicNameFcc96fa2;
 
-  public constructor(scope: cdk.App, id: string, props: nest-stacks-refs1-producerProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: NestStacksRefs1ProducerProps = {}) {
     super(scope, id, props);
 
     // Resources

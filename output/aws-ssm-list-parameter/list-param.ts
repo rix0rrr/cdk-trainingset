@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as ssm from 'aws-cdk-lib/aws-ssm';
 
-export interface list-paramProps extends cdk.StackProps {
+export interface ListParamProps extends cdk.StackProps {
   /**
    * @default 'integ-list-param'
    */
@@ -17,13 +17,13 @@ export interface list-paramProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class list-param extends cdk.Stack {
+export class ListParam extends cdk.Stack {
   public readonly output;
   public readonly exportsOutputRefversionvaluetestB139b4aa;
   public readonly exportsOutputRefvaluetest4Dd5ff9d;
   public readonly exportsOutputRefattrstestCca64863;
 
-  public constructor(scope: cdk.App, id: string, props: list-paramProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: ListParamProps = {}) {
     super(scope, id, props);
 
     // Applying default props

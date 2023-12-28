@@ -1,14 +1,14 @@
 import * as cdk from 'aws-cdk-lib';
 import * as cloudformation from 'aws-cdk-lib/aws-cloudformation';
 
-export interface nestedstacksmultirefsNested146CE1F9F.nestedProps extends cdk.StackProps {
+export interface Nestedstacksmultirefsnested146Ce1F9FNestedProps extends cdk.StackProps {
   /**
    */
   readonly referencetonestedstacksmultirefsLevel19Fb2466dTopicName: string;
 }
 
-export class nestedstacksmultirefsNested146CE1F9F.nested extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: nestedstacksmultirefsNested146CE1F9F.nestedProps) {
+export class Nestedstacksmultirefsnested146Ce1F9FNested extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: Nestedstacksmultirefsnested146Ce1F9FNestedProps) {
     super(scope, id, props);
 
     // Resources

@@ -3,7 +3,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as ssm from 'aws-cdk-lib/aws-ssm';
 
-export interface edge-lambda-stack-c8363f8375cbe20a55dbe2aafe5dcee3889b0631e6Props extends cdk.StackProps {
+export interface EdgeLambdaStackC8363F8375Cbe20A55Dbe2Aafe5Dcee3889B0631E6Props extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface edge-lambda-stack-c8363f8375cbe20a55dbe2aafe5dcee3889b0631e6Pro
   readonly bootstrapVersion?: string;
 }
 
-export class edge-lambda-stack-c8363f8375cbe20a55dbe2aafe5dcee3889b0631e6 extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: edge-lambda-stack-c8363f8375cbe20a55dbe2aafe5dcee3889b0631e6Props = {}) {
+export class EdgeLambdaStackC8363F8375Cbe20A55Dbe2Aafe5Dcee3889B0631E6 extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: EdgeLambdaStackC8363F8375Cbe20A55Dbe2Aafe5Dcee3889B0631E6Props = {}) {
     super(scope, id, props);
 
     // Applying default props

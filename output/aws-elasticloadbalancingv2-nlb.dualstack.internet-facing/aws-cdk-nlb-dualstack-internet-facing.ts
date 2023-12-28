@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as elasticloadbalancingv2 from 'aws-cdk-lib/aws-elasticloadbalancingv2';
 
-export interface aws-cdk-nlb-dualstack-internet-facingProps extends cdk.StackProps {
+export interface AwsCdkNlbDualstackInternetFacingProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface aws-cdk-nlb-dualstack-internet-facingProps extends cdk.StackPro
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-nlb-dualstack-internet-facing extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-nlb-dualstack-internet-facingProps = {}) {
+export class AwsCdkNlbDualstackInternetFacing extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkNlbDualstackInternetFacingProps = {}) {
     super(scope, id, props);
 
     // Applying default props

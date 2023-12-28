@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as certificatemanager from 'aws-cdk-lib/aws-certificatemanager';
 
-export interface integ-certificate-nameProps extends cdk.StackProps {
+export interface IntegCertificateNameProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface integ-certificate-nameProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-certificate-name extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-certificate-nameProps = {}) {
+export class IntegCertificateName extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegCertificateNameProps = {}) {
     super(scope, id, props);
 
     // Applying default props

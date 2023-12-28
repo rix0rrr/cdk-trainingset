@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface lambda-ecr-docker-arm64Props extends cdk.StackProps {
+export interface LambdaEcrDockerArm64Props extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface lambda-ecr-docker-arm64Props extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class lambda-ecr-docker-arm64 extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: lambda-ecr-docker-arm64Props = {}) {
+export class LambdaEcrDockerArm64 extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: LambdaEcrDockerArm64Props = {}) {
     super(scope, id, props);
 
     // Applying default props

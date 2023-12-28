@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as cloudwatch from 'aws-cdk-lib/aws-cloudwatch';
 
-export interface DashboardWithGraphWidgetWithStatisticIntegrationTestProps extends cdk.StackProps {
+export interface DashboardwithgraphwidgetwithstatisticintegrationtestProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface DashboardWithGraphWidgetWithStatisticIntegrationTestProps exten
   readonly bootstrapVersion?: string;
 }
 
-export class DashboardWithGraphWidgetWithStatisticIntegrationTest extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: DashboardWithGraphWidgetWithStatisticIntegrationTestProps = {}) {
+export class Dashboardwithgraphwidgetwithstatisticintegrationtest extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: DashboardwithgraphwidgetwithstatisticintegrationtestProps = {}) {
     super(scope, id, props);
 
     // Applying default props

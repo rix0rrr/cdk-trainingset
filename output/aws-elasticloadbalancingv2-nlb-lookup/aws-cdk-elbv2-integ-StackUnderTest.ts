@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as cloudwatch from 'aws-cdk-lib/aws-cloudwatch';
 
-export interface aws-cdk-elbv2-integ-StackUnderTestProps extends cdk.StackProps {
+export interface AwsCdkElbv2IntegStackundertestProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface aws-cdk-elbv2-integ-StackUnderTestProps extends cdk.StackProps 
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-elbv2-integ-StackUnderTest extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-elbv2-integ-StackUnderTestProps = {}) {
+export class AwsCdkElbv2IntegStackundertest extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkElbv2IntegStackundertestProps = {}) {
     super(scope, id, props);
 
     // Applying default props

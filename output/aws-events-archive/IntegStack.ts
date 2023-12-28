@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as events from 'aws-cdk-lib/aws-events';
 
-export interface IntegStackProps extends cdk.StackProps {
+export interface IntegstackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface IntegStackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class IntegStack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: IntegStackProps = {}) {
+export class Integstack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegstackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

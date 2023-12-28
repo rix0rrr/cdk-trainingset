@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as cloudformation from 'aws-cdk-lib/aws-cloudformation';
 
-export interface ParentStackProps extends cdk.StackProps {
+export interface ParentstackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface ParentStackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class ParentStack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: ParentStackProps = {}) {
+export class Parentstack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: ParentstackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -3,7 +3,7 @@ import * as docdb from 'aws-cdk-lib/aws-docdb';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as kms from 'aws-cdk-lib/aws-kms';
 
-export interface aws-cdk-docdb-integProps extends cdk.StackProps {
+export interface AwsCdkDocdbIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface aws-cdk-docdb-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-docdb-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-docdb-integProps = {}) {
+export class AwsCdkDocdbInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkDocdbIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

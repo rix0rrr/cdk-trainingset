@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface awscdkeksimportclustertestawscdkawseksKubectlProvider31F66FBD.nestedProps extends cdk.StackProps {
+export interface Awscdkeksimportclustertestawscdkawsekskubectlprovider31F66FbdNestedProps extends cdk.StackProps {
   /**
    */
   readonly referencetoawscdkeksimportclustertestKubectlLayer51952008Ref: string;
@@ -20,10 +20,10 @@ export interface awscdkeksimportclustertestawscdkawseksKubectlProvider31F66FBD.n
   readonly referencetoawscdkeksimportclustertestCluster9Dd2ac72ClusterSecurityGroupId: string;
 }
 
-export class awscdkeksimportclustertestawscdkawseksKubectlProvider31F66FBD.nested extends cdk.Stack {
+export class Awscdkeksimportclustertestawscdkawsekskubectlprovider31F66FbdNested extends cdk.Stack {
   public readonly awscdkeksimportclustertestawscdkawseksKubectlProviderframeworkonEvent301Acd4fArn;
 
-  public constructor(scope: cdk.App, id: string, props: awscdkeksimportclustertestawscdkawseksKubectlProvider31F66FBD.nestedProps) {
+  public constructor(scope: cdk.App, id: string, props: Awscdkeksimportclustertestawscdkawsekskubectlprovider31F66FbdNestedProps) {
     super(scope, id, props);
 
     // Resources

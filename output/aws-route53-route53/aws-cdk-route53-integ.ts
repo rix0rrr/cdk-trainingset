@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 
-export interface aws-cdk-route53-integProps extends cdk.StackProps {
+export interface AwsCdkRoute53IntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,11 +10,11 @@ export interface aws-cdk-route53-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-route53-integ extends cdk.Stack {
+export class AwsCdkRoute53Integ extends cdk.Stack {
   public readonly privateZoneId;
   public readonly publicZoneId;
 
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-route53-integProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkRoute53IntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

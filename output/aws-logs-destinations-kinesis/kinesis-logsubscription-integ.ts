@@ -3,7 +3,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as kinesis from 'aws-cdk-lib/aws-kinesis';
 import * as logs from 'aws-cdk-lib/aws-logs';
 
-export interface kinesis-logsubscription-integProps extends cdk.StackProps {
+export interface KinesisLogsubscriptionIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface kinesis-logsubscription-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class kinesis-logsubscription-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: kinesis-logsubscription-integProps = {}) {
+export class KinesisLogsubscriptionInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: KinesisLogsubscriptionIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

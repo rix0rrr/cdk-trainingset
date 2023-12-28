@@ -3,7 +3,7 @@ import * as amplify from 'aws-cdk-lib/aws-amplify';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 
-export interface cdk-amplify-appProps extends cdk.StackProps {
+export interface CdkAmplifyAppProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface cdk-amplify-appProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-amplify-app extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-amplify-appProps = {}) {
+export class CdkAmplifyApp extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkAmplifyAppProps = {}) {
     super(scope, id, props);
 
     // Applying default props

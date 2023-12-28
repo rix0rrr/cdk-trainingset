@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as apprunner from 'aws-cdk-lib/aws-apprunner';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface integ-apprunner-ecr-publicProps extends cdk.StackProps {
+export interface IntegApprunnerEcrPublicProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,14 +10,14 @@ export interface integ-apprunner-ecr-publicProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-apprunner-ecr-public extends cdk.Stack {
+export class IntegApprunnerEcrPublic extends cdk.Stack {
   public readonly url1;
   public readonly serviceName;
   public readonly serviceId;
   public readonly serviceStatus;
   public readonly serviceArn;
 
-  public constructor(scope: cdk.App, id: string, props: integ-apprunner-ecr-publicProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegApprunnerEcrPublicProps = {}) {
     super(scope, id, props);
 
     // Applying default props

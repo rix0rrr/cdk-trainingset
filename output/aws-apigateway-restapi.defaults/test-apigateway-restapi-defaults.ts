@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface test-apigateway-restapi-defaultsProps extends cdk.StackProps {
+export interface TestApigatewayRestapiDefaultsProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,10 +10,10 @@ export interface test-apigateway-restapi-defaultsProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class test-apigateway-restapi-defaults extends cdk.Stack {
+export class TestApigatewayRestapiDefaults extends cdk.Stack {
   public readonly myapiEndpoint3628Afe3;
 
-  public constructor(scope: cdk.App, id: string, props: test-apigateway-restapi-defaultsProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: TestApigatewayRestapiDefaultsProps = {}) {
     super(scope, id, props);
 
     // Applying default props

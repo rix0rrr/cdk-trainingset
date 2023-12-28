@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface aws-cdk-lambda-runtime-fromassetProps extends cdk.StackProps {
+export interface AwsCdkLambdaRuntimeFromassetProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,10 +10,10 @@ export interface aws-cdk-lambda-runtime-fromassetProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-lambda-runtime-fromasset extends cdk.Stack {
+export class AwsCdkLambdaRuntimeFromasset extends cdk.Stack {
   public readonly exportsOutputRefMyFunction3Baa72d119002d92;
 
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-lambda-runtime-fromassetProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkLambdaRuntimeFromassetProps = {}) {
     super(scope, id, props);
 
     // Applying default props

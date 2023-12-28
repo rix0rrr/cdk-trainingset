@@ -3,7 +3,7 @@ import * as cdk from 'aws-cdk-lib';
 import { LAMBDA_RECOGNIZE_LAYER_VERSION } from 'aws-cdk-lib/cx-api';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as path from 'path';
-import { STANDARD_NODEJS_RUNTIME } from '../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 const app = new cdk.App();
 

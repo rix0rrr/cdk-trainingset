@@ -4,7 +4,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as redshift from 'aws-cdk-lib/aws-redshift';
 import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 
-export interface redshift-iamrole-integProps extends cdk.StackProps {
+export interface RedshiftIamroleIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface redshift-iamrole-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class redshift-iamrole-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: redshift-iamrole-integProps = {}) {
+export class RedshiftIamroleInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: RedshiftIamroleIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

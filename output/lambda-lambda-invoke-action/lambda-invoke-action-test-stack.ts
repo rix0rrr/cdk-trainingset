@@ -3,7 +3,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as iotevents from 'aws-cdk-lib/aws-iotevents';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface lambda-invoke-action-test-stackProps extends cdk.StackProps {
+export interface LambdaInvokeActionTestStackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface lambda-invoke-action-test-stackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class lambda-invoke-action-test-stack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: lambda-invoke-action-test-stackProps = {}) {
+export class LambdaInvokeActionTestStack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: LambdaInvokeActionTestStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

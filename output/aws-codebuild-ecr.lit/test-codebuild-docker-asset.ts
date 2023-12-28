@@ -3,7 +3,7 @@ import * as codebuild from 'aws-cdk-lib/aws-codebuild';
 import * as ecr from 'aws-cdk-lib/aws-ecr';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface test-codebuild-docker-assetProps extends cdk.StackProps {
+export interface TestCodebuildDockerAssetProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface test-codebuild-docker-assetProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class test-codebuild-docker-asset extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: test-codebuild-docker-assetProps = {}) {
+export class TestCodebuildDockerAsset extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: TestCodebuildDockerAssetProps = {}) {
     super(scope, id, props);
 
     // Applying default props

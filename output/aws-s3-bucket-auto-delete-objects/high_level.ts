@@ -4,7 +4,7 @@ import { IntegTest } from '@aws-cdk/integ-tests-alpha';
 import { Construct } from 'constructs';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import { AwsCustomResource, AwsCustomResourcePolicy, PhysicalResourceId } from 'aws-cdk-lib/custom-resources';
-import { STANDARD_CUSTOM_RESOURCE_PROVIDER_RUNTIME } from '../../config';
+import { STANDARD_CUSTOM_RESOURCE_PROVIDER_RUNTIME } from '@additional/config';
 
 const PUT_OBJECTS_RESOURCE_TYPE = 'Custom::S3PutObjects';
 

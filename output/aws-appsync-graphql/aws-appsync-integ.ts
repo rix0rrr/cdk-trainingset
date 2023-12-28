@@ -4,7 +4,7 @@ import * as cognito from 'aws-cdk-lib/aws-cognito';
 import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface aws-appsync-integProps extends cdk.StackProps {
+export interface AwsAppsyncIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface aws-appsync-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-appsync-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-appsync-integProps = {}) {
+export class AwsAppsyncInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsAppsyncIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

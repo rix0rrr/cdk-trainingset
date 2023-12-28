@@ -6,7 +6,7 @@ import * as cr from 'aws-cdk-lib/custom-resources';
 import * as integ from '@aws-cdk/integ-tests-alpha';
 
 import { NodeProxyAgentLayer } from 'aws-cdk-lib/lambda-layer-node-proxy-agent';
-import { STANDARD_NODEJS_RUNTIME } from '../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 /**
  * Test verifies that node-proxy-agent is invoked successfully inside Lambda runtime.

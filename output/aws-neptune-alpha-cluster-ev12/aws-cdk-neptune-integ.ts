@@ -4,7 +4,7 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as kms from 'aws-cdk-lib/aws-kms';
 import * as neptune from 'aws-cdk-lib/aws-neptune';
 
-export interface aws-cdk-neptune-integProps extends cdk.StackProps {
+export interface AwsCdkNeptuneIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,8 +12,8 @@ export interface aws-cdk-neptune-integProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-neptune-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-neptune-integProps = {}) {
+export class AwsCdkNeptuneInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkNeptuneIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

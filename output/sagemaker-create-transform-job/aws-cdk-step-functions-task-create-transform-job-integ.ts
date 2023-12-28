@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface aws-cdk-step-functions-task-create-transform-job-integProps extends cdk.StackProps {
+export interface AwsCdkStepFunctionsTaskCreateTransformJobIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface aws-cdk-step-functions-task-create-transform-job-integProps ext
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-step-functions-task-create-transform-job-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-step-functions-task-create-transform-job-integProps = {}) {
+export class AwsCdkStepFunctionsTaskCreateTransformJobInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkStepFunctionsTaskCreateTransformJobIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

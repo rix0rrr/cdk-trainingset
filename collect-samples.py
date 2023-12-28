@@ -46,7 +46,8 @@ def process_integtest(dir, ts_file_name):
     for template_file in template_files:
         try:
             basename = re.sub('\.template\.json$', '', path.basename(template_file))
-            upconverted_templates[f'{basename}.ts'] = subprocess.check_output(['node', 'cdk-from-cfn.js', template_file, basename], encoding='utf-8')
+            stack_name = re.sub('[^a-zA-Z0-9_]', '', basename.title())
+            upconverted_templates[f'{basename}.ts'] = subprocess.check_output(['node', 'cdk-from-cfn.js', template_file, stack_name], encoding='utf-8')
         except Exception:
             # cdk-from-cfn already printed an error to stderr
             pass
@@ -55,7 +56,9 @@ def process_integtest(dir, ts_file_name):
     dir = f'output/{simple_name}'
     os.makedirs(dir, exist_ok=True)
     with open(path.join(dir, 'high_level.ts'), 'w') as f:
-        f.write(ts_program)
+        program = ts_program
+        program = re.sub(r'(?:\.\./)+config', '@additional/config', program)
+        f.write(program)
     for name, template in templates.items():
         with open(path.join(dir, name), 'w') as f:
             json.dump(template, f, indent=2)

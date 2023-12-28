@@ -3,11 +3,11 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as sns from 'aws-cdk-lib/aws-sns';
 
-export interface FunctionStackProps extends cdk.StackProps {
+export interface FunctionstackProps extends cdk.StackProps {
 }
 
-export class FunctionStack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: FunctionStackProps = {}) {
+export class Functionstack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: FunctionstackProps = {}) {
     super(scope, id, props);
 
     // Resources

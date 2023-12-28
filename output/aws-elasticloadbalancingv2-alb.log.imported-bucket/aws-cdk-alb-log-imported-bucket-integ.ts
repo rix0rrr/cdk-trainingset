@@ -3,7 +3,7 @@ import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as elasticloadbalancingv2 from 'aws-cdk-lib/aws-elasticloadbalancingv2';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 
-export interface aws-cdk-alb-log-imported-bucket-integProps extends cdk.StackProps {
+export interface AwsCdkAlbLogImportedBucketIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,8 +11,8 @@ export interface aws-cdk-alb-log-imported-bucket-integProps extends cdk.StackPro
   readonly bootstrapVersion?: string;
 }
 
-export class aws-cdk-alb-log-imported-bucket-integ extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: aws-cdk-alb-log-imported-bucket-integProps = {}) {
+export class AwsCdkAlbLogImportedBucketInteg extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: AwsCdkAlbLogImportedBucketIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

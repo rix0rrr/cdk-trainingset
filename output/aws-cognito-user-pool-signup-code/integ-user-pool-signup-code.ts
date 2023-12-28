@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as cognito from 'aws-cdk-lib/aws-cognito';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface integ-user-pool-signup-codeProps extends cdk.StackProps {
+export interface IntegUserPoolSignupCodeProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,11 +10,11 @@ export interface integ-user-pool-signup-codeProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class integ-user-pool-signup-code extends cdk.Stack {
+export class IntegUserPoolSignupCode extends cdk.Stack {
   public readonly userpoolid;
   public readonly clientid;
 
-  public constructor(scope: cdk.App, id: string, props: integ-user-pool-signup-codeProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: IntegUserPoolSignupCodeProps = {}) {
     super(scope, id, props);
 
     // Applying default props

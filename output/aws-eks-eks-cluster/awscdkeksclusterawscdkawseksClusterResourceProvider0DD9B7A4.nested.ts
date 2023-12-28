@@ -4,15 +4,15 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as logs from 'aws-cdk-lib/aws-logs';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface awscdkeksclusterawscdkawseksClusterResourceProvider0DD9B7A4.nestedProps extends cdk.StackProps {
+export interface Awscdkeksclusterawscdkawseksclusterresourceprovider0Dd9B7A4NestedProps extends cdk.StackProps {
 }
 
-export class awscdkeksclusterawscdkawseksClusterResourceProvider0DD9B7A4.nested extends cdk.Stack {
+export class Awscdkeksclusterawscdkawseksclusterresourceprovider0Dd9B7A4Nested extends cdk.Stack {
   public readonly awscdkeksclusterawscdkawseksClusterResourceProviderOnEventHandlerServiceRole9C5eb73bArn;
   public readonly awscdkeksclusterawscdkawseksClusterResourceProviderIsCompleteHandlerServiceRole95B1cfc8Arn;
   public readonly awscdkeksclusterawscdkawseksClusterResourceProviderframeworkonEventE7ab77f7Arn;
 
-  public constructor(scope: cdk.App, id: string, props: awscdkeksclusterawscdkawseksClusterResourceProvider0DD9B7A4.nestedProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: Awscdkeksclusterawscdkawseksclusterresourceprovider0Dd9B7A4NestedProps = {}) {
     super(scope, id, props);
 
     // Resources

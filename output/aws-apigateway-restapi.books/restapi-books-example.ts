@@ -3,7 +3,7 @@ import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface restapi-books-exampleProps extends cdk.StackProps {
+export interface RestapiBooksExampleProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface restapi-books-exampleProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class restapi-books-example extends cdk.Stack {
+export class RestapiBooksExample extends cdk.Stack {
   public readonly booksapiEndpointE230e8d5;
 
-  public constructor(scope: cdk.App, id: string, props: restapi-books-exampleProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: RestapiBooksExampleProps = {}) {
     super(scope, id, props);
 
     // Applying default props

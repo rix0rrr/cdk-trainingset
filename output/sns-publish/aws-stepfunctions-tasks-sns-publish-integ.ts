@@ -4,7 +4,7 @@ import * as sns from 'aws-cdk-lib/aws-sns';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
 
-export interface aws-stepfunctions-tasks-sns-publish-integProps extends cdk.StackProps {
+export interface AwsStepfunctionsTasksSnsPublishIntegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -12,12 +12,12 @@ export interface aws-stepfunctions-tasks-sns-publish-integProps extends cdk.Stac
   readonly bootstrapVersion?: string;
 }
 
-export class aws-stepfunctions-tasks-sns-publish-integ extends cdk.Stack {
+export class AwsStepfunctionsTasksSnsPublishInteg extends cdk.Stack {
   public readonly stateMachineArn;
   public readonly queueUrl;
   public readonly fifoQueueUrl;
 
-  public constructor(scope: cdk.App, id: string, props: aws-stepfunctions-tasks-sns-publish-integProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: AwsStepfunctionsTasksSnsPublishIntegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

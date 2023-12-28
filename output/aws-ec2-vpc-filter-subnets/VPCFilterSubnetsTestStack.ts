@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 
-export interface VPCFilterSubnetsTestStackProps extends cdk.StackProps {
+export interface VpcfiltersubnetsteststackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,11 +9,11 @@ export interface VPCFilterSubnetsTestStackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class VPCFilterSubnetsTestStack extends cdk.Stack {
+export class Vpcfiltersubnetsteststack extends cdk.Stack {
   public readonly privateSubnet01;
   public readonly publicSubnet01;
 
-  public constructor(scope: cdk.App, id: string, props: VPCFilterSubnetsTestStackProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: VpcfiltersubnetsteststackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

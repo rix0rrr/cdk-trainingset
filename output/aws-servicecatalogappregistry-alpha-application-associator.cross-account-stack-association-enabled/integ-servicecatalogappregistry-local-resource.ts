@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as servicecatalogappregistry from 'aws-cdk-lib/aws-servicecatalogappregistry';
 
-export interface integ-servicecatalogappregistry-local-resourceProps extends cdk.StackProps {
+export interface IntegServicecatalogappregistryLocalResourceProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface integ-servicecatalogappregistry-local-resourceProps extends cdk
   readonly bootstrapVersion?: string;
 }
 
-export class integ-servicecatalogappregistry-local-resource extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: integ-servicecatalogappregistry-local-resourceProps = {}) {
+export class IntegServicecatalogappregistryLocalResource extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IntegServicecatalogappregistryLocalResourceProps = {}) {
     super(scope, id, props);
 
     // Applying default props

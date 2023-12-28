@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as elasticsearch from 'aws-cdk-lib/aws-elasticsearch';
 
-export interface cdk-integ-elasticsearch-ultrawarmProps extends cdk.StackProps {
+export interface CdkIntegElasticsearchUltrawarmProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface cdk-integ-elasticsearch-ultrawarmProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-integ-elasticsearch-ultrawarm extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-integ-elasticsearch-ultrawarmProps = {}) {
+export class CdkIntegElasticsearchUltrawarm extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkIntegElasticsearchUltrawarmProps = {}) {
     super(scope, id, props);
 
     // Applying default props

@@ -3,7 +3,7 @@ import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface RequestAuthorizerIntegProps extends cdk.StackProps {
+export interface RequestauthorizerintegProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -11,10 +11,10 @@ export interface RequestAuthorizerIntegProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class RequestAuthorizerInteg extends cdk.Stack {
+export class Requestauthorizerinteg extends cdk.Stack {
   public readonly myRestApiEndpoint4C55e4cb;
 
-  public constructor(scope: cdk.App, id: string, props: RequestAuthorizerIntegProps = {}) {
+  public constructor(scope: cdk.App, id: string, props: RequestauthorizerintegProps = {}) {
     super(scope, id, props);
 
     // Applying default props

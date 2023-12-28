@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 
-export interface parent-stackProps extends cdk.StackProps {
+export interface ParentStackProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface parent-stackProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class parent-stack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: parent-stackProps = {}) {
+export class ParentStack extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: ParentStackProps = {}) {
     super(scope, id, props);
 
     // Applying default props

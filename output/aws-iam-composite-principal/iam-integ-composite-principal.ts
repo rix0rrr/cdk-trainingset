@@ -1,7 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface iam-integ-composite-principalProps extends cdk.StackProps {
+export interface IamIntegCompositePrincipalProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -9,8 +9,8 @@ export interface iam-integ-composite-principalProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class iam-integ-composite-principal extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: iam-integ-composite-principalProps = {}) {
+export class IamIntegCompositePrincipal extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: IamIntegCompositePrincipalProps = {}) {
     super(scope, id, props);
 
     // Applying default props

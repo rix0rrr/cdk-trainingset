@@ -5,7 +5,7 @@ import * as codepipeline from 'aws-cdk-lib/aws-codepipeline';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as cdk from 'aws-cdk-lib';
 import * as codepipeline_actions from 'aws-cdk-lib/aws-codepipeline-actions';
-import { STANDARD_NODEJS_RUNTIME } from '../../config';
+import { STANDARD_NODEJS_RUNTIME } from '@additional/config';
 
 const app = new cdk.App();
 

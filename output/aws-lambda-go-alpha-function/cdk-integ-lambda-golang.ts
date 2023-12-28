@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 
-export interface cdk-integ-lambda-golangProps extends cdk.StackProps {
+export interface CdkIntegLambdaGolangProps extends cdk.StackProps {
   /**
    * Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]
    * @default '/cdk-bootstrap/hnb659fds/version'
@@ -10,8 +10,8 @@ export interface cdk-integ-lambda-golangProps extends cdk.StackProps {
   readonly bootstrapVersion?: string;
 }
 
-export class cdk-integ-lambda-golang extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props: cdk-integ-lambda-golangProps = {}) {
+export class CdkIntegLambdaGolang extends cdk.Stack {
+  public constructor(scope: cdk.App, id: string, props: CdkIntegLambdaGolangProps = {}) {
     super(scope, id, props);
 
     // Applying default props
