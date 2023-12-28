@@ -1,0 +1,16 @@
+{
+  "name": "collect-cdk-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cdk-from-cfn": "^0.106.0",
+    "cfngine": "^0.0.1"
+  }
+}
